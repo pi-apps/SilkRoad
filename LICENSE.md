@@ -2,9 +2,9 @@ PiOS License
 
 Copyright (C) 2023 Pi Clover Corporation
 
-Permission is hereby granted by the application software developer (“Software Developer”), free
+Permission is hereby granted by the application software developer (“Pi Clover Corporation”), free
 of charge, to any person obtaining a copy of this application, software and associated 
-documentation files (the “Software”), which was developed by the Software Developer for use on 
+documentation files (the “Pi Silk Road”), which was developed by the Software Developer for use on 
 Pi Network, whereby the purpose of this license is to permit the development of derivative works 
 based on the Software, including the right to use, copy, modify, merge, publish, distribute, 
 sub-license, and/or sell copies of such derivative works and any Software components incorporated 
