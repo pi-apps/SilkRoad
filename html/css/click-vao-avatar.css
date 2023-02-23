@@ -1,0 +1,850 @@
+/* screen - click-vao-avatar */
+
+.click-vao-avatar {
+  align-items: flex-start;
+  display: flex;
+  height: 1667px;
+  min-width: 1440px;
+}
+
+.click-vao-avatar .overlap-group5 {
+  height: 1668px;
+  position: relative;
+  width: 1440px;
+}
+
+.click-vao-avatar .overlap-group3 {
+  height: 1631px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.click-vao-avatar .chuyn-tin-cho-ngi-bn {
+  align-items: flex-end;
+  background-color: var(--lavender);
+  display: flex;
+  flex-direction: column;
+  height: 1631px;
+  left: 0;
+  padding: 18px 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.click-vao-avatar .frame-19132 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-right: 120px;
+}
+
+.click-vao-avatar .lets-connect {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  min-width: 84px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .ellipse-1538 {
+  height: 44px;
+  min-width: 44px;
+  object-fit: cover;
+}
+
+.click-vao-avatar .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 1297px;
+  margin-top: 18px;
+  min-width: 1440px;
+  padding: 19px 120px;
+}
+
+.click-vao-avatar .lch-s-giao-dch {
+  letter-spacing: 0;
+  min-height: 25px;
+}
+
+.click-vao-avatar .group-container {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  left: 120px;
+  min-height: 1069px;
+  position: absolute;
+  top: 254px;
+  width: 1200px;
+}
+
+.click-vao-avatar .overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--concrete);
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 45px;
+  padding: 1px 0;
+  width: 1200px;
+}
+
+.click-vao-avatar .flex-row {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 9px;
+  min-width: 1138px;
+}
+
+.click-vao-avatar .sn-phm {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 67px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .hnh-thc {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 254px;
+  min-height: 24px;
+  min-width: 67px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .hnh-thc-thanh-ton {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-width: 145px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .s-tin {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 73px;
+  min-height: 24px;
+  min-width: 48px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .ngi-bn {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 114px;
+  min-height: 24px;
+  min-width: 72px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .trng-thi {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 168px;
+  min-height: 24px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .line-7 {
+  height: 1px;
+  margin-left: -1px;
+  margin-top: 9px;
+  width: 1200px;
+}
+
+.click-vao-avatar .group-2148 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 9.0px;
+  margin-top: 19px;
+  min-height: 88px;
+  width: 1177px;
+}
+
+.click-vao-avatar .overlap-group {
+  height: 68px;
+  margin-right: 5.0px;
+  position: relative;
+  width: 1142px;
+}
+
+.click-vao-avatar .frame-19130 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  left: 817px;
+  position: absolute;
+  top: 19px;
+}
+
+.click-vao-avatar .ellipse-1537 {
+  height: 30px;
+  min-width: 30px;
+}
+
+.click-vao-avatar .frame-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.click-vao-avatar .pro_vip_-trader {
+  letter-spacing: 0;
+  margin-top: -1px;
+}
+
+.click-vao-avatar .group-1967 {
+  align-items: center;
+  display: flex;
+  height: 68px;
+  left: 0;
+  min-width: 1142px;
+  position: absolute;
+  top: 0;
+}
+
+.click-vao-avatar .iphone-13-pro-max-gold-650x650-1-1 {
+  height: 68px;
+  width: 54px;
+}
+
+.click-vao-avatar .i-phone-13-pro-max-128-gb {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 23px;
+  min-height: 24px;
+  min-width: 169px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .chuyn-khon-ngn-hng {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 102px;
+  min-height: 24px;
+  min-width: 140px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .text-1 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 78px;
+  min-height: 24px;
+  min-width: 84px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .hon-thnh {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 318px;
+  min-height: 24px;
+  min-width: 75px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .line-8 {
+  height: 1px;
+  margin-top: 20px;
+  width: 1177px;
+}
+
+.click-vao-avatar .group-21 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 9.0px;
+  margin-top: 20px;
+  min-height: 88px;
+  width: 1177px;
+}
+
+.click-vao-avatar .mua-1 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-2 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-3 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-4 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-5 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-6 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-7 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .mua-8 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 62px;
+  min-height: 24px;
+  min-width: 27px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .group-1935 {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  margin-left: 6.0px;
+  margin-top: 10px;
+  min-width: 1186px;
+}
+
+.click-vao-avatar .s-hng-hin-th {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 89px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .number-1 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 15px;
+  min-height: 24px;
+  min-width: 14px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .text-13 {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 10px;
+  min-width: 3px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .number {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 10px;
+  min-height: 24px;
+  min-width: 14px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-left: 630px;
+}
+
+.click-vao-avatar .page {
+  height: 32px;
+  min-width: 32px;
+}
+
+.click-vao-avatar .page-disabled {
+  align-items: center;
+  background-color: var(--manatee);
+  border-radius: 4px;
+  display: flex;
+  height: 32px;
+  opacity: 0.5;
+  overflow: hidden;
+  padding: 0 4px;
+  width: 32px;
+}
+
+.click-vao-avatar .ic-carat-left {
+  background-image: url(../img/ic---carat---left-14@2x.svg);
+  background-size: 100% 100%;
+  height: 24px;
+  width: 24px;
+}
+
+.click-vao-avatar .page-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  height: 32px;
+  overflow: hidden;
+  padding: 4px;
+  width: 32px;
+}
+
+.click-vao-avatar .num {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-1 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-2 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-3 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-4 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-5 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .num-6 {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.click-vao-avatar .page-master {
+  background-color: var(--white);
+  border-radius: 4px;
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+}
+
+.click-vao-avatar .ic-carat-right {
+  align-items: flex-start;
+  display: flex;
+  left: 4px;
+  min-width: 24px;
+  position: relative;
+  top: 4px;
+}
+
+.click-vao-avatar .ic-carat-right-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 24px;
+  transform: rotate(180deg);
+}
+
+.click-vao-avatar .ic-carat-left-1 {
+  height: 24px;
+  transform: rotate(-180deg);
+  width: 24px;
+}
+
+.click-vao-avatar .frame-19136 {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  left: 120px;
+  position: absolute;
+  top: 165px;
+}
+
+.click-vao-avatar .sn-phm-1 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .frame-10 {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  padding: 8px 10px;
+  width: 212px;
+}
+
+.click-vao-avatar .mua-9 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+  width: 163px;
+}
+
+.click-vao-avatar .vuesaxoutlinearrow-down {
+  height: 16px;
+  min-width: 16px;
+}
+
+.click-vao-avatar .gi {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .address {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+  width: 163px;
+}
+
+.click-vao-avatar .trng-thi-1 {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .tt-c {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+  width: 163px;
+}
+
+.click-vao-avatar .group-48095439 {
+  align-items: center;
+  display: flex;
+  height: 48px;
+  left: 120px;
+  min-width: 736px;
+  position: absolute;
+  top: 16px;
+}
+
+.click-vao-avatar .mdistar-three-points {
+  height: 48px;
+  width: 48px;
+}
+
+.click-vao-avatar .navbar {
+  align-items: flex-start;
+  display: flex;
+  gap: 25px;
+  margin-left: 40px;
+}
+
+.click-vao-avatar .lets-connect-1 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 73px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-2 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 93px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-3 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 146px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-4 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 108px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-5 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 48px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-6 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .overlap-group4 {
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.click-vao-avatar .group-48095528 {
+  align-items: center;
+  background-color: var(--fuchsia-pink);
+  display: flex;
+  height: 80px;
+  left: 0;
+  min-width: 1440px;
+  padding: 0 120px;
+  position: absolute;
+  top: 0;
+}
+
+.click-vao-avatar .frame-19086 {
+  align-items: flex-start;
+  display: flex;
+  gap: 25px;
+  margin-left: 40px;
+}
+
+.click-vao-avatar .frame-19132-1 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  left: 1184px;
+  position: absolute;
+  top: 18px;
+}
+
+.click-vao-avatar .group-48095502 {
+  align-items: flex-end;
+  background-color: var(--baltic-sea);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 290px;
+  padding: 100px 501px;
+  position: absolute;
+  top: 1378px;
+  width: 1440px;
+}
+
+.click-vao-avatar .social {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+.click-vao-avatar .placeholder-s-circle {
+  height: 40px;
+  min-width: 40px;
+}
+
+.click-vao-avatar .placeholder-s-circle-2 {
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  backdrop-filter: blur(14px) brightness(100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+  height: 40px;
+  min-width: 40px;
+}
+
+.click-vao-avatar .instagram-original {
+  align-items: flex-end;
+  display: flex;
+  height: 20px;
+  left: 10px;
+  padding: 1.7px 1.7px;
+  position: relative;
+  top: 10px;
+  width: 20px;
+}
+
+.click-vao-avatar .group {
+  background-image: url(../img/subtract-25@2x.svg);
+  background-size: 100% 100%;
+  height: 17px;
+  width: 17px;
+}
+
+.click-vao-avatar .placeholder-s-circle-1 {
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  backdrop-filter: blur(14px) brightness(100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+  height: 40px;
+  min-width: 40px;
+  position: relative;
+}
+
+.click-vao-avatar .x-original {
+  height: 20px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.click-vao-avatar .telegram-original {
+  height: 20px;
+  left: 8px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.click-vao-avatar .x2022-pi-ecommerce {
+  height: 20px;
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: 30px;
+  min-width: 437px;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .frame-19135 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 1135px;
+  padding: 10px;
+  position: absolute;
+  top: 67px;
+}
+
+.click-vao-avatar .frame-1913 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.click-vao-avatar .vuesax {
+  height: 24px;
+  min-width: 24px;
+}
+
+.click-vao-avatar .lets-connect-7 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  min-width: 131px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-8 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  min-width: 128px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.click-vao-avatar .lets-connect-9 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  min-width: 77px;
+  text-align: center;
+  white-space: nowrap;
+}

@@ -1,0 +1,166 @@
+﻿#table-cart-grid tbody .cart_description ul.cart-body-attribute {
+    font-size: 12px;
+    margin-left: 15px;
+    text-align: left;
+}
+.wishlist-item table td {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 12px;
+    text-align: left;
+}
+span.status_order_1 {
+    float: right;
+    background: #3ab54a;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 13px;
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: normal;
+}
+span.status_order_0 {
+    float: right;
+    background: #ffef71;
+    color: #000;
+    padding: 4px 6px;
+    font-size: 13px;
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: normal;
+}
+.account-order-detail {
+    overflow: hidden;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+.account-order-detail .note {
+    position: relative;
+    margin: 10px 0;
+    font-size: 13px;
+}
+    .account-order-detail .address-1, .account-order-detail .address-2, .account-order-detail .other-1, .account-order-detail .other-2,
+    .account-order-detail .payment-1, .account-order-detail .payment-2 {
+        width: 24%;
+        display: block;
+        vertical-align: top;
+        margin-top: 20px;
+        float: left;
+        margin-right: 1%;
+    }
+.account-order-detail .payment-2 {
+    margin-right: 0;
+}
+.account-order-detail .note div.ct {
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 1.38;
+}
+    .account-order-detail .note h3 {
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-family: Roboto;
+        text-transform: uppercase;
+        color: #242424;
+        font-size: 14px;
+    }
+.account-order-detail .note div.ct div.ct-row:first-child {
+    margin-top: 0;
+}
+.account-order-detail .note div.ct div {
+    font-size: 13px;
+    color: #242424;
+}
+.account-order-detail .note div.ct div.ct-left {
+    float: left;
+    width: 17%;
+}
+.account-order-detail .note div.ct div.ct-right {
+    float: right;
+    width: 83%;
+}
+    .account-order-detail .note div.ct {
+        padding: 10px;
+        background: #CCFFFF;
+        border-radius: 4px;
+        overflow: hidden;
+        line-height: 1.38;
+        margin-bottom: 5px;
+    }
+.titlebill {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#table-cart-grid thead tr.thead-tr th {
+    text-align: center;
+    font-size: 11px;
+}
+.account-order-detail .address-1 h3, .account-order-detail .address-2 h3, .account-order-detail .other-1 h3, .account-order-detail .other-2 h3, .account-order-detail .payment-1 h3, .account-order-detail .payment-2 h3 {
+    font-weight: 500;
+    margin-top: 0;
+    /*margin-bottom: 15px;*/
+    font-family: Roboto;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #242424;
+}
+    .account-order-detail .address-1 > div, .account-order-detail .address-2 > div, .account-order-detail .other-1 > div, .account-order-detail .other-2 > div, .account-order-detail .payment-1 > div, .account-order-detail .payment-2 > div {
+        padding: 5px 10px;
+        background: #FFFF99;
+        border-radius: 4px;
+        min-height: 110px;
+        line-height: 1.38;
+    }
+.account-order-detail .address-1 p.name, .account-order-detail .address-2 p.name, .account-order-detail .other-1 p.name, .account-order-detail .other-2 p.name, .account-order-detail .payment-1 p.name, .account-order-detail .payment-2 p.name {
+    font-weight: 500;
+    color: #242424;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+    .account-order-detail .address-1 p, .account-order-detail .address-2 p, .account-order-detail .other-1 p, .account-order-detail .other-2 p, .account-order-detail .payment-1 p, .account-order-detail .payment-2 p {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+.cart_summary td.cart_product {
+    width: 120px;
+    padding: 15px;
+}
+.cart_summary img {
+    max-width: 100px;
+}
+.cart_summary tfoot {
+    text-align: right;
+}
+.button-login-member {
+    background: #d72828;
+    color: #fff;
+    width: inherit;
+    display: inline-block;
+    padding: 8px 25px;
+    border: none;
+    /* float: right; */
+}
+.btn-float-right {
+    float: right;
+    text-align: center;
+}
+.btn-float-left {
+    float: left;
+    text-align: center;
+}
+.a-right {
+    text-align: right !important;
+}
+.price {
+    font-size: 14px;
+    color: #fe0100;
+    white-space: nowrap !important;
+}
+.cart_summary .qty {
+    text-align: center;
+    width: 100px;
+}

@@ -1,0 +1,221 @@
+﻿
+.submitButton {
+    background-color: #F1890E;
+    border: #F1890E solid 1px;
+    padding: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: -4px;
+    color: #fff;
+}
+
+    .submitButton:hover {
+        background-color: #e1e1e1;
+    }
+
+.login {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid 2px #BF40BF;
+    color: #1e4638;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+    .login .textBox {
+        width: 67%;
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+    }
+
+
+    .login #divButton {
+        padding: 4px;
+        text-align: right;
+    }
+
+.chatRoom {
+    /*width: 650px;*/
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #BF40BF;
+    clear: both;
+}
+
+    .chatRoom .title {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px;
+        background-color: #BF40BF;
+        border-bottom: solid 1px #BF40BF;
+        color: #fff;
+    }
+
+    .chatRoom .content {
+        height: 400px;
+        clear: both;
+    }
+
+        .chatRoom .content .chatWindow {
+            /* float: left; */
+            /* width: 409px; */
+            height: 400px;
+            border-right: solid 1px #BF40BF;
+            overflow-y: scroll;
+        }
+
+            .chatRoom .content .chatWindow .message {
+                padding: 5px 0px 10px 10px;
+                font-size: 14px;
+                clear: both;
+                display: block;
+                margin-bottom: 13px;
+            }
+
+                .chatRoom .content .chatWindow .message .userName {
+                    font-weight: 600;
+                }
+
+        .chatRoom .content .users {
+            /* float: right; */
+            /* width: 240px; */
+            /* height: 300px; */
+            overflow-y: scroll;
+            margin-left: -12px;
+        }
+
+            .chatRoom .content .users .user {
+                display: block;
+                cursor: pointer;
+                padding: 4px;
+                /* background-color: #f9f9f9; */
+                /* border-bottom: solid 1px #BF40BF; */
+                color: #FF6060;
+                padding-left: 10px;
+            }
+
+            .chatRoom .content .users .loginUser {
+                display: block;
+                padding: 4px;
+                color: gray;
+                /* border-bottom: solid 1px #BF40BF; */
+                padding-left: 10px;
+            }
+
+            .chatRoom .content .users .user:hover {
+                background-color: #e1e1e1;
+            }
+
+    .chatRoom .messageBar {
+        border-top: solid 1px #BF40BF;
+        padding: 4px;
+    }
+
+        .chatRoom .messageBar .textbox {
+            width: 66%;
+            display: inline-block;
+        }
+
+.disconnect {
+    position: absolute;
+    margin: 10px;
+    background-color: #ffcbcb;
+    padding: 4px;
+    border: solid 1px red;
+}
+
+
+.draggable {
+    position: absolute;
+    border: #5f9482 solid 1px !important;
+    width: 250px;
+}
+
+    .draggable .header {
+        cursor: move;
+        background-color: #d7e5e4;
+        border-bottom: #5f9482 solid 1px;
+        color: #1e4638;
+    }
+
+    .draggable .selText {
+        color: black;
+        padding: 4px;
+    }
+
+    .draggable .messageArea {
+        width: 250px;
+        overflow-y: scroll;
+        height: 200px;
+        border-bottom: #5f9482 solid 1px;
+    }
+
+        .draggable .messageArea .message {
+            padding: 4px;
+        }
+
+    .draggable .buttonBar {
+        width: 250px;
+        padding: 4px;
+    }
+
+        .draggable .buttonBar .msgText {
+            width: 172px;
+        }
+
+        .draggable .buttonBar .button {
+            margin-left: 4px;
+            width: 55px;
+        }
+
+div#divContainer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.submitButton:hover {
+    background-color: #FAB34B;
+    border: #FAB34B solid 1px;
+}
+
+.message-chat {
+}
+
+    .message-chat img {
+        float: left;
+        width: 50px;
+        vertical-align: middle;
+        border-radius: 50%;
+        height: 50px;
+        vertical-align: top;
+        margin: 0;
+        margin-right: 4px;
+    }
+
+    .message-chat .div-chat-userName {
+        /* clear: both; */
+        display: block;
+        padding: 0 0 0 60px;
+        right: 0;
+        font-weight: 500;
+        color: #F1890E;
+        text-transform: uppercase;
+        /* float: left; */
+    }
+
+        .message-chat .div-chat-userName span {
+            color: #828282;
+            font-size: 11px;
+            font-weight: 400;
+        }
+
+    .message-chat .message-content-chat {
+        /* clear: both; */
+        display: block;
+        padding: 0 0 0 60px;
+        right: 0;
+    }

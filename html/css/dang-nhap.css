@@ -1,0 +1,693 @@
+/* screen - dang-nhap */
+
+.dang-nhap {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  width: 1440px;
+}
+
+.dang-nhap .overlap-group2 {
+  height: 2553px;
+  position: relative;
+  width: 1440px;
+}
+
+.dang-nhap .rectangle-39224 {
+  background-color: var(--concrete);
+  height: 623px;
+  left: 0;
+  position: absolute;
+  top: 1640px;
+  width: 1440px;
+}
+
+.dang-nhap .rectangle-39222 {
+  background-color: var(--fuchsia-pink);
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.dang-nhap .rectangle-39223 {
+  background-color: var(--fuchsia-pink);
+  height: 940px;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  width: 1440px;
+}
+
+.dang-nhap .f-yitd-gtuea-an-wud-1 {
+  height: 940px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 80px;
+  width: 1440px;
+}
+
+.dang-nhap .frame-19090 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 300px;
+  position: absolute;
+  top: 777px;
+}
+
+.dang-nhap .frame-1908 {
+  align-items: flex-start;
+  display: flex;
+  gap: 40px;
+}
+
+.dang-nhap .button {
+  align-items: flex-start;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(189.13, 137.9, 184, 0.5) 100%);
+  border-radius: 20px;
+  box-shadow: inset 0px -5px 0px #c64ac6 , inset 0px -4px 0px #860a86;
+  display: flex;
+  gap: 15.2px;
+  height: 59px;
+  justify-content: center;
+  padding: 8.2px 36.48px;
+  width: 400px;
+}
+
+.dang-nhap .gian-hng-mall {
+  letter-spacing: 0;
+  margin-top: -1.52px;
+  min-width: 258px;
+  text-align: center;
+}
+
+.dang-nhap .gian-hng-mua-bn {
+  letter-spacing: 0;
+  margin-top: -1.52px;
+  min-width: 316px;
+  text-align: center;
+}
+
+.dang-nhap .gian-hng-cho-thu {
+  letter-spacing: 0;
+  margin-left: -2.48px;
+  margin-right: -2.48px;
+  margin-top: -1.52px;
+  min-width: 332px;
+  text-align: center;
+}
+
+.dang-nhap .gian-hng-u-gi {
+  letter-spacing: 0;
+  margin-top: -1.52px;
+  min-width: 301px;
+  text-align: center;
+}
+
+.dang-nhap .frame-19091 {
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  left: 120px;
+  position: absolute;
+  top: 1120px;
+}
+
+.dang-nhap .img {
+  background-color: var(--white);
+  border-radius: 70px;
+  box-shadow: 0px 0px 26px #0000001a;
+  height: 420px;
+  min-width: 580px;
+}
+
+.dang-nhap .group-48095474 {
+  align-items: flex-start;
+  display: flex;
+  left: 137px;
+  min-width: 307px;
+  position: relative;
+  top: 67px;
+}
+
+.dang-nhap .overlap-group1 {
+  height: 287px;
+  margin-top: 0;
+  position: relative;
+  width: 307px;
+}
+
+.dang-nhap .overlap-group {
+  align-items: flex-end;
+  background-image: url(../img/sphere-4@2x.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 151px;
+  left: 0;
+  min-width: 151px;
+  padding: 0.0px 0.0px;
+  position: absolute;
+  top: 119px;
+}
+
+.dang-nhap .texture {
+  height: 151px;
+  width: 151px;
+}
+
+.dang-nhap .icons {
+  height: 287px;
+  left: 65px;
+  position: absolute;
+  top: 0;
+  width: 242px;
+}
+
+.dang-nhap .text-block {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  width: 487px;
+}
+
+.dang-nhap .text {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dang-nhap .nhn-vin-h-tr-mi-lc-247 {
+  letter-spacing: 0;
+  line-height: 65.0px;
+  margin-top: -1px;
+  width: 418px;
+}
+
+.dang-nhap .we-invest-more-resou {
+  letter-spacing: 0;
+  line-height: 27px;
+  width: 487px;
+}
+
+.dang-nhap .bttn {
+  background-color: var(--tangerine);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+  border-radius: 20px;
+  height: 50px;
+  min-width: 163px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dang-nhap .text-1 {
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.dang-nhap .frame-19092 {
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  left: 120px;
+  position: absolute;
+  top: 1740px;
+}
+
+.dang-nhap .nhp-ngay-email-n {
+  height: 190px;
+  letter-spacing: 0;
+  line-height: 65.0px;
+  margin-right: -1px;
+  margin-top: -1px;
+  width: 488px;
+}
+
+.dang-nhap .separated-they-live {
+  letter-spacing: 0;
+  line-height: 27px;
+  width: 487px;
+}
+
+.dang-nhap .bttninput {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px #0000001a;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  overflow: hidden;
+  padding: 16px 20px;
+  width: 304px;
+}
+
+.dang-nhap .email-ca-bn {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.dang-nhap .iconarrow {
+  height: 24px;
+  min-width: 24px;
+}
+
+.dang-nhap .img-1 {
+  background-color: var(--white);
+  border-radius: 70px;
+  box-shadow: 0px 0px 26px #0000001a;
+  height: 420px;
+  min-width: 580px;
+}
+
+.dang-nhap .group-48095475 {
+  align-items: flex-start;
+  display: flex;
+  left: 153px;
+  min-width: 274px;
+  position: relative;
+  top: 95px;
+}
+
+.dang-nhap .overlap-group-1 {
+  height: 230px;
+  position: relative;
+  width: 274px;
+}
+
+.dang-nhap .sphere {
+  align-items: flex-end;
+  background-image: url(../img/sphere-5@2x.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 132px;
+  left: 142px;
+  min-width: 132px;
+  position: absolute;
+  top: 7px;
+}
+
+.dang-nhap .texture-1 {
+  height: 132px;
+  margin-bottom: 0;
+  width: 132px;
+}
+
+.dang-nhap .icons-1 {
+  height: 230px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 228px;
+}
+
+.dang-nhap .group-48095502 {
+  align-items: flex-end;
+  background-color: var(--baltic-sea);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 290px;
+  padding: 100px 501px;
+  position: absolute;
+  top: 2263px;
+  width: 1440px;
+}
+
+.dang-nhap .social {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+.dang-nhap .placeholder-s-circle {
+  height: 40px;
+  min-width: 40px;
+}
+
+.dang-nhap .placeholder-s-circle-2 {
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  backdrop-filter: blur(14px) brightness(100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+  height: 40px;
+  min-width: 40px;
+}
+
+.dang-nhap .instagram-original {
+  align-items: flex-end;
+  display: flex;
+  height: 20px;
+  left: 10px;
+  padding: 1.7px 1.7px;
+  position: relative;
+  top: 10px;
+  width: 20px;
+}
+
+.dang-nhap .group {
+  background-image: url(../img/subtract@2x.svg);
+  background-size: 100% 100%;
+  height: 17px;
+  width: 17px;
+}
+
+.dang-nhap .placeholder-s-circle-1 {
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  backdrop-filter: blur(14px) brightness(100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+  height: 40px;
+  min-width: 40px;
+  position: relative;
+}
+
+.dang-nhap .x-original {
+  height: 20px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.dang-nhap .telegram-original {
+  height: 20px;
+  left: 8px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.dang-nhap .x2022-pi-ecommerce {
+  height: 20px;
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: 30px;
+  min-width: 437px;
+  white-space: nowrap;
+}
+
+.dang-nhap .group-48095442 {
+  align-items: center;
+  display: flex;
+  height: 48px;
+  left: 120px;
+  min-width: 1200px;
+  position: absolute;
+  top: 16px;
+}
+
+.dang-nhap .group-48095416 {
+  align-items: center;
+  display: flex;
+  min-width: 736px;
+}
+
+.dang-nhap .mdistar-three-points {
+  height: 48px;
+  width: 48px;
+}
+
+.dang-nhap .navbar {
+  align-items: flex-start;
+  display: flex;
+  gap: 25px;
+  margin-left: 40px;
+}
+
+.dang-nhap .navbar-link-lets-connect {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 73px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .navbar-link-lets-connect-1 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 93px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .navbar-link-lets-connect-2 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 146px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .navbar-link-lets-connect-3 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 108px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .navbar-link-lets-connect-4 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 48px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .navbar-link-lets-connect-5 {
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-width: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .bttn-1 {
+  align-items: flex-start;
+  border-radius: 15px;
+  display: flex;
+  height: 40px;
+  margin-left: 218px;
+  overflow: hidden;
+  padding: 11px 19px;
+  width: 103px;
+}
+
+.dang-nhap .text-2 {
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 2px;
+  min-height: 16px;
+  min-width: 63px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .bttn-2 {
+  align-items: flex-start;
+  background-color: var(--tangerine);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+  border-radius: 15px;
+  display: flex;
+  height: 40px;
+  margin-left: 20px;
+  overflow: hidden;
+  padding: 11px 20px;
+  width: 123px;
+}
+
+.dang-nhap .text-3 {
+  letter-spacing: 0;
+  line-height: 16px;
+  min-height: 16px;
+  min-width: 83px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .rectangle-640 {
+  background-color: var(--charade-3);
+  height: 2553px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.dang-nhap .overlap-group1-1 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  left: 473px;
+  min-height: 480px;
+  padding: 20px 18px;
+  position: absolute;
+  top: 149px;
+  width: 422px;
+}
+
+.dang-nhap .flex-row {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  min-width: 382px;
+}
+
+.dang-nhap .ng-nhp {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 84px;
+  white-space: nowrap;
+}
+
+.dang-nhap .close {
+  height: 20px;
+  margin-left: 278px;
+  width: 20px;
+}
+
+.dang-nhap .group-184 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  min-height: 79px;
+  width: 384px;
+}
+
+.dang-nhap .s-in-thoi {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  white-space: nowrap;
+}
+
+.dang-nhap .rectangle-626 {
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 5px;
+  width: 382px;
+}
+
+.dang-nhap .mt-khu {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  white-space: nowrap;
+}
+
+.dang-nhap .overlap-group-2 {
+  align-items: flex-start;
+  border-radius: 10px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  margin-top: 5px;
+  min-width: 382px;
+  padding: 14px 11px;
+}
+
+.dang-nhap .visibility-1 {
+  height: 20px;
+  width: 20px;
+}
+
+.dang-nhap .bttn-3 {
+  align-items: flex-start;
+  background-color: var(--tangerine);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+  border-radius: 50px;
+  display: flex;
+  height: 50px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 16px 149px;
+  width: 382px;
+}
+
+.dang-nhap .text-4 {
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 1px;
+  min-height: 16px;
+  min-width: 83px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .cha-c-ti-khon-ng-k {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 1.0px;
+  margin-top: 10px;
+  min-height: 24px;
+  min-width: 181px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .line-6 {
+  height: 1px;
+  margin-top: 19px;
+  width: 382px;
+}
+
+.dang-nhap .hoc-ng-nhp-bng {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 1.0px;
+  margin-top: 20px;
+  min-height: 24px;
+  min-width: 141px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dang-nhap .group-1848 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 10px;
+  min-width: 100px;
+}
+
+.dang-nhap .facebook {
+  height: 40px;
+  width: 40px;
+}
+
+.dang-nhap .google {
+  height: 40px;
+  margin-left: 20px;
+  width: 40px;
+}

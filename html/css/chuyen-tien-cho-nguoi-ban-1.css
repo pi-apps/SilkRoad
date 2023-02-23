@@ -1,0 +1,1035 @@
+/* screen - chuyen-tien-cho-nguoi-ban-1 */
+
+.chuyen-tien-cho-nguoi-ban-1 {
+    align-items: flex-start;
+    background-color: var(--lavender);
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group10 {
+        height: 80px;
+        position: relative;
+        width: 100%;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19132 {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        /* left: 1184px; */
+        position: relative;
+        /* top: 18px; */
+        float: right;
+        margin-top: -32px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        min-width: 84px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ellipse-1538 {
+        height: 44px;
+        min-width: 44px;
+        object-fit: cover;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group7 {
+        height: 80px;
+        left: 0;
+        position: relative;
+        top: 0;
+        background-color: var(--fuchsia-pink);
+        width: 100%;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095528 {
+        align-items: center;
+        background-color: var(--fuchsia-pink);
+        /* display: flex; */
+        height: 80px;
+        left: 0;
+        /* min-width: 100%; */
+        padding: 0 120px;
+        position: absolute;
+        top: 0;
+        align-items: center;
+        background-color: var(--fuchsia-pink);
+        /* display: flex; */
+        /* height: 65px; */
+        left: 0;
+        width: 1400px;
+        /* padding: 0px 100px; */
+        position: relative;
+        /* top: 4px; */
+        /* left: 102px; */
+        /* padding-left: 210px; */
+        /* width: 1440px; */
+        margin: 0 auto;
+        padding-top: 17PX;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .mdistar-three-points {
+        height: 48px;
+        width: 48px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19086 {
+        align-items: flex-start;
+        display: flex;
+        gap: 25px;
+        /* margin-left: 40px; */
+        margin-left: 69px;
+        margin-top: -35px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-1 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 73px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-2 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 93px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-3 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 146px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-4 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 108px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-5 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 48px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .lets-connect-6 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 55px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-container {
+        height: 75px;
+        position: relative;
+        width: 100%;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-row {
+        align-items: flex-start;
+        background-color: var(--concrete);
+        display: flex;
+        height: 75px;
+        left: 0;
+        /* min-width: 1420px; */
+        padding: 12px 120px;
+        position: relative;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-col {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        min-height: 48px;
+        width: 327px;
+        top: 11px;
+        margin-top: 27px;
+        padding-left: 41px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .mua-i-phone-13-pro-max-128-gb {
+        letter-spacing: 0;
+        min-height: 25px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .to-lnh-vui-ln {
+        letter-spacing: 0;
+        margin-top: 5px;
+        min-height: 18px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-col-1 {
+        align-items: flex-end;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 681px;
+        margin-top: 4.0px;
+        min-height: 41px;
+        width: 234px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-row-1 {
+        align-items: center;
+        display: flex;
+        height: 18px;
+        min-width: 234px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .s-lnh-20391780847056777216 {
+        letter-spacing: 0;
+        min-height: 18px;
+        min-width: 214px;
+        line-height: 16px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ant-designcopy-filled {
+        height: 15px;
+        margin-bottom: 1.0px;
+        margin-left: 5px;
+        width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .thi-gian-to-2022-08-12-214356 {
+        letter-spacing: 0;
+        margin-top: 10px;
+        min-height: 18px;
+        min-width: 234px;
+        left: 10px;
+        margin-left: 10px;
+        padding-left: -46px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095474 {
+        align-items: center;
+        display: flex;
+        height: 28px;
+        left: 375px;
+        min-width: 118px;
+        position: relative;
+        /* top: 37px; */
+        /* display: none; */
+        top: -37px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19107-2 {
+        align-items: flex-start;
+        background-color: var(--casablanca);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 28px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-1 {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-top: -6px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-1911 {
+        align-items: center;
+        background-color: var(--casablanca);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 28px;
+        justify-content: center;
+        margin-left: 2px;
+        padding: 10px;
+        width: 26px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-2 {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-left: -1.5px;
+        margin-right: -1.5px;
+        margin-top: -6px;
+        min-width: 9px;
+        text-align: center;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .text-98 {
+        letter-spacing: 0;
+        margin-left: 2px;
+        min-height: 18px;
+        min-width: 4px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-3 {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-left: -2px;
+        margin-right: -2px;
+        margin-top: -6px;
+        min-width: 10px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-4 {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-left: -1.5px;
+        margin-right: -1.5px;
+        margin-top: -6px;
+        min-width: 9px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group9 {
+        height: auto;
+        position: relative;
+        width: 100%;
+        background-color: var(--white);
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group {
+        align-items: flex-start;
+        background-color: var(--white);
+        display: flex;
+        height: auto;
+        left: 0;
+        min-width: 1440px;
+        padding: 31px 120px;
+        position: relative;
+        top: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-col-2 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin-top: 13px;
+        min-height: 739px;
+        width: 793px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-container {
+        align-items: flex-start;
+        display: flex;
+        margin-left: 28px;
+        min-width: 606px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-16 {
+        height: 1px;
+        width: 253px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-17 {
+        height: 1px;
+        margin-left: 28px;
+        width: 325px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-18 {
+        height: 1px;
+        margin-top: 66px;
+        width: 793px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group2 {
+        align-items: flex-start;
+        align-self: flex-end;
+        background-color: var(--white);
+        border-radius: 5px;
+        display: flex;
+        height: 342px;
+        margin-top: 189px;
+        min-width: 776px;
+        padding: 0 19px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19121 {
+        align-items: flex-start;
+        background-color: var(--concrete);
+        border-radius: 4px;
+        display: flex;
+        gap: 10px;
+        margin-top: 19px;
+        padding: 10px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .chuyn-khon-ngn-hng {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-20 {
+        height: 341px;
+        margin-left: 20px;
+        margin-top: -1px;
+        width: 1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-row-2 {
+        align-items: center;
+        display: flex;
+        margin-left: 17px;
+        margin-top: 90px;
+        min-width: 495px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bttn {
+        align-items: flex-start;
+        background-color: var(--tangerine);
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+        border-radius: 10px;
+        display: flex;
+        height: 50px;
+        overflow: hidden;
+        padding: 16px 38px;
+        width: 394px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .text {
+        letter-spacing: 0;
+        line-height: 16px;
+        min-height: 16px;
+        min-width: 316px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .hy-lnh {
+        letter-spacing: 0;
+        margin-left: 32px;
+        margin-top: 4.0px;
+        min-height: 20px;
+        min-width: 69px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group-container-1 {
+        align-items: flex-start;
+        background-color: var(--white);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        min-height: 612px;
+        width: 387px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group4 {
+        align-items: center;
+        background-color: var(--concrete);
+        border-radius: 5px 5px 0px 0px;
+        display: flex;
+        height: 80px;
+        min-width: 387px;
+        padding: 0 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ellipse-1537 {
+        height: 50px;
+        width: 50px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19129 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .pro_vip_-trader {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .trader-giao-dch-ln {
+        letter-spacing: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group3 {
+        border-radius: 5px 5px 0px 0px;
+        height: 46px;
+        margin-left: 0;
+        margin-top: 486px;
+        position: relative;
+        width: 387px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .rectangle-40034 {
+        background-color: var(--white);
+        border-radius: 5px 5px 0px 0px;
+        height: 46px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: rotate(-180.00deg);
+        width: 387px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .fluentsend-16-filled {
+        height: 20px;
+        left: 327px;
+        position: absolute;
+        top: 13px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .akar-iconsattach {
+        height: 20px;
+        left: 357px;
+        position: absolute;
+        top: 13px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-19 {
+        height: 129px;
+        left: 123px;
+        position: absolute;
+        top: 154px;
+        width: 1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .line-20-1 {
+        height: 399px;
+        left: 123px;
+        position: absolute;
+        top: 290px;
+        width: 1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19113 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        left: 120px;
+        position: absolute;
+        top: 30px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19107-3 {
+        align-items: center;
+        background-color: var(--casablanca);
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 28px;
+        justify-content: center;
+        padding: 10px;
+        width: 28px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-5 {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-top: -6px;
+        min-width: 6px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .chuyn-tin-cho-ngi-bn {
+        letter-spacing: 0;
+        text-decoration: underline;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19114 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        left: 401px;
+        position: absolute;
+        top: 30px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19107 {
+        align-items: center;
+        background-color: var(--bon-jour);
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 28px;
+        justify-content: center;
+        padding: 10px;
+        width: 28px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number {
+        letter-spacing: 0;
+        margin-bottom: -4px;
+        margin-left: -0.5px;
+        margin-right: -0.5px;
+        margin-top: -6px;
+        min-width: 9px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ang-ch-ngi-bn-m-kha-tin-m-ha {
+        letter-spacing: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19115 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        left: 754px;
+        position: absolute;
+        top: 30px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .hon-tt {
+        letter-spacing: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19120 {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        left: 120px;
+        position: absolute;
+        top: 276px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19107-1 {
+        border-radius: 100px;
+        height: 7px;
+        min-width: 7px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .chuyn-tin-vo-ti {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 487px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bxsinfo-circle {
+        height: 15px;
+        min-width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19116 {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        left: 120px;
+        position: absolute;
+        top: 141px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .chuyn-tin-cho-ngi-bn-1 {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 199px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19128 {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        left: 120px;
+        position: absolute;
+        top: 683px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19126 {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .sau-khi-chuyn-tin {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 536px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bxsinfo-circle-1 {
+        height: 15px;
+        min-width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19119 {
+        align-items: flex-start;
+        display: flex;
+        gap: 40px;
+        left: 137px;
+        position: absolute;
+        top: 181px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-1911-1 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .s-pi {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .x15845349-pi {
+        letter-spacing: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .s-vn {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .text-99 {
+        letter-spacing: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-19125 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        left: 389px;
+        position: absolute;
+        top: 321px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-1912 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .frame-1912-1 {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ni-dung-chuyn-khon {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 151px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bxsinfo-circle-2 {
+        height: 15px;
+        min-width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095475 {
+        height: 18px;
+        margin-right: -2px;
+        min-width: 184px;
+        position: relative;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-6 {
+        left: 0;
+        letter-spacing: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ant-designcopy-filled-1 {
+        height: 15px;
+        left: 167px;
+        position: absolute;
+        top: 2px;
+        width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .tn {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095475-1 {
+        height: 18px;
+        min-width: 159px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .surname {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 139px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ant-designcopy-filled-2 {
+        height: 15px;
+        min-width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ti-khon-ngn-hngs-th {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095475-2 {
+        height: 18px;
+        min-width: 135px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .number-7 {
+        letter-spacing: 0;
+        margin-top: -1px;
+        min-width: 115px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .ant-designcopy-filled-3 {
+        height: 15px;
+        min-width: 15px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .tn-ngn-hng {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095475-3 {
+        height: 35px;
+        min-width: 502px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .x-ni {
+        letter-spacing: 0;
+        margin-top: -1px;
+        width: 502px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .chi-nhnh-m-ti-khon {
+        letter-spacing: 0;
+        margin-top: -1px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095475-4 {
+        height: 18px;
+        min-width: 502px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .vit-tin-nhn {
+        left: 943px;
+        letter-spacing: 0;
+        position: absolute;
+        top: 610px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .overlap-group6 {
+        height: 105px;
+        left: 951px;
+        position: absolute;
+        top: 472px;
+        width: 347px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .rectangle-40035 {
+        background-color: var(--concrete);
+        border-radius: 5px;
+        height: 80px;
+        left: 0;
+        position: absolute;
+        top: 25px;
+        width: 347px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095476 {
+        align-items: center;
+        display: flex;
+        height: 95px;
+        left: 9px;
+        min-width: 334px;
+        position: absolute;
+        top: 0;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bxsinfo-circle-3 {
+        height: 20px;
+        margin-top: 35.0px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .flex-col-3 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7px;
+        min-height: 95px;
+        width: 303px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .text-100 {
+        letter-spacing: 0;
+        margin-right: 28.0px;
+        min-height: 15px;
+        min-width: 95px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .bn-to-lnh-thn {
+        letter-spacing: 0;
+        margin-top: 20px;
+        min-height: 60px;
+        width: 303px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095502 {
+        align-items: flex-end;
+        background-color: var(--baltic-sea);
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        min-height: 290px;
+        padding: 100px 501px;
+        /* position: relative; */
+        top: 903px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .social {
+        align-items: flex-start;
+        align-self: center;
+        display: flex;
+        gap: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .placeholder-s-circle {
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .placeholder-s-circle-2 {
+        -webkit-backdrop-filter: blur(14px) brightness(100%);
+        backdrop-filter: blur(14px) brightness(100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .instagram-original {
+        align-items: flex-end;
+        display: flex;
+        height: 20px;
+        left: 10px;
+        padding: 1.7px 1.7px;
+        position: relative;
+        top: 10px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group {
+        background-image: url(../img/subtract-3@2x.svg);
+        background-size: 100% 100%;
+        height: 17px;
+        width: 17px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .placeholder-s-circle-1 {
+        -webkit-backdrop-filter: blur(14px) brightness(100%);
+        backdrop-filter: blur(14px) brightness(100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+        height: 40px;
+        min-width: 40px;
+        position: relative;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .x-original {
+        height: 20px;
+        left: 10px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .telegram-original {
+        height: 20px;
+        left: 8px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .x2022-pi-ecommerce {
+        height: 20px;
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: 30px;
+        min-width: 437px;
+        white-space: nowrap;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .group-48095439 {
+        align-items: center;
+        display: flex;
+        height: 48px;
+        left: 120px;
+        min-width: 736px;
+        position: fixed;
+        top: 16px;
+        z-index: 2;
+    }
+
+    .chuyen-tien-cho-nguoi-ban-1 .navbar {
+        align-items: flex-start;
+        display: flex;
+        gap: 25px;
+        margin-left: 40px;
+    }
+
+.box-chuyen-tien {
+    min-width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: var(--white);
+    /* align-items: flex-start; */
+    background-color: var(--white);
+    display: flex;
+    height: auto;
+    left: 0;
+    width: 1400px;
+    /* padding: 31px 120px; */
+    position: relative;
+    top: 0;
+}

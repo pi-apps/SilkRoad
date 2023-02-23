@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PiglobalPriateUserMasterPage.master.cs" Inherits="taikhoan_PiglobalAdminMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        <asp:ContentPlaceHolder ID="titleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        - piglobal.net</title>
+    <!-- Favicon  -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <!-- Google Fonts -->
+    <link href="/taikhoan/admin_template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/taikhoan/admin_template/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/taikhoan/admin_template/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="/pi-layout/colorbox/example2/colorbox.css" rel="stylesheet" />
+    <link href="/taikhoan/admin_template/css/style.css" rel="stylesheet">
+    <link href="/taikhoan/script/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <link href="/taikhoan/admin_template/css/custom.css" rel="stylesheet" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <script src="/taikhoan/admin_template/js/jquery-1.7.2.min.js"></script>
+    <script src="/taikhoan/admin_template/js/bootstrap.js"></script>
+    <script src="/pi-layout/colorbox/jquery.colorbox.js"></script>
+    <script src="/taikhoan/admin_template/js/base.js"></script>
+    <script src="/taikhoan/script/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link href="/taikhoan/select2/css/select2.css" rel="stylesheet" />
+    <script src="/taikhoan/select2/js/select2.js"></script>
+    <script src="/taikhoan/script/jquery-number-master/jquery.number.js"></script>
+    <script src="/taikhoan/script/tinymce/tinymce.min.js" type="text/javascript"></script>
+    <script src="/taikhoan/script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/taikhoan/script/master.js" type="text/javascript"></script>
+    <script src="/taikhoan/moxiemanager/js/moxman.loader.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="/">
+                            <span style="color: #f1890e; font-weight: bold; margin-top: 10px; display: inline-block; font-size: 28px;">Piglobal.net</span>
+                        </a>
+                    <div class="nav-collapse" style="margin-top: 8px;">
+                        <ul class="nav pull-right">
+                            <li class="dropdown"><a href="#" style="color: #f1890e !important; font-weight: bold; font-size: 17px;" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="icon-user"></i>&nbsp;<%=Account.FullName %> <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/taikhoan/thongtin/updatepassword.aspx"><i class="fa fa-key" aria-hidden="true"></i>&nbsp;Đổi mật khẩu</a></li>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Đăng xuất</asp:LinkButton></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar-search pull-right sodu-tk-admin">
+                            Số dư: <span><%=SoDu.ToString("0.##") %>π</span> (<%=Account.Code %>)
+                        </div>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /navbar-inner -->
+        </div>
+        <!-- /navbar -->
+        <div class="subnavbar">
+            <div class="subnavbar-inner">
+                <div class="container">
+                    <ul class="mainnav">
+                        <li class="" id="menu0"><a href="/taikhoan"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Dashboard</span> </a></li>
+
+                        <li class="dropdown" id="menu60">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-users"></i><span>Thông tin tài khoản</span></a>
+                            <ul class="dropdown-menu dropdown-menu-custom">
+
+                                <li><a href="/taikhoan/thongtin/updateinfo.aspx"><i class="fa fa-info-circle"></i>&nbsp;Thông tin cá nhân</a></li>
+
+                                <li><a href="/taikhoan/thongtin/updatepassword.aspx"><i class="fa fa-key"></i>&nbsp;Đổi mật khẩu</a></li>
+
+                                <li>
+                                    <asp:LinkButton ID="LinkButton2" OnClick="LinkButton1_Click" runat="server"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Đăng xuất</asp:LinkButton>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" id="menu133">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-bag"></i><span>Cửa hàng</span></a>
+                            <ul class="dropdown-menu dropdown-menu-custom">
+                                <li><a href="/taikhoan/cuahang/danhsachdangthue/list.aspx"><i class="fa fa-arrow-right"></i>&nbsp;Gian hàng đang thuê</a></li>
+                                <li><a href="/taikhoan/cuahang/danhsachdamua/list.aspx"><i class="fa fa-arrow-right"></i>&nbsp;Cửa hàng đã mua</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown subnavbar-open-right" id="menu57">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cubes"></i><span>Kho sản phẩm</span></a>
+                            <ul class="dropdown-menu dropdown-menu-custom">
+                                <li><a href="/taikhoan/khosanpham/quanlysanpham/list.aspx"><i class="fa fa-product-hunt"></i>&nbsp;Danh sách sản phẩm</a></li>
+                                <li><a href="/taikhoan/khosanpham/sanphamdaugia/list.aspx"><i class="fa fa-bandcamp"></i>&nbsp;Sản phẩm đấu giá</a></li>
+                                <li><a href="/taikhoan/khosanpham/binhluansanpham/list.aspx"><i class="fa fa-commenting"></i>&nbsp;Bình luận sản phẩm</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" id="menu84">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-line-chart"></i><span>Giao dịch</span></a>
+                            <ul class="dropdown-menu dropdown-menu-custom">
+                                <li><a href="/taikhoan/giaodich/naptien/list.aspx"><i class="fa fa-money"></i>&nbsp;Lịch sử giao dịch</a></li>
+                                <li><a href="/taikhoan/giaodich/dondathangcuaban/list.aspx"><i class="fa fa-cart-arrow-down"></i>&nbsp;Đơn hàng của bạn</a></li>
+                                <li><a href="/taikhoan/giaodich/dondathangcuakhach/list.aspx"><i class="fa fa-cart-arrow-down"></i>&nbsp;Đơn hàng của khách</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <!-- /container -->
+            </div>
+            <!-- /subnavbar-inner -->
+        </div>
+        <!-- /subnavbar -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="breadCrumbContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="main">
+            <div class="main-inner">
+                <div class="container">
+                    <asp:ContentPlaceHolder ID="bodyContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /main-inner -->
+        </div>
+        <!-- /main -->
+
+        <!-- /extra -->
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="span121" style="text-align: center;">Copyright &copy; 2022 <a href="http://piglobal.net">piglobal.net</a>. Hệ thống quản lý ver 1.0</div>
+                        <!-- /span12 -->
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /footer-inner -->
+        </div>
+        <!-- /footer -->
+        <!-- Le javascript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/taikhoan/admin_template/js/custom.js"></script>
+    </form>
+</body>
+</html>

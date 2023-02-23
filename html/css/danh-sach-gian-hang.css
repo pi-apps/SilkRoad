@@ -1,0 +1,944 @@
+/* screen - danh-sach-gian-hang */
+
+.danh-sach-gian-hang {
+    align-items: flex-start;
+    background-color: var(--concrete);
+    display: flex;
+    flex-direction: column;
+    /* height: 6516px; */
+    width: 100%;
+}
+
+    .danh-sach-gian-hang .rectangle-39222 {
+        background-color: var(--fuchsia-pink);
+        height: 80px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .danh-sach-gian-hang .group-48095442 {
+        align-items: center;
+        display: flex;
+        height: 48px;
+        min-width: 1400px;
+        position: inherit;
+        /* top: 16px; */
+        z-index: 6;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .danh-sach-gian-hang .group-48095416 {
+        align-items: center;
+        display: flex;
+        min-width: 736px;
+    }
+
+    .danh-sach-gian-hang .mdistar-three-points {
+        height: 48px;
+        width: 48px;
+    }
+
+    .danh-sach-gian-hang .navbar {
+        align-items: flex-start;
+        display: flex;
+        gap: 25px;
+        margin-left: 40px;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 73px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect-1 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 93px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect-2 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 146px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect-3 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 108px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect-4 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 48px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .navbar-link-lets-connect-5 {
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: -1px;
+        min-width: 55px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .bttn-1 {
+        align-items: flex-start;
+        border-radius: 15px;
+        display: flex;
+        height: 40px;
+        margin-left: 218px;
+        overflow: hidden;
+        padding: 11px 19px;
+        width: 103px;
+    }
+
+    .danh-sach-gian-hang .text-2 {
+        letter-spacing: 0;
+        line-height: 16px;
+        margin-left: 2px;
+        min-height: 16px;
+        min-width: 63px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .bttn-2 {
+        align-items: flex-start;
+        background-color: var(--tangerine);
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+        border-radius: 15px;
+        display: flex;
+        height: 40px;
+        margin-left: 20px;
+        overflow: hidden;
+        padding: 11px 20px;
+        width: 123px;
+    }
+
+    .danh-sach-gian-hang .text-3 {
+        letter-spacing: 0;
+        line-height: 16px;
+        min-height: 16px;
+        min-width: 83px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .lets-connect {
+        height: 20px;
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        /* margin-left: 121px; */
+        margin-top: 29px;
+        min-width: 78px;
+        text-align: left;
+        text-decoration: underline;
+        white-space: nowrap;
+        z-index: 4;
+        align-items: center;
+        justify-content: center;
+        /* width: 100%; */
+        min-width: 1200px;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 29px;
+    }
+
+    .danh-sach-gian-hang .danh-sch-gian-hng {
+        height: 30px;
+        letter-spacing: 0.20px;
+        /* margin-left: 120px; */
+        margin-top: 25px;
+        z-index: 3;
+        min-width: 1200px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: block;
+        /* background: #fff; */
+    }
+
+    .danh-sach-gian-hang .overlap-group {
+        align-self: center;
+        height: 2720px;
+        margin-left: 1.0px;
+        margin-top: 41px;
+        position: relative;
+        width: 1201px;
+        z-index: 2;
+        margin-top: 80px;
+    }
+
+    .danh-sach-gian-hang .group-48095408 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        left: 382px;
+        min-height: 90px;
+        position: absolute;
+        top: 2138px;
+        width: 439px;
+    }
+
+    .danh-sach-gian-hang .social {
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+        margin-right: 3.0px;
+    }
+
+    .danh-sach-gian-hang .placeholder-s-circle {
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .danh-sach-gian-hang .placeholder-s-circle-1 {
+        -webkit-backdrop-filter: blur(14px) brightness(100%);
+        backdrop-filter: blur(14px) brightness(100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .danh-sach-gian-hang .instagram-original {
+        align-items: flex-end;
+        display: flex;
+        height: 20px;
+        left: 10px;
+        padding: 1.7px 1.7px;
+        position: relative;
+        top: 10px;
+        width: 20px;
+    }
+
+    .danh-sach-gian-hang .group {
+        background-image: url(../img/subtract@2x.svg);
+        background-size: 100% 100%;
+        height: 17px;
+        width: 17px;
+    }
+
+    .danh-sach-gian-hang .placeholder-s-circle-2 {
+        -webkit-backdrop-filter: blur(14px) brightness(100%);
+        backdrop-filter: blur(14px) brightness(100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.24) 100%);
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)) 1;
+        height: 40px;
+        min-width: 40px;
+        position: relative;
+    }
+
+    .danh-sach-gian-hang .x-original {
+        height: 20px;
+        left: 10px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+    }
+
+    .danh-sach-gian-hang .telegram-original {
+        height: 20px;
+        left: 8px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+    }
+
+    .danh-sach-gian-hang .x2022-pi-ecommerce {
+        height: 20px;
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-right: 2.0px;
+        margin-top: 30px;
+        min-width: 437px;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19216 {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .danh-sach-gian-hang .frame-1914 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .danh-sach-gian-hang .hexagon_2-1 {
+        height: 330.25px;
+        min-width: 1201px;
+        object-fit: cover;
+    }
+
+    .danh-sach-gian-hang .frame-1914-1 {
+        align-items: flex-start;
+        display: flex;
+        gap: 21px;
+    }
+
+    .danh-sach-gian-hang .group-48095 {
+        height: 501px;
+        min-width: 590px;
+    }
+
+    .danh-sach-gian-hang .frame-19166 {
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .danh-sach-gian-hang .frame-19193 {
+        background-image: url(../img/rectangle@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-6 {
+        align-items: center;
+        background-color: #40bf45;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: right;
+        /* right: 480px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 70px;
+        font-weight: normal;
+    }
+
+    .danh-sach-gian-hang .online {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 50px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .group-4809549 {
+        height: 196px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-191 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .danh-sach-gian-hang .frame-19172 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .danh-sach-gian-hang .frame-19174 {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .danh-sach-gian-hang .gian-hng-abc {
+        letter-spacing: 0;
+        line-height: 28px;
+        min-width: 158px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19175 {
+        align-items: flex-start;
+        background-color: var(--fuchsia-pink-2);
+        border-radius: 5px;
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+        color: #fff;
+    }
+
+    .danh-sach-gian-hang .x1-pi24000-vn {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 120px;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: normal;
+        color: var(--white);
+    }
+
+    .danh-sach-gian-hang .in-publishing-and-gr {
+        letter-spacing: 0;
+        line-height: 23px;
+        margin-top: 7px;
+        text-align: left;
+        width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19170 {
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .danh-sach-gian-hang .frame-19168 {
+        align-items: center;
+        background-color: var(--carnation);
+        border-radius: 10px;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 10px;
+        width: 270px;
+    }
+
+    .danh-sach-gian-hang .vuesaxlinearheart {
+        height: 24px;
+        min-width: 24px;
+    }
+
+    .danh-sach-gian-hang .yu-thch {
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-top: -1px;
+        min-width: 63px;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19172-1 {
+        align-items: center;
+        background-color: var(--fuchsia-pink-2);
+        border-radius: 10px;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 10px;
+        width: 258px;
+    }
+
+    .danh-sach-gian-hang .vuesaxboldbag {
+        height: 20px;
+        min-width: 20px;
+    }
+
+    .danh-sach-gian-hang .mua-hng {
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-top: -1px;
+        min-width: 66px;
+        white-space: nowrap;
+        color: var(--white);
+    }
+
+    .danh-sach-gian-hang .frame-19192 {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .danh-sach-gian-hang .xem-chi-tit {
+        letter-spacing: 0;
+        line-height: 22.5px;
+        margin-top: -1px;
+        min-width: 98px;
+        text-align: center;
+        text-decoration: underline;
+        white-space: nowrap;
+        margin-left: -15px;
+    }
+
+    .danh-sach-gian-hang .frame-19169 {
+        align-items: flex-start;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .danh-sach-gian-hang .group-1832 {
+        height: 24px;
+        min-width: 150px;
+    }
+
+    .danh-sach-gian-hang .group-1831 {
+        align-items: center;
+        display: flex;
+        height: 24px;
+        min-width: 150px;
+    }
+
+    .danh-sach-gian-hang .claritystar-solid {
+        height: 20px;
+        width: 20px;
+    }
+
+    .danh-sach-gian-hang .claritystar-solid-1 {
+        height: 20px;
+        margin-left: 5px;
+        width: 20px;
+    }
+
+    .danh-sach-gian-hang .text {
+        align-self: flex-start;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-left: 5px;
+        margin-top: -1px;
+        min-height: 24px;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19 {
+        background-image: url(../img/rectangle-1@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-7 {
+        align-items: center;
+        background-color: #b6b6b6;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 478px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 70px;
+    }
+
+    .danh-sach-gian-hang .offline {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 52px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19201 {
+        background-image: url(../img/rectangle-2@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-1 {
+        align-items: center;
+        background-color: var(--red);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 491px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 70px;
+    }
+
+    .danh-sach-gian-hang .place {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 39px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19175-8 {
+        align-items: center;
+        background-color: #45c6be;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 478px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 70px;
+    }
+
+    .danh-sach-gian-hang .offday {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 52px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .bttn-view-all {
+        background-color: var(--tangerine);
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+        border-radius: 15px;
+        height: 50px;
+        min-width: 199px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .danh-sach-gian-hang .text-1 {
+        left: 54px;
+        letter-spacing: 0;
+        line-height: 16px;
+        position: absolute;
+        text-align: center;
+        top: 16px;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .hexagon_2-3 {
+        height: 328.77px;
+        min-width: 1201px;
+    }
+
+    .danh-sach-gian-hang .frame-19203 {
+        background-image: url(../img/rectangle-4@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19204 {
+        background-image: url(../img/rectangle-5@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-9 {
+        align-items: center;
+        background-color: var(--magenta--fuchsia);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 408px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 135px;
+    }
+
+    .danh-sach-gian-hang .bonus-weekend {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 122px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19206 {
+        background-image: url(../img/rectangle-6@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-2 {
+        align-items: center;
+        background-color: var(--black);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 434px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 111px;
+    }
+
+    .danh-sach-gian-hang .surname {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 96px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .frame-19207 {
+        background-image: url(../img/rectangle-7@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-3 {
+        align-items: center;
+        background-color: var(--sea-serpent);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 460px; */
+        padding: 5px;
+        position: relative;
+        top: 11px;
+        width: 80px;
+    }
+
+    .danh-sach-gian-hang .discount {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-top: -1px;
+        min-width: 69px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .danh-sach-gian-hang .hexagon_2-2 {
+        height: 328.77px;
+        min-width: 1201px;
+    }
+
+    .danh-sach-gian-hang .frame-19208 {
+        background-image: url(../img/rectangle-8@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        margin-top: -1.53e-05px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19209 {
+        background-image: url(../img/rectangle-9@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        margin-top: -1.53e-05px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19210 {
+        background-image: url(../img/rectangle-10@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19211 {
+        background-image: url(../img/rectangle-11@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .hexagon_2-5 {
+        height: 327.42px;
+        min-width: 1201px;
+    }
+
+    .danh-sach-gian-hang .frame-19212 {
+        background-image: url(../img/rectangle-12@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-4 {
+        align-items: center;
+        background-color: var(--red);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 491px; */
+        padding: 5px;
+        position: relative;
+        top: 12px;
+        width: 70px;
+    }
+
+    .danh-sach-gian-hang .frame-19213 {
+        background-image: url(../img/rectangle-13@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19214 {
+        background-image: url(../img/rectangle-14@1x.png);
+        background-size: 100% 100%;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .frame-19175-5 {
+        align-items: center;
+        background-color: var(--magenta--fuchsia);
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px #00000066;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        /* left: 408px; */
+        padding: 5px;
+        position: relative;
+        top: 12px;
+        width: 133px;
+    }
+
+    .danh-sach-gian-hang .frame-19215 {
+        background-image: url(../img/rectangle-15@1x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 245px;
+        min-width: 550px;
+    }
+
+    .danh-sach-gian-hang .group-48095502 {
+        align-items: flex-end;
+        background-color: var(--baltic-sea);
+        display: flex;
+        flex-direction: column;
+        margin-top: 88px;
+        min-height: 290px;
+        padding: 100px 501px;
+        width: 100%;
+        z-index: 5;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .danh-sach-gian-hang .social-1 {
+        align-items: flex-start;
+        align-self: center;
+        display: flex;
+        gap: 20px;
+    }
+
+    .danh-sach-gian-hang .group-1 {
+        background-image: url(../img/subtract-1@2x.svg);
+        background-size: 100% 100%;
+        height: 17px;
+        width: 17px;
+    }
+
+    .danh-sach-gian-hang .x2022-pi-ecommerce-1 {
+        height: 20px;
+        letter-spacing: 0.20px;
+        line-height: 20px;
+        margin-top: 30px;
+        min-width: 437px;
+        white-space: nowrap;
+    }
+/*custom*/
+.navbar-link-top {
+    color: var(--white);
+}
+
+    .navbar-link-top:hover {
+        color: var(--tangerine);
+    }
+
+.home-top .bttn {
+    align-items: flex-start;
+    border-radius: 15px;
+    display: flex;
+    height: 40px;
+    margin-left: 218px;
+    overflow: hidden;
+    padding: 11px 19px;
+    width: 103px;
+}
+
+.home-top .text-1 {
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-left: 2px;
+    min-height: 16px;
+    min-width: 63px;
+    text-align: center;
+    white-space: nowrap;
+    position: inherit;
+}
+
+.home-top .bttn-1 {
+    align-items: flex-start;
+    background-color: var(--tangerine);
+    border: 0;
+    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.55) 45.31%, rgba(255, 255, 255, 0.39) 100%) 1;
+    border-radius: 15px;
+    display: flex;
+    height: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+    padding: 11px 20px;
+    width: 123px;
+}
+
+.home-top .text-2 {
+    letter-spacing: 0;
+    line-height: 16px;
+    min-height: 16px;
+    min-width: 83px;
+    text-align: center;
+    white-space: nowrap;
+}

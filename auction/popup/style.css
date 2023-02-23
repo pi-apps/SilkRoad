@@ -1,0 +1,78 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
+    -youbkit-touch-callout: none; /* iOS Safari */
+    -youbkit-user-select: none; /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Non-prefixed version,
+                                currently supported by Chrome and Opera */
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+div#example_wrapper {
+    padding: 20px 015px 0px 10px;
+}
+
+#example_info {
+    display: inline-block;
+    float: left;
+}
+
+div#example_paginate {
+    display: inline-block;
+    float: right;
+}
+div#example_length {
+    display: inline-block;
+    float: left;
+}
+div#example_filter {
+    display: inline-block;
+    float: right;
+    margin-top: -42px;
+}
+
+
+/* Normal desktop :1366px. */
+@media (min-width: 1170px) and (max-width: 1400px) {
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    div#example_filter {
+    display: block;
+    float: left;
+    margin-top: 0;
+}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	div#example_filter {
+    display: inline-block;
+    float: right;
+    margin-top: -42px;
+}
+}

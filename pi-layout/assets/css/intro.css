@@ -1,0 +1,76 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.body-intro {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+#outPopUp {
+    position: absolute;
+    width: 800px;
+    z-index: 15;
+    top: 30%;
+    left: 30%;
+    /*background: red;*/
+}
+    #outPopUp .groupbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 31px;
+        /* position: absolute; */
+        width: 692.85px;
+        /* height: 59px; */
+        /* left: 374px; */
+        /* top: 899px; */
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-family: 'Bai Jamjuree', sans-serif;
+    }
+    #outPopUp .button-intro {
+        display: flex;
+        font-family: 'Bai Jamjuree', sans-serif;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        /* padding: 0px 29px; */
+        gap: 15.2px;
+        width: 210.95px;
+        height: 59px;
+        background: radial-gradient(99.77% 100% at 31.97% 99.5%, rgba(255, 255, 255, 0) 0%, rgba(189, 138, 184, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(180deg, #67127C 0%, #F483F4 100%);
+        box-shadow: 0px 4px 15px #c432c2, inset 0px -4px 0px #860a86, inset 0px -5px 0px #c74bc7;
+        border-radius: 20px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        width: 195px;
+        height: 45px;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.396px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    #outPopUp .button-intro-mo {
+        background: radial-gradient(99.77% 100% at 31.97% 99.5%, rgba(255, 255, 255, 0) 0%, rgba(189, 138, 184, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #BF40BF;
+        opacity: 0.6;
+        box-shadow: inset 0px -5px 0px #860a86;
+    }
+    #outPopUp .button-intro:hover {
+        background: radial-gradient(99.77% 100% at 31.97% 99.5%, rgba(255, 255, 255, 0) 0%, rgba(189, 138, 184, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(180deg, #BF40BF 0%, #F483F4 100%);
+        box-shadow: 0px 4px 15px #c432c2, inset 0px -4px 0px #860a86, inset 0px -5px 0px #c74bc7;
+        border-radius: 20px;
+        opacity: 1;
+    }

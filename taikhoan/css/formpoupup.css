@@ -1,0 +1,60 @@
+﻿a.close {
+	background-color: rgb(204,204,204);
+	border-radius: 50%;
+	color: rgb(255,255,255);
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: .8em;
+	padding: .2em .5em;
+	position: absolute;
+	top: 1.25rem;
+	transition: all 400ms ease;
+	right: 1.25rem;
+}
+	
+	a.close:hover {
+		background-color: #1bc5b3;
+		cursor: pointer;
+	}
+
+/*
+*	LOG-IN BOX
+*/
+div.overlay {
+	background-color: rgba(0,0,0,.25);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+	div.overlay > div.login-wrapper {
+		align-self: center;
+		background-color: #1579bd;
+		border-radius: 2px;
+		padding: 6px;
+		width: 500px;
+	}
+	
+		div.overlay > div.login-wrapper > div.login-content {
+			background-color: rgb(255,255,255);
+			border-radius: 2px;
+			padding: 24px;	
+			position: relative;
+		}
+		
+			div.overlay > div.login-wrapper > div.login-content > h3 {
+				color: rgb(0,0,0);
+				font-family: 'Varela Round', sans-serif;
+				font-size: 1.8em;
+				margin: 0;
+				padding: 0;
+			}
+/*
+*	FORM
+*/
+.btn{width:150px;height:45px;line-height:40px;text-align:center;font-size:12pt;border:none;background:#1579bd;color:#fff; cursor:pointer}
+.btn:hover{background:#ffd54e}

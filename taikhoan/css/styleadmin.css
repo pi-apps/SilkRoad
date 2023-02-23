@@ -1,0 +1,1507 @@
+﻿body {
+    margin: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+a {
+    color: #0f5491;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+    a:hover {
+        color: #000;
+        text-decoration: none;
+    }
+
+.a1 {
+    color: #0f5491;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+    .a1:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+.emailColor {
+    color: #228822;
+    font-weight: normal;
+}
+
+    .emailColor:hover {
+        color: #106510;
+        text-decoration: none;
+    }
+
+#mainpage {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    text-align: center;
+}
+.thanhtacvu i,.txt1 a.btn i{
+    margin-right:5px;
+}
+.status-dang-cho-duyet {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 3px 6px;
+    border-radius: 6pc;
+    font-size: 10px;
+    color: #fff;
+}
+
+.status-dang-hien-thi {
+    padding: 3px 6px;
+    border-radius: 6pc;
+    font-size: 10px;
+    color: #fff;
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+.status-tin-dang-het-han {
+    padding: 3px 6px;
+    border-radius: 6pc;
+    font-size: 10px;
+    color: #c0c2c1;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+#mainpage #top {
+    width: 100%;
+    /* height: 35px; */
+    /* padding-top: 10px; */
+    background: #d7dde4;
+    /* border-bottom: 1px solid #dfdfdf; */
+    /* overflow: hidden; */
+    position: fixed;
+    /* margin-bottom: 100px; */
+    z-index: 9;
+    line-height: 35px;
+    text-align: right;
+    /* margin-right: 1000px; */
+    padding-right: 270px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+#top>span{
+    margin-right:55px;
+}
+#content_ASPxGVDS_DXSearchPanel {
+    width: 300px;
+    float: right;
+}
+
+.dxgvSearchPanel_Material .dxeButtonEdit_Material .dxic {
+    padding: 10px 5px 10px 10px;
+}
+
+#mainpage #top .logo {
+    float: left;
+    width: 250px;
+}
+
+    #mainpage #top .logo .picture {
+        text-align: center;
+    }
+
+#mainpage #top .topcontent {
+    margin-left: 280px;
+    line-height: 35px;
+}
+
+    #mainpage #top .topcontent .div {
+        float: right;
+        padding-right: 20px;
+    }
+
+.company-car {
+    color: #0368ac;
+    font-weight: bold;
+}
+.item-hot{
+    background:#b02803;color:#fff;
+    padding:2px 4px;
+}
+.item-vip1 {
+    background: #228822;
+    color: #fff;
+    padding: 2px 4px;
+}
+.item-vip2 {
+    background: #0368ac;
+    color: #fff;
+    padding: 2px 4px;
+}
+.item-vip3 {
+    background: #f4d03f;
+    color: #fff;
+    padding: 2px 4px;
+}
+.item-tin-thuong {
+    background: #222;
+    color: #fff;
+    padding: 2px 4px;
+}
+.vehicle {
+    color: #b02803;
+    font-weight: bold;
+}
+
+.rental-company {
+    font-weight: bold;
+}
+
+#mainpage #maincontent {
+    width: 100%;
+}
+
+.config-delete-grid {
+    vertical-align: middle;
+}
+
+#mainpage #maincontent #left {
+    float: left;
+    width: 250px;
+    background: #F8F8FF;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.menuLeft ul i {
+    margin-right: 5px;
+}
+
+#mainpage #maincontent #left .titleLeft {
+    padding-left: 42px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: Red;
+}
+
+#mainpage #maincontent #left .menuLeft {
+    padding-top: 20px;
+}
+
+.parent {
+    /*background: #333e48;*/
+    display: inline-block;
+    width: 100%;
+}
+
+#mainpage #maincontent #left .menuLeft ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainpage #maincontent #left .menuLeft > ul > li {
+    display: block;
+    clear: both;
+    position: relative !important;
+}
+
+#mainpage #maincontent #left .menuLeft ul li .icon {
+    float: left;
+    border: none;
+    width: 20px;
+    padding-right: 10px;
+}
+
+#mainpage #maincontent #left .menuLeft > ul > li > a {
+    font-size: 15px !important;
+    white-space: nowrap;
+    color: #fff;
+    float: left;
+    padding: 10px 10px;
+    width: 100%;
+    background: #235baf;
+    border-bottom: 1px solid #fff;
+    background-image: linear-gradient(135deg, #235baf 0%, #764ba2 100%);
+}
+    #mainpage #maincontent #left .menuLeft > ul > li > a:hover {
+        background: #0080ff;
+        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    }
+#mainpage #maincontent #left .menuLeft > ul > li > ul > li > a {
+    font-size: 13px !important;
+    /* white-space: nowrap; */
+    color: #000;
+    /* float: left; */
+    /* height: 20px !important; */
+    padding: 5px 0px 5px 5px;
+    width: 95%;
+    display: inline-block;
+}
+
+    #mainpage #maincontent #left .menuLeft > ul > li > ul > li > a:hover {
+    text-decoration: none;
+    background-color: none;
+    color: #3B4E32;
+}
+
+#mainpage #maincontent #left .menuLeft ul li ul {
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 5px;
+}
+
+#mainpage #maincontent #left .menuLeft > ul > li {
+    display: block;
+    clear: both;
+    margin: 0 !important;
+}
+
+    #mainpage #maincontent #left .menuLeft > ul > li > ul > li {
+        /*display: block;
+                    clear: both;
+                    margin: 0 !important;
+                    padding: 5px 0px 5px 15px !important;*/
+        margin-left: 10px;
+        height: 30px;
+    }
+
+
+
+a.selected {
+    color: #bc4307 !important;
+     font-weight: bold; 
+}
+
+#mainpage #maincontent #left .menuLeft ul li ul li ul {
+    display: block;
+    clear: both;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+
+    #mainpage #maincontent #left .menuLeft ul li ul li ul li {
+        display: block;
+        clear: both;
+        margin: 0 !important;
+        padding: 5px 5px 5px 20px !important;
+        height: 20px !important;
+    }
+
+        #mainpage #maincontent #left .menuLeft ul li ul li ul li:hover {
+            /*background-color: #e5e5e5;*/
+            color: #fff;
+        }
+
+
+
+
+.selected_open {
+    /*background: #0080ff !important;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%) !important;*/
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898 !important;
+    background-blend-mode: multiply,multiply;
+}
+
+#mainpage #maincontent #right {
+    margin-left: 250px !important;
+    background: #fff;
+    overflow: auto;
+}
+
+    #mainpage #maincontent #right .content {
+        display: block;
+        padding: 0px 15px 0px 20px;
+    }
+
+        /*BG GENNERAL*/
+        #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bg {
+            background: #dfdfdf;
+            height: 40px;
+            width: 653px;
+            line-height: 40px;
+        }
+
+            #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bg .row {
+                float: left;
+                padding-left: 10px;
+                padding-right: 40px;
+            }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bg .row a {
+                    line-height: 40px;
+                    color: #0a5598;
+                    font-weight: bold;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bg .row a:hover {
+                        line-height: 40px;
+                        color: #333;
+                        font-weight: bold;
+                    }
+
+        /*Tour*/
+        #mainpage #maincontent #right .content .noidung {
+            display: block;
+            text-align: left;
+            padding-top: 25px;
+            padding-bottom: 45px;
+        }
+
+            #mainpage #maincontent #right .content .noidung .quitrinhcapnhat {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                line-height: 30px;
+                color: #4a4949;
+            }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat a {
+                    color: #0f5491 !important;
+                    text-decoration: none;
+                    font-weight: normal;
+                    font-family: Arial,Tahoma !important;
+                    font-size: 10pt !important;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgnhapchuongtrinhtour {
+                    background-image: url('../images/bg_nhapthongtintour.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgngaykh {
+                    background-image: url('../images/bg_ngaykh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgchuongtrinhtour {
+                    background-image: url('../images/bg_chuongtrinhtour.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgchuongtrinhtourduthuyen {
+                    background-image: url('../images/bg_chuongtrinhtourduthuyen.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgdichvu {
+                    background-image: url('../images/bg_dichvu.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bghinhanhtourduthuyen {
+                    background-image: url('../images/bg_picture_tourduthuyen.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bghinhanhtour {
+                    background-image: url('../images/bg_tourpicture.png');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End Tour*/
+
+                /*Destination*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .destination {
+                    background-image: url('../images/destination.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .place {
+                    background-image: url('../images/place_destination.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .banner {
+                    background-image: url('../images/banner_destination.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End Destination*/
+
+                /*hotel*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .thongtinks {
+                    background-image: url('../images/thongtinks.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .room {
+                    background-image: url('../images/loaiphong.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .banggiaphong {
+                    background-image: url('../images/bg_giaphong.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .banggialt {
+                    background-image: url('../images/bg_gialt.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .banggiaCuoituan {
+                    background-image: url('../images/bg_giacuoituan.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .banggiaDC {
+                    background-image: url('../images/bg_giaDC.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .hinhks {
+                    background-image: url('../images/bg_hinhanhks.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .kmks {
+                    background-image: url('../images/bg_kmks.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End hotel*/
+
+                /*Ship*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgship {
+                    background-image: url('../images/bg_ship.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgshipDeck {
+                    background-image: url('../images/bg_shipdeck.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgshipActive {
+                    background-image: url('../images/bg_shipActive.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgshipStateRoom {
+                    background-image: url('../images/bg_shipstateroom.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End Ship*/
+
+                /*Cruise*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgcruise {
+                    background-image: url('../images/bg_cruise.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgcruiseChuongtrinh {
+                    background-image: url('../images/bg_cruisechuongtrinh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgcruiseNgaykhoihanh {
+                    background-image: url('../images/bg_cruiseNgaykhoihanh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End Cruise*/
+
+                /*Full package*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgfull {
+                    background-image: url('../images/bg_full_tour.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgfullChuongtrinh {
+                    background-image: url('../images/bg_cruisechuongtrinh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgfullNgaykhoihanh {
+                    background-image: url('../images/bg_cruiseNgaykhoihanh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .bgfullHinhanh {
+                    background-image: url('../images/bg_full_hinhanh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End Full package*/
+
+                /*du lịch qua ảnh*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .dulichquaanh {
+                    background-image: url('../images/bg_dulichquaanh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .hinhanhnhatkydulich {
+                    background-image: url('../images/bg_dulichquaanh_hinhanh.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+                /*End*/
+
+                /*Hồ sơ nhân sự*/
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .thongtinNS {
+                    background-image: url('../images/bg_thongtinNS.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+
+                #mainpage #maincontent #right .content .noidung .quitrinhcapnhat .hosoNS {
+                    background-image: url('../images/bg_hosoNS.jpg');
+                    height: 40px;
+                    width: 653px;
+                }
+            /*End*/
+
+            #mainpage #maincontent #right .content .noidung .thanhtacvu {
+                float: right;
+                width: 300px;
+                text-align: right;
+                margin-top: -40px;
+            }
+
+            #mainpage #maincontent #right .content .noidung .thanhtacvu1 {
+                float: right;
+                width: 300px;
+                right: 0px;
+                margin-top: 28px;
+            }
+
+                #mainpage #maincontent #right .content .noidung .thanhtacvu1 .formtacvu {
+                    width: 300px;
+                    height: auto;
+                    padding-bottom: 20px;
+                    background-color: #313e45;
+                    position: absolute;
+                    right: 0;
+                    z-index: 99999;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .thanhtacvu1 .formtacvu .icon {
+                        padding-top: 5px;
+                        padding-left: 20px;
+                    }
+
+                    #mainpage #maincontent #right .content .noidung .thanhtacvu1 .formtacvu .search {
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+
+                        #mainpage #maincontent #right .content .noidung .thanhtacvu1 .formtacvu .search .colorname {
+                            color: #b6b6b6;
+                        }
+
+            #mainpage #maincontent #right .content .noidung .gridview {
+                display: block;
+                padding-top: 10px;
+                text-align: left;
+            }
+
+                #mainpage #maincontent #right .content .noidung .gridview .dstour {
+                    display: block;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .dstour .indentmenu ul {
+                        margin: 0;
+                        padding: 0;
+                        height: 36px;
+                    }
+
+                        #mainpage #maincontent #right .content .noidung .gridview .dstour .indentmenu ul li {
+                            display: inline;
+                            height: 36px;
+                        }
+
+                            #mainpage #maincontent #right .content .noidung .gridview .dstour .indentmenu ul li a {
+                                float: left;
+                                margin-top: 1px;
+                                color: #fff;
+                                width: 172px;
+                                height: 36px;
+                                text-align: center;
+                                line-height: 36px;
+                                text-decoration: none;
+                                font-weight: bold;
+                                background-image: url('../images/tab.jpg');
+                            }
+
+                                #mainpage #maincontent #right .content .noidung .gridview .dstour .indentmenu ul li a.selected {
+                                    color: #0368ac;
+                                    width: 172px;
+                                    height: 36px;
+                                    background-image: url('../images/tab_selected.jpg');
+                                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .dstour .tintuc {
+                        display: block;
+                        border: 1px solid #c7c8ca;
+                        padding: 15px 10px 10px 10px;
+                    }
+
+                /* ngày khởi hành cruise*/
+                #mainpage #maincontent #right .content .noidung .gridview .ds {
+                    width: 45px;
+                    float: left;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .ds .lichkhoihanh {
+                        display: block;
+                        width: 39px;
+                        height: 39px;
+                        background-image: url('../images/bg_cruise_date.gif');
+                        background-repeat: no-repeat;
+                        color: #0073bb;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                        #mainpage #maincontent #right .content .noidung .gridview .ds .lichkhoihanh a {
+                            color: #003a76;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+
+                            #mainpage #maincontent #right .content .noidung .gridview .ds .lichkhoihanh a:hover {
+                                color: #000;
+                                text-decoration: none;
+                            }
+
+                #mainpage #maincontent #right .content .noidung .gridview .txtsochonhan {
+                    text-align: center;
+                }
+
+                #mainpage #maincontent #right .content .noidung .gridview .ds1 {
+                    float: left;
+                    padding-right: 10px;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .ds1 .lichkhoihanh {
+                        display: block;
+                        height: 25px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        line-height: 25px;
+                        background-color: #f2a807;
+                        text-align: center;
+                    }
+
+                        #mainpage #maincontent #right .content .noidung .gridview .ds1 .lichkhoihanh a {
+                            color: #0151a5;
+                            text-decoration: none;
+                            font-weight: normal;
+                        }
+
+                            #mainpage #maincontent #right .content .noidung .gridview .ds1 .lichkhoihanh a:hover {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+
+                #mainpage #maincontent #right .content .noidung .gridview .btshow {
+                    float: left;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .btshow a.blueButton {
+                        background: url('../images/btn/btn_blue.png') no-repeat;
+                        width: 180px;
+                        text-decoration: none !important;
+                        cursor: pointer;
+                        height: 34px;
+                        padding-left: 10px;
+                        position: static !important;
+                        line-height: 30px;
+                        display: block;
+                        color: #fff;
+                        font-size: 12pt;
+                    }
+
+                #mainpage #maincontent #right .content .noidung .gridview .btHidden {
+                    background: url('../images/btn/bg_HiddenTour.jpg') no-repeat;
+                    width: 963px;
+                    height: 59px;
+                    margin-bottom: 10px;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .gridview .btHidden a.bluehiddenButton {
+                        width: 135px;
+                        margin-right: 20px;
+                        float: left;
+                        padding-left: 20px;
+                        height: 59px;
+                        text-align: center;
+                        line-height: 59px;
+                        font-weight: bold;
+                        color: #0073bb;
+                        font-size: 12pt;
+                    }
+            /* End ngày khởi hành cruise*/
+
+            #mainpage #maincontent #right .content .noidung .doimatkhau {
+                display: block;
+                width: 600px;
+                padding-bottom: 50px;
+                padding-left: 190px;
+                margin-left: 0px;
+            }
+
+            #mainpage #maincontent #right .content .noidung .thongbao {
+                display: block;
+                float: left;
+                padding-top: 20px;
+                margin-left: 0px !important;
+                text-align: left;
+            }
+
+            #mainpage #maincontent #right .content .noidung .ndedit {
+                display: block;
+                float: left;
+                padding-top: 20px;
+                margin-left: 0px !important;
+                text-align: left;
+            }
+
+            #mainpage #maincontent #right .content .noidung .orderdetail {
+                display: block;
+                padding-top: 10px;
+            }
+
+                #mainpage #maincontent #right .content .noidung .orderdetail .boxorder {
+                    float: left;
+                    width: 760px;
+                    overflow: hidden;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxorder .top {
+                        background-image: url('../images/box_ordertop.jpg');
+                        height: 14px;
+                    }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxorder .middle {
+                        background-image: url('../images/box_ordermiddle.jpg');
+                        height: 70px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+
+                        #mainpage #maincontent #right .content .noidung .orderdetail .boxorder .middle .left {
+                            float: left;
+                            width: 600px;
+                        }
+
+                        #mainpage #maincontent #right .content .noidung .orderdetail .boxorder .middle .right {
+                            float: left;
+                            width: 140px;
+                            padding-top: 25px;
+                        }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxorder .bottom {
+                        background-image: url('../images/box_orderbottom.jpg');
+                        height: 10px;
+                    }
+
+                #mainpage #maincontent #right .content .noidung .orderdetail .boxprice {
+                    margin-left: 760px;
+                    width: 100%;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxprice .top {
+                        background-image: url('../images/box_pricetop.jpg');
+                        background-repeat: no-repeat;
+                        height: 8px;
+                    }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxprice .middle {
+                        background-image: url('../images/box_pricemiddle.jpg');
+                        height: 77px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        max-width: 183px;
+                    }
+
+                    #mainpage #maincontent #right .content .noidung .orderdetail .boxprice .bottom {
+                        background-image: url('../images/box_pricebottom.jpg');
+                        background-repeat: no-repeat;
+                        height: 9px;
+                    }
+
+            #mainpage #maincontent #right .content .noidung .thongbao .xemkqcapnhat {
+                display: block;
+                width: 510px;
+                border: 1px solid #dedcdc;
+                padding: 15px 10px 20px 10px;
+            }
+
+                #mainpage #maincontent #right .content .noidung .thongbao .xemkqcapnhat .ngaykh {
+                    display: block;
+                    padding-top: 15px;
+                }
+
+                    #mainpage #maincontent #right .content .noidung .thongbao .xemkqcapnhat .ngaykh .tieude {
+                        display: block;
+                        color: #0368ac;
+                        font-weight: bold;
+                    }
+
+                    #mainpage #maincontent #right .content .noidung .thongbao .xemkqcapnhat .ngaykh .chuongtrinh {
+                        display: block;
+                        padding-top: 5px;
+                    }
+
+
+/* Lịch khởi hành */
+.ngaykh {
+    display: block;
+    width: 690px;
+    padding: 15px 5px 0px 5px;
+}
+
+    .ngaykh .tieude {
+        display: block;
+        color: #0368ac;
+        font-size: 11pt;
+        font-weight: bold;
+        line-height: 35px;
+        padding-bottom: 5px;
+    }
+
+    .ngaykh .chuongtrinh {
+        display: block;
+        padding-top: 5px;
+    }
+
+        .ngaykh .chuongtrinh .lichkh {
+            float: left;
+            width: 64px;
+        }
+
+        .ngaykh .chuongtrinh .cttour {
+            float: left;
+            width: 356px;
+            line-height: 150%;
+        }
+
+        .ngaykh .chuongtrinh .ctpicture {
+            float: left;
+            width: 244px;
+            padding-left: 26px;
+        }
+
+            .ngaykh .chuongtrinh .ctpicture img {
+                border: 1px solid #c0c2c1;
+                padding: 1px;
+                width: 240px;
+            }
+/* End Lịch khởi hành */
+
+
+#mainpage #maincontent #right .content .noidung .thongbao .cruisetour {
+    width: 690px;
+}
+
+.linehight {
+    line-height: 170%;
+}
+
+.lineheight {
+    line-height: 150%;
+}
+
+
+#mainpage #footer {
+    display: block;
+    /* margin: 20px 20px 10px 20px; */
+    /* border-top: 1px solid #ebeaea; */
+    position: fixed;
+    width: 100%;
+    background: #f2f2f2;
+    bottom: 1px;
+    height: 35px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+    #mainpage #footer .text {
+        padding-top: 10px;
+        text-align: center;
+        color: #6a6969;
+    }
+
+.title {
+    line-height: 33px;
+    font-weight: bold;
+    color: #222;
+    padding-top: 15px;
+    font-size: 12pt;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #ebeaea;*/
+    text-transform:uppercase;
+}
+.menuLeft {
+    text-transform: uppercase;
+}
+
+.dieuhuong {
+    line-height: 30px;
+    text-align: left;
+    font-weight: normal;
+    color: #908f8f;
+    padding-top: 0px;
+    font-size: 9pt;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ebeaea;
+}
+
+.name {
+    line-height: 30px;
+    width: 150px;
+}
+
+.txt {
+    width: 450px;
+    vertical-align: top;
+    padding: 7px 0 7px 10px;
+    line-height: 130%;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    background: #f3f3f3;
+}
+
+.bt {
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.bgbutton {
+    background-color: #69c1f8;
+    color: #fff;
+}
+
+.name1 {
+    width: 220px;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    line-height: 130%;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    background: #f8f8f8;
+    vertical-align: middle;
+}
+
+.name1noBg {
+    width: 270px;
+    text-align: right;
+    vertical-align: top;
+    padding: 7px 10px 7px 0;
+    line-height: 130%;
+    border: none;
+}
+
+.txt1 {
+    width: auto;
+    vertical-align: top;
+    padding: 7px 7px 5px 7px;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    background: #f3f3f3;
+}
+
+.txt3 {
+    width: auto;
+    vertical-align: top;
+    padding: 7px 0 7px 10px;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    background: #f3f3f3;
+}
+
+.txt3noBg {
+    width: auto;
+    vertical-align: top;
+    padding: 7px 0 7px 10px;
+    border: none;
+}
+
+.bt1 {
+    /*padding-top: 20px;*/
+}
+
+.txt1 label {
+    font-weight: normal;
+}
+
+.ColorRequire {
+    color: #b02803;
+}
+
+.titleGroup {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Cambria;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #9f9e9e;
+}
+
+.titleGroupRequire {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Cambria;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #b02803;
+}
+
+.bgimgcontinue {
+    background: url('../images/btn/btn_continue1.png') no-repeat;
+    width: 250px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.displayname {
+    padding: 5px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.displayname1 {
+    padding-right: 10px;
+}
+
+.padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bg {
+    background: #393a3a;
+}
+
+.note {
+    color: #bebebd;
+    font-size: 9pt;
+}
+
+.top10 {
+    padding-top: 10px;
+}
+
+.imgchuongtrinh {
+    border: 1px solid #c0c2c1;
+    padding: 1px;
+    width: 200px;
+}
+
+.cssgridview {
+    border: 1px solid #c7c8ca;
+}
+
+.cssgridviewkh {
+    padding-left: 10px;
+}
+
+.tieude {
+    font-size: 10pt;
+    color: #0368ac;
+    font-weight: bold;
+}
+
+.line {
+    font-size: 12pt;
+    color: #0368ac;
+    font-weight: bold;
+    border-bottom: 1px solid #bfc1c1;
+    border-bottom-style: dashed;
+    padding-bottom: 5px;
+}
+
+.linetitle {
+    display: block;
+    padding-top: 20px;
+    border-bottom: 1px solid #ebeaea;
+}
+
+.status {
+    color: #0368ac;
+}
+
+.thu {
+    color: Red;
+}
+
+.thu2 {
+    color: #0368ac;
+}
+
+.thu1 {
+    color: #000;
+}
+
+.name2 {
+    line-height: 30px;
+    width: 100px;
+}
+
+.txt2 {
+    line-height: 30px;
+    width: 200px;
+}
+
+.bt2 {
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.colorUser {
+    font-weight: normal;
+    color: #0f5491;
+}
+
+.colorUser1 {
+    font-weight: normal;
+    color: #222;
+    font-size: 8pt;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.line-height {
+    line-height: 30px;
+}
+
+.align-top {
+    vertical-align: top;
+    padding-top: 7px;
+}
+
+.textgray {
+    font-size: 9pt;
+    color: #aaa;
+}
+
+.td {
+    width: 200px;
+}
+
+.left5px {
+    padding-left: 5px;
+}
+
+.top15 {
+    padding-top: 15px;
+}
+
+.ngaynghi0 {
+    color: #bdbdbd;
+}
+
+.ngaynghi1 {
+    color: Red;
+}
+
+.colorGray {
+    color: #9f9e9e;
+}
+
+/* Set Background title gridview*/
+
+.gridHeader {
+    background-color: #e9e9e9;
+    height: 35px;
+    color: #333333;
+}
+
+.gridRowstyle {
+    background-color: #f5f5f5;
+}
+
+table.grid {
+    border-collapse: collapse;
+}
+
+    table.grid td, th {
+        border: 1px solid #dedcdc;
+    }
+
+tr th {
+    background-color: #e9e9e9;
+    height: 35px;
+    color: #333333;
+}
+
+.tbprice_header {
+    background: #00b0f0;
+    text-align: center;
+    font-size: 10pt;
+    color: #ffffff;
+    font-weight: bold;
+    height: 50px;
+}
+
+.tbprice_r0 {
+    background-color: #ffffff;
+    height: 19px;
+}
+
+.tbprice_r1 {
+    background-color: #EFF3FB;
+    height: 19px;
+}
+
+.tbprice_price {
+    background-color: #ccffcc;
+    height: 19px;
+}
+
+.tbprice_footer {
+    background-color: #ffff00;
+    line-height: 19px;
+}
+
+.tbprice_system_space {
+    background-color: #ffffff;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    line-height: 19px;
+}
+
+.tbprice_ft_line {
+    border-bottom: 1px solid;
+    line-height: 19px;
+}
+
+.menuLeft ul li ul li img {
+    display: inline-block;
+}
+
+.title-custom {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 3px;
+    text-transform:uppercase;
+}
+
+.div-crud {
+    clear: both;
+    margin-top: 10px;
+}
+
+.table-crud {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#divlink {
+    background-color: #f7f7f7;
+    padding: 17px;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+}
+
+.validateForm {
+    color: Red;
+    display: block;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-top: 5px;
+}
+
+.error {
+    color: red;
+}
+
+#content_ValidationSummary1 {
+    display: none;
+}
+/*tiện ích*/
+.table-convenient {
+    width: 100%;
+}
+
+    .table-convenient tr {
+        background-color: #f8f8f8;
+    }
+
+        .table-convenient tr td {
+            padding: 5px;
+        }
+
+            .table-convenient tr td label {
+                font-weight: normal;
+                margin-left: 5px;
+            }
+
+.table-crud-grvprice {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+    border: 0px;
+}
+
+    .table-crud-grvprice tr th {
+        display: none;
+    }
+
+    .table-crud-grvprice tr td:first-child {
+        width: 220px;
+        text-align: left;
+        vertical-align: top;
+        padding: 5px;
+        line-height: 130%;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+        background: #f8f8f8;
+        vertical-align: middle;
+    }
+
+    .table-crud-grvprice tr td {
+        width: auto;
+        vertical-align: top;
+        padding: 7px 7px 5px 7px;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+        background: #f3f3f3;
+    }
+
+.action-crud {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.dxgvTable_Material {
+    background-color: White;
+    border: 1px #dfdfdf solid;
+    border-bottom-width: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-collapse: separate!important;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+.dxgvPagerBottomPanel_Material {
+    background-color: white;
+    border-bottom: 1px Solid #dfdfdf;
+    border-left: 1px Solid #dfdfdf;
+    border-right: 1px Solid #dfdfdf;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+#maincontent .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: transparent;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border: none;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+#maincontent .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    border: none;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    border: none;
+}
+.dxpLite_Material .dxp-current {
+    background-color: #009688;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+.table-crud .name1 label{
+    font-weight:normal;
+}
+/* Loading */
+.loading-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 99999;
+}
+
+.loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}

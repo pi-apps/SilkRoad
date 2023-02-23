@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+.temp
+dist
+yarn-error.log
+.next
+.env
+.idea
+yalc.lock
+.yalc

@@ -1,0 +1,32 @@
+﻿/* Normal desktop :1366px. */
+@media (min-width: 1170px) and (max-width: 1400px) {
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    #outPopUp {
+        position: fixed;
+        width: 300px;
+        height: 200px;
+        z-index: 15;
+        top: 25%;
+        left: 20%;
+        margin: 0;
+        background: transparent;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

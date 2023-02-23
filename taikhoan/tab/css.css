@@ -1,0 +1,49 @@
+﻿.div-crud .ui-tabs-vertical {
+    width: 100%;
+}
+
+    .div-crud .ui-tabs-vertical .ui-tabs-nav {
+        padding: 0;
+        float: left;
+        width: 19%;
+    }
+
+        .div-crud .ui-tabs-vertical .ui-tabs-nav li {
+            clear: left;
+            width: 100%;
+            border-bottom-width: 1px !important;
+            border-right-width: 1px !important;
+            margin: 0 -1px .2em 0;
+            margin-bottom: 10px;
+        }
+
+            .div-crud .ui-tabs-vertical .ui-tabs-nav li a {
+                display: block;
+            }
+
+            .div-crud .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+                padding-bottom: 0;
+                padding-right: .1em;
+                border-right-width: 1px;
+            }
+
+    .div-crud .ui-tabs-vertical .ui-tabs-panel {
+        padding: 0;
+        float: right;
+        width: 80%;
+    }
+
+.div-crud .ui-widget.ui-widget-content {
+    border: none;
+}
+
+.div-crud .ui-widget-header {
+    border: none;
+    background: no-repeat;
+    color: #333333;
+    font-weight: bold;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 10px !important;
+    padding-bottom: 1px !important;
+}

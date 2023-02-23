@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+<title>jPopup</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/jpopup.min.css" />
+<script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="./js/jquery.jpopup.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    var what = new jPopup({
+        title: "<h2>What?</h2>",
+        content: "<p>A sandwich is a food item consisting of one or more types of food, such as vegetables, sliced cheese or meat, placed on or between slices of bread.</p>",
+        draggable: true,
+        resizeable: true,
+        overlay: false,
+        closeButton: true
+    });
+    var draggable = true;
+    var overlay = false;
+    what.open(function (r) {
+        switch (r) {
+            case "draggable":
+                draggable = draggable ? false : true;
+                what.draggable(draggable);
+                break;
+            case "overlay":
+                overlay = overlay ? false : true;
+                what.overlay(overlay);
+        }
+    });
+});
+</script>
+</head>
+<body>
+</body>
+</html>

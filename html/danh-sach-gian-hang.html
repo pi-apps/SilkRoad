@@ -1,0 +1,852 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách gian hàng</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type=image/png href=https://animaproject.s3.amazonaws.com/home/favicon.png />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/danh-sach-gian-hang.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body style="margin: 0; background: #f2f2f2">
+    <input type="hidden" id="anPageName" name="page" value="danh-sach-gian-hang" />
+    <div class="container-center-horizontal">
+        <div class="danh-sach-gian-hang screen">
+            <div class="rectangle-39222">
+                <div class="home-top group-48095442">
+                    <div class="group-48095416">
+                        <img class="mdistar-three-points" src="img/mdi-star-three-points@2x.svg" />
+                        <div class="navbar baijamjuree-normal-white-16px">
+                            <ul class="menu-top">
+                                <li>
+                                    <a href="#" class="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Sàn giao dịch</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Gate &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#">Gate 1</a></li>
+                                        <li><a href="#">Gate 2</a></li>
+                                        <li><a href="#">Gate 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Sàn đấu giá</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Cafeteria</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Map</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Hỗ trợ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Ngôn ngữ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bttn border-1px-white"><a href="#" class="text-1 baijamjuree-semi-bold-white-16px">Đăng ký</a></div>
+                    <div class="bttn-1"><a href="#" class="text-2 baijamjuree-semi-bold-white-16px">Đăng nhập</a></div>
+                </div>
+            </div>
+            <a href="home.html" class="lets-connect valign-text-middle baijamjuree-bold-casablanca-16px">&lt; Quay về</a>
+            <div class="danh-sch-gian-hng valign-text-middle baijamjuree-bold-black-24px">
+                <p>Danh Sách Cửa Hàng</p>
+                <div class="filter-danh-sach">
+                    <div class="pull-left">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="inputPassword6">Tìm kiếm:</label>
+                                <input style="width: 430px;" type="text" id="inputPassword6" class="form-control mx-sm-3"
+                                       aria-describedby="passwordHelpInline" placeholder="theo tên / theo mã / theo tỷ giá">
+                                <button type="submit" class="btn btn-warning my-1"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pull-right">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="inputPassword6">Hiển thị:</label>&nbsp;
+                                <select class="form-control">
+                                    <option>10</option>
+                                    <option>24</option>
+                                    <option>36</option>
+                                    <option>48</option>
+                                    <option>60</option>
+                                </select>&nbsp;&nbsp;&nbsp;
+                                <label for="inputPassword6">Sắp xếp</label>&nbsp;
+                                <select class="form-control">
+                                    <option>Vị trí</option>
+                                    <option>Online</option>
+                                    <option>Offline</option>
+                                    <option>Lượng giao dịch (giảm dần)</option>
+                                    <option>Lượng giao dịch (tăng dần)</option>
+                                    <option>Theo tỷ giá (giảm dần)</option>
+                                    <option>Theo tỷ giá (tăng dần)</option>
+                                    <option>Theo đánh giá (giảm dần)</option>
+                                    <option>Theo đánh giá (tăng dần)</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="overlap-group">
+                <div class="frame-19216">
+                    <div class="frame-1914">
+                        <div class="frame-1914-1">
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19193">
+                                        <div class="frame-19175-6">
+                                            <div class="online valign-text-middle baijamjuree-bold-white-16px">Online</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">
+                                                            1&#960; = 2$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19212">
+                                        <div class="frame-19175-7">
+                                            <div class="offline valign-text-middle baijamjuree-bold-white-16px">Offline</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 1.5$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-1914-1">
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19201">
+                                        <div class="frame-19175-1">
+                                            <div class="place valign-text-middle baijamjuree-bold-white-16px">Busy</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 2$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19">
+                                        <div class="frame-19175-8">
+                                            <div class="offday valign-text-middle baijamjuree-bold-white-16px">Day off</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 5$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-1914">
+                        <div class="frame-1914-1">
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19203">
+                                        <div class="frame-19175-1">
+                                            <div class="place valign-text-middle baijamjuree-bold-white-16px">Busy</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 10$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19204">
+                                        <div class="frame-19175-9">
+                                            <div class="bonus-weekend valign-text-middle baijamjuree-bold-white-16px">Bonus Weekend</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 1$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="frame-1914">
+                        <div class="frame-1914-1">
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19203">
+                                        <div class="frame-19175-1">
+                                            <div class="place valign-text-middle baijamjuree-bold-white-16px">Busy</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 10$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19204">
+                                        <div class="frame-19175-9">
+                                            <div class="bonus-weekend valign-text-middle baijamjuree-bold-white-16px">Bonus Weekend</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 1$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="frame-1914">
+                        <div class="frame-1914-1">
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19208">
+                                        <div class="frame-19175-2">
+                                            <div class="surname valign-text-middle baijamjuree-bold-white-16px">Black Friday</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 2$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-48095">
+                                <div class="frame-19166">
+                                    <div class="frame-19209">
+                                        <div class="frame-19175-2">
+                                            <div class="surname valign-text-middle baijamjuree-bold-white-16px">Black Friday</div>
+                                        </div>
+                                    </div>
+                                    <div class="group-4809549">
+                                        <div class="frame-191">
+                                            <div class="frame-19172">
+                                                <div class="frame-19174">
+                                                    <div class="gian-hng-abc valign-text-middle baijamjuree-bold-black-20px box-ds-giang-hang">
+                                                        <p><img src="img/location.png" style="width:23px; height:30px; margin-right:10px;vertical-align: bottom;" />GIAN HÀNG ABC</p>
+                                                        <span class="code-gh">Mã: abcxyz</span>
+                                                    </div>
+                                                    <div class="frame-19175">
+                                                        <div class="x1-pi24000-vn valign-text-middle baijamjuree-bold-fuchsia-pink-16px">1&#960; = 2$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-191">
+                                                    <p class="in-publishing-and-gr baijamjuree-normal-gray-16px">
+                                                        Các mặt hàng shop sẽ được đăng lên hàng ngày để AE trao đổi Pi lấy sản phẫm ...  sẽ được thẩm định trực tiếp hoặc gián tiếp theo cách của anh em ADM
+                                                    </p>
+                                                    <div class="frame-19170">
+                                                        <a style="color:#fab34b;" href="chi-tiet-gian-hang.html" class="xem-chi-tit baijamjuree-normal-casablanca-18px">Vào cửa hàng</a>
+                                                        <div style="width: 190px; text-align:right">
+                                                            <div style="color:#fab34b; font-weight:normal">Review</div>
+                                                        </div>
+                                                        <div style="width:168px; text-align:right">
+                                                            <img class="claritystar-solid" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            <img class="claritystar-solid-1" src="img/clarity-star-solid@2x.svg" />
+                                                            5/5
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align:center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-48095502 group-footer">
+                <footer>
+                    <div class="container">
+                        <div class="footer-head">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer-logo">
+                                        <a href="/">
+                                            <img src="/pi-logo.png" title="pi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 footer-col-form">
+                                    <div class="footer-section">
+                                        <h4 class="footer-section-head">
+                                            ĐĂNG NHẬP EMAIL ĐỂ NHẬN THÔNG TIN
+                                        </h4>
+                                        <div class="footer-section-body">
+                                            <p>
+                                                Đăng nhập để nhận được những thông tin mới nhất về
+                                                bộ sưu tập, chiến dịch và video qua email.
+                                            </p>
+                                            <p>
+                                            </p><div class="footer-form-group">
+                                                <input autocomplete="off" type="text" id="input-subscribe-email-footer" value="" class="footer-form-control" placeholder="*Email của bạn">
+                                                <button type="button" class="btn-subscribe-email-footer footer-form-btn">OK</button>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-section">
+                                        <h4 class="footer-section-head">
+                                            TÌM KIẾM CỬA HÀNG
+                                        </h4>
+                                        <div class="footer-section-body">
+                                            <p>
+                                            </p><div class="footer-form-group form-select">
+                                                <i class="fa fa-map-marker footer-form-ico" aria-hidden="true"></i>
+                                                <select name="ctl00$footerUserControl$ddlBranch" id="footerUserControl_ddlBranch" class="ddlBranchFooterJs footer-form-control">
+                                                    <option value="">Hệ thống cửa hàng của PI ECOMMERCE</option>
+                                                    <option value="3">Số 13 Đường 3/2, Phường 12, Quận 10, Thành phố Hồ Chí Minh</option>
+                                                </select>
+                                            </div>
+                                            <div id="show-info-store-ajax"></div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-6 footer-col-menu" id="footer-accordion-section">
+                                    <div class="row">
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="footer-section">
+                                                <input type="hidden" name="ctl00$footerUserControl$rptFooterMenu$ctl00$hdfId" id="footerUserControl_rptFooterMenu_hdfId_0" value="1">
+                                                <h4 class="footer-section-head">
+                                                    DỊCH VỤ TRỰC TUYẾN
+                                                </h4>
+                                                <div class="footer-section-body" id="footerCollapseOne1" aria-labelledby="headingOne1" data-parent="#footer-accordion-section">
+                                                    <ul>
+
+                                                        <li><a href="PI ECOMMERCE" title="Phương thức thanh toán">Phương thức thanh toán</a></li>
+
+                                                        <li><a href="#" title="Hỏi &amp; đáp">Hỏi &amp; đáp</a></li>
+
+                                                        <li><a href="#" title="Hướng dẫn kích thước">Hướng dẫn kích thước</a></li>
+
+                                                        <li><a href="#" title="Dịch vụ &amp; chăm sóc khách hàng">Dịch vụ &amp; chăm sóc khách hàng</a></li>
+
+                                                        <li><a href="#" title="Chính sách đổi trả hàng">Chính sách đổi trả hàng</a></li>
+
+                                                        <li><a href="#" title="Cách mua hàng tại PI ECOMMERCE">Cách mua hàng tại <b>PI ECOMMERCE</b></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="footer-section">
+                                                <input type="hidden" name="ctl00$footerUserControl$rptFooterMenu$ctl01$hdfId" id="footerUserControl_rptFooterMenu_hdfId_1" value="2">
+                                                <h4 class="footer-section-head">
+                                                    THÔNG TIN CÔNG TY
+                                                </h4>
+                                                <div class="footer-section-body" id="footerCollapseOne2" aria-labelledby="headingOne2" data-parent="#footer-accordion-section">
+                                                    <ul>
+
+                                                        <li><a href="#" title="Giới thiệu PI ECOMMERCE">Giới thiệu <b>PI ECOMMERCE</b></a></li>
+
+                                                        <li><a href="#" title="Tính pháp lý">Tính pháp lý</a></li>
+
+                                                        <li><a href="#" title="Chính sách riêng tư &amp; Cookies">Chính sách riêng tư &amp; Cookies</a></li>
+
+                                                        <li><a href="#" title="Thông tin doanh nghiệp">Thông tin doanh nghiệp</a></li>
+
+                                                        <li><a href="#" title="Cam kết về lao động">Cam kết về lao động</a></li>
+
+                                                        <li><a href="#" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="footer-section">
+                                                <h4 class="footer-section-head">
+                                                    KẾT NỐI VỚI CHÚNG TÔI
+                                                </h4>
+                                                <div class="footer-section-body" id="footerCollapseOnesoccial" aria-labelledby="headingOnesoccial" data-parent="#footer-accordion-section">
+                                                    <ul>
+
+                                                        <li>
+                                                            <a href="#" title="Facebook">
+                                                                <div class="ico-social">
+                                                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                                                </div>
+                                                                Facebook
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" title="Instagram">
+                                                                <div class="ico-social">
+                                                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                                </div>
+                                                                Telegram
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" title="Instagram Customers">
+                                                                <div class="ico-social">
+                                                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                                                </div>
+                                                                Linkedin
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" title="Twitter">
+                                                                <div class="ico-social">
+                                                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                                                </div>
+                                                                Twitter
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" title="Youtube">
+                                                                <div class="ico-social">
+                                                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                                                </div>
+                                                                Youtube
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-2 footer-col-contact">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-12">
+                                            <div class="footer-section">
+                                                <h4 class="footer-section-head">
+                                                    <i class="fa fa-phone"></i>TỔNG ĐÀI
+                                                </h4>
+                                                <div class="footer-section-body">
+                                                    <p>
+                                                        <a href="tel:19008498" title="19008498">1900 8498</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-12">
+                                            <div class="footer-section">
+                                                <h4 class="footer-section-head">
+                                                    <i class="fa fa-phone"></i>CSKH
+                                                </h4>
+                                                <div class="footer-section-body">
+                                                    <p>
+                                                        <a href="tel:0280390455455" title="(84.28) 39 455 455">(84.28) 39 455 455</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-12">
+                                            <div class="footer-section">
+                                                <h4 class="footer-section-head">
+                                                    THANH TOÁN
+                                                </h4>
+                                                <div class="footer-section-body">
+                                                    <p>
+                                                        <a href="#" title="Visa">
+                                                            <img src="/pi-logo.png" title="pi" width="30px">
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-foot">
+                            <div class="footer-foot-left">
+                                Thay đổi địa điểm và ngôn ngữ <a href="#" title="Viet Nam - English (US)"><span>Viet Nam - English (US)</span></a>
+                            </div>
+                            <div class="footer-foot-right">
+                                <div class="footer-copyright">
+                                    <a href="/" title=""><span>CÔNG TY CỔ PHẦN PI ECOMMERCE</span></a>
+                                    <br>Văn phòng: Số 13 Đường 3/2, Phường 12, Quận 10, Thành phố Hồ Chí Minh, Việt Nam.
+                                    <br>Mã số thuế 0323941896 do sở KHĐT TP Hồ Chí Minh cấp lần đầu ngày 18/05/2005
+                                </div>
+                                <ul class="footer-nav-list" style="display:none;">
+
+                                    <li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+
+                                    <li><a href="#" title="Bảo vệ dữ liệu">Bảo vệ dữ liệu</a></li>
+
+                                    <li><a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+
+                                    <li><a href="#" title="Chính sách cookie">Chính sách cookie</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

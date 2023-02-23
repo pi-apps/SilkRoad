@@ -1,0 +1,727 @@
+:root {
+    --abbey: #4f4f4f;
+    --alizarin-crimson: #e91818;
+    --baltic-sea: #282b2f;
+    --black: #000000;
+    --bon-jour: #e0e0e0;
+    --cadet-blue: #a8aebe;
+    --carnation: #ff60601a;
+    --carnation-2: #ff6060;
+    --casablanca: #fab34b;
+    --cerulean: #25b1d8;
+    --charade: #292d32;
+    --charade-2: #212b36;
+    --charade-3: #292d3266;
+    --cinnabar: #e93428;
+    --comet: #565975;
+    --concrete: #f2f2f2;
+    --curious-blue: #2d9cdb;
+    --fuchsia-pink: #67127C;
+    --fuchsia-pink-2: #873286;
+    --geyser: #d8dde6;
+    --gray: #828282;
+    --green-vogue: #032050;
+    --lavender: #b67cf7;
+    --lavender-2: #bb6bd9;
+    --log-cabin: #222222;
+    --magenta--fuchsia: #d800fb;
+    --magnolia: #f8f2ff;
+    --manatee: #919eab;
+    --manatee-2: #898ca8;
+    --mercury: #dfe3e8;
+    --mine-shaft: #333333;
+    --mirage: #141b2f;
+    --red: #fb0000;
+    --sea-serpent: #4cded5;
+    --silver: #bdbdbd;
+    --tangerine: #f1890e;
+    --white: #ffffff;
+    --font-size-l: 16px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 24px;
+    --font-size-xxxxl: 50px;
+    --font-family-bai_jamjuree: "Bai Jamjuree", Helvetica;
+    --font-family-baloo_2: "Baloo 2", Helvetica;
+    --font-family-inter: "Inter", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+}
+.baijamjuree-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-log-cabin-14px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-log-cabin-14px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-charade-14px {
+  color: var(--charade);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-fuchsia-pink-14px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-silver-14px {
+  color: var(--silver);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.baijamjuree-bold-log-cabin-12px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-concrete-20px {
+  color: var(--concrete);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-fuchsia-pink-14px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-fuchsia-pink-16px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-green-vogue-14px {
+  color: var(--green-vogue);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-red-20px {
+  color: var(--red);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-gray-20px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-gray-14px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-gray-16px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-carnation-14px {
+  color: var(--carnation-2);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-casablanca-18px {
+  color: var(--casablanca);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-charade-14px {
+  color: var(--charade);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-casablanca-16px {
+  color: var(--casablanca);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-charade-16px {
+  color: var(--charade);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-charade-16px {
+  color: var(--charade-2);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-charade-14px {
+  color: var(--charade-2);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-gray-12px {
+  color: var(--gray);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-gray-18px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-bold-charade-14px {
+  color: var(--charade-2);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-log-cabin-12px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-cerulean-14px {
+  color: var(--cerulean);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-gray-12px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-mirage-14px {
+  color: var(--mirage);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-semi-bold-green-vogue-14px {
+  color: var(--green-vogue);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-bold-gray-12px {
+  color: var(--gray);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-white-14px-2 {
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-white-30-4px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: 30.4px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-gray-14px {
+  color: var(--gray);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-mirage-16px {
+  color: var(--mirage);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-cadet-blue-14px {
+  color: var(--cadet-blue);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-casablanca-18px {
+  color: var(--casablanca);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-alizarin-crimson-18px {
+  color: var(--alizarin-crimson);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-abbey-12px {
+  color: var(--abbey);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-cadet-blue-12px {
+  color: var(--cadet-blue);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-charade-18px {
+  color: var(--charade);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-fuchsia-pink-20px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-black-50px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-manatee-18px {
+  color: var(--manatee-2);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-fuchsia-pink-16px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-black-12px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-normal-comet-14px {
+  color: var(--comet);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-silver-16px {
+  color: var(--silver);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-casablanca-14px {
+  color: var(--casablanca);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-normal-cinnabar-12px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-cinnabar-14px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-medium-white-30-4px {
+  color: var(--white);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: 30.4px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.baijamjuree-bold-fuchsia-pink-20px {
+  color: var(--fuchsia-pink);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-normal-curious-blue-14px {
+  color: var(--curious-blue);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-bold-cinnabar-12px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-bold-cinnabar-14px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-log-cabin-20px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-mirage-14px {
+  color: var(--mirage);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baloo2-bold-mirage-16px {
+  color: var(--mirage);
+  font-family: var(--font-family-baloo_2);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baloo2-normal-cadet-blue-14px {
+  color: var(--cadet-blue);
+  font-family: var(--font-family-baloo_2);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baloo2-normal-white-14px {
+  font-family: var(--font-family-baloo_2);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baloo2-normal-mirage-14px {
+  color: var(--mirage);
+  font-family: var(--font-family-baloo_2);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baloo2-normal-cerulean-14px {
+  color: var(--cerulean);
+  font-family: var(--font-family-baloo_2);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-normal-lavender-20px {
+  color: var(--lavender-2);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baijamjuree-bold-silver-16px {
+  color: var(--silver);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-charade-18px {
+  color: var(--charade);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baijamjuree-bold-cinnabar-14px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-bai_jamjuree);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.border-1px-mercury {
+  border: 1px solid var(--mercury);
+}
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+
+.border-1px-concrete {
+  border: 1px solid var(--concrete);
+}
+
+.border-1px-magnolia {
+  border: 1px solid var(--magnolia);
+}
+
+.border-1-5px-bon-jour {
+  border: 1.5px solid var(--bon-jour);
+}
+
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+
+.border-1px-black {
+  border: 1px solid var(--black);
+}
+
+.border-1px-cinnabar {
+  border: 1px solid var(--cinnabar);
+}
+
+.border-1px-casablanca {
+  border: 1px solid var(--casablanca);
+}
+
+.border-1px-geyser {
+  border: 1px solid var(--geyser);
+}
+
+.border-1px-lavender {
+  border: 1px solid var(--lavender);
+}
+
+.border-2px-fuchsia-pink {
+  border: 2px solid var(--fuchsia-pink);
+}
+
+.border-1px-curious-blue {
+  border: 1px solid var(--curious-blue);
+}
+
+.border-1px-silver {
+  border: 1px solid var(--silver);
+}

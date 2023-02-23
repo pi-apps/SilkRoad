@@ -1,0 +1,215 @@
+body {
+  background-color: #f1f1f1;
+  padding-top: 0px;
+}
+
+.purple-gradient {
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+
+.young-passion-gradient {
+  background: linear-gradient(40deg, #b12a5b, #ff8177);
+}
+
+.title h1 {
+  text-align: left;
+  color: #202020;
+}
+
+.hero {
+  color: white;
+  padding: 15px;
+}
+
+.hero h3 {
+  color: white;
+}
+
+.description, .simple-examples {
+  margin-top: 15px;
+}
+
+.description p, .simple-examples p {
+  font-weight: 700;
+}
+
+.simple-examples .countdown {
+  display: none;
+}
+
+.simple-examples .countdown.simple-bar {
+  background-color: #af0b0b;
+  margin: 20px;
+  padding: 3px 21px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+
+.simple-examples .countdown.fix {
+  font-size: 14px;
+}
+
+.countdown.show, .countdown.hero_count {
+  text-align: center;
+  background-color: #e4e4e4;
+  margin: 22px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.countdown.show h2, .countdown.hero_count h2 {
+  font-size: 60px;
+}
+
+.countdown.show .running, .countdown.hero_count .running {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown.show .running timer, .countdown.hero_count .running timer {
+  font-size: 55px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  color: #8c0734;
+}
+
+.countdown.show .running timer .days, .countdown.hero_count .running timer .days,
+.countdown.show .running timer .hours,
+.countdown.hero_count .running timer .hours,
+.countdown.show .running timer .minutes,
+.countdown.hero_count .running timer .minutes,
+.countdown.show .running timer .seconds,
+.countdown.hero_count .running timer .seconds {
+  width: 70px;
+  text-align: left;
+  margin: 0 7px;
+}
+
+@media (max-width: 480px) {
+  .countdown.show .running timer, .countdown.hero_count .running timer {
+    font-size: 40px;
+  }
+  .countdown.show .running timer .days, .countdown.hero_count .running timer .days,
+  .countdown.show .running timer .hours,
+  .countdown.hero_count .running timer .hours,
+  .countdown.show .running timer .minutes,
+  .countdown.hero_count .running timer .minutes,
+  .countdown.show .running timer .seconds,
+  .countdown.hero_count .running timer .seconds {
+    width: 49px;
+  }
+}
+
+.countdown.show .running .labels, .countdown.hero_count .running .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.countdown.show .running .labels span, .countdown.hero_count .running .labels span {
+  width: 97px;
+  text-align: center;
+  margin: 0px 2px;
+}
+
+@media (max-width: 480px) {
+  .countdown.show .running .labels span, .countdown.hero_count .running .labels span {
+    width: 69px;
+  }
+}
+
+.countdown.show .running .text, .countdown.hero_count .running .text {
+  font-size: 20px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.countdown.show .running button, .countdown.hero_count .running button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.countdown.show .running .break, .countdown.hero_count .running .break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
+.countdown.show .ended, .countdown.hero_count .ended {
+  display: none;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown.show .ended .text, .countdown.hero_count .ended .text {
+  font-size: 20px;
+}
+
+.countdown.show .ended button, .countdown.hero_count .ended button {
+  border: none;
+  background-color: #5a0000;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.countdown.show .ended .break, .countdown.hero_count .ended .break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
+.countdown.hero_count {
+  background-color: #6d0303;
+  margin: 0 10px;
+}
+
+.countdown.hero_count h2 {
+  font-size: 40px;
+  color: #b3b3b3;
+  font-size: 33px;
+}
+
+.countdown.hero_count .running timer {
+  color: #e2e2e2;
+}
+
+.countdown.hero_count .running button {
+  background-color: #af0b0b;
+}
+
+.countdown.hero_count .running button a {
+  color: white;
+}
+
+.countdown.hero_count .running .labels span {
+  width: 95px;
+  margin: 0px 3px 0px 0px;
+}
+
+@media (max-width: 480px) {
+  .countdown.hero_count .running .labels span {
+    width: 69px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

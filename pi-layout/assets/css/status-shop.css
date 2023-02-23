@@ -1,0 +1,112 @@
+﻿:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --abbey: #4f4f4f;
+    --alizarin-crimson: #e91818;
+    --baltic-sea: #282b2f;
+    --black: #000000;
+    --bon-jour: #e0e0e0;
+    --cadet-blue: #a8aebe;
+    --carnation: #ff60601a;
+    --carnation-2: #ff6060;
+    --casablanca: #fab34b;
+    --cerulean: #25b1d8;
+    --charade: #292d32;
+    --charade-2: #212b36;
+    --charade-3: #292d3266;
+    --cinnabar: #e93428;
+    --comet: #565975;
+    --concrete: #f2f2f2;
+    --curious-blue: #2d9cdb;
+    --fuchsia-pink: #67127C;
+    --fuchsia-pink-2: #873286;
+    --geyser: #d8dde6;
+    --gray: #828282;
+    --green-vogue: #032050;
+    --lavender: #b67cf7;
+    --lavender-2: #bb6bd9;
+    --log-cabin: #222222;
+    --magenta--fuchsia: #d800fb;
+    --magnolia: #f8f2ff;
+    --manatee: #919eab;
+    --manatee-2: #898ca8;
+    --mercury: #dfe3e8;
+    --mine-shaft: #333333;
+    --mirage: #141b2f;
+    --red: #fb0000;
+    --sea-serpent: #4cded5;
+    --silver: #bdbdbd;
+    --tangerine: #f1890e;
+    --white: #ffffff;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+    --font-size-12: 12px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-50: 50px;
+}
+
+.shop-status {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    text-align: center;
+    padding: 6px 14px;
+    border-radius: 0;
+    font-size: 15px;
+    color: var(--bs-body-bg);
+}
+
+.status-online {
+    background: var(--green);
+    /* color: var(--bs-body-bg); */
+    /* font-size: 15px; */
+}
+
+.status-offline {
+    background: var(--bs-gray);
+}
+
+.status-busy {
+}
+
+.status-offday {
+    color: #000;
+    background: var(--concrete);
+}
+
+.status-bonus {
+    background: var(--bs-purple);
+}
+
+.status-weekend {
+    background: var(--bs-orange);
+}
+
+.status-black-friday {
+    background: var(--bs-black);
+}
+
+.status-discount {
+    background: var(--alizarin-crimson);
+}

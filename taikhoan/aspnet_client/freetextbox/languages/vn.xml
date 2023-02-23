@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- General -->
+    <resource name="Yes">Đồng ý</resource>
+    <resource name="No">Không</resource>
+    <resource name="0">0</resource>
+    <resource name="1">1</resource>
+    <resource name="2">2</resource>
+    <resource name="3">3</resource>
+    <resource name="4">4</resource>
+    <resource name="5">5</resource>
+    <resource name="6">6</resource>
+    <resource name="7">7</resource>
+    <resource name="8">8</resource>
+    <resource name="9">9</resource>
+    <!-- Main FTB Stuff -->
+    <resource name="DesignModeTab">&lt;b style="font-family: arial;"&gt;Thiết kế&lt;/b&gt;</resource>
+    <resource name="HtmlModeTab">&lt;b style="font-family: verdana;"&gt;Mã HTML&lt;/b&gt;</resource>
+    <!-- Buttons -->
+    <resource name="Bold">In đậm</resource>
+    <resource name="BulletedList">Nút đầu dòng</resource>
+    <resource name="Copy">Sao chép</resource>
+    <resource name="CreateLink">Tạo liên kết</resource>
+    <resource name="Cut">Cắt</resource>
+    <resource name="Delete">Xóa</resource>
+    <resource name="Indent">Dịch hàng vào</resource>
+    <resource name="InsertDate">Thêm ngày tháng</resource>
+    <resource name="InsertImage">Thêm hình</resource>
+    <resource name="InsertRule">Thêm thanh ngang</resource>
+    <resource name="InsertTime">Thêm ngày giờ</resource>
+    <resource name="Italic">In nghiêng</resource>
+    <resource name="JustifyRight">Canh phải</resource>
+    <resource name="JustifyCenter">Canh gữa</resource>
+    <resource name="JustifyFull">Canh đều</resource>
+    <resource name="JustifyLeft">Canh trái</resource>
+    <resource name="NumberedList">Đánh số đầu dòng</resource>
+    <resource name="Outdent">Dịch hàng ra</resource>
+    <resource name="Paste">Dán</resource>
+    <resource name="Print">In</resource>
+    <resource name="Redo">
+    </resource>
+    <resource name="RemoveFormat">Bỏ mọi định dạng</resource>
+    <resource name="Save">Lưu</resource>
+    <resource name="StrikeThrough">Chữ gạch xuyên</resource>
+    <resource name="SuperScript">Số mũ</resource>
+    <resource name="SubScript">Chỉ số</resource>
+    <resource name="Underline">Gạch dưới</resource>
+    <resource name="Undo">
+    </resource>
+    <resource name="Unlink">Xóa liên kết</resource>
+    <resource name="IeSpellCheck">Kiểm tra lỗi bằng IE</resource>
+    <resource name="NetSpell">Kiểm tra lỗi bằng Net</resource>
+    <!-- Table Functions -->
+    <resource name="InsertTable">Thêm bảng</resource>
+    <resource name="InsertTableRowAfter">Insert Row After</resource>
+    <resource name="InsertTableRowBefore">Insert Row Before</resource>
+    <resource name="InsertTableColumnAfter">Insert Column After</resource>
+    <resource name="InsertTableColumnBefore">Insert Column Before</resource>
+    <resource name="DeleteTableColumn">Xóa cột của bảng</resource>
+    <resource name="DeleteTableRow">Xóa hàng của bảng</resource>
+    <!-- DropDownLists -->
+    <resource name="FontForeColorsMenu">Màu chữ</resource>
+    <resource name="FontBackColorsMenu">Màu nền</resource>
+    <resource name="FontSizesMenu">Cỡ chữ</resource>
+    <resource name="ParagraphMenu">Paragraph</resource>
+    <resource name="FontFacesMenu">Kiểu chữ</resource>
+    <resource name="InsertHtmlMenu">Insert Html</resource>
+    <resource name="SymbolsMenu">Ký hiệu</resource>
+    <resource name="StylesMenu">Styles</resource>
+    <!-- DropDownList Items -->
+    <resource name="ParagraphMenu_Normal">Normal</resource>
+    <resource name="ParagraphMenu_Heading1">Heading 1</resource>
+    <resource name="ParagraphMenu_Heading2">Heading 2</resource>
+    <resource name="ParagraphMenu_Heading3">Heading 3</resource>
+    <resource name="ParagraphMenu_Heading4">Heading 4</resource>
+    <resource name="ParagraphMenu_Heading5">Heading 5</resource>
+    <resource name="ParagraphMenu_Heading6">Heading 6</resource>
+    <resource name="ParagraphMenu_Formatted">Formatted</resource>
+    <resource name="ParagraphMenu_Address">Address</resource>
+</root>

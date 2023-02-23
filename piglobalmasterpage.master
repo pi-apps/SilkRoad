@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PiglobalMasterPage.master.cs" Inherits="PiglobalMasterPage" %>
+
+<%@ Register Src="~/UC/master/cssUserControl.ascx" TagPrefix="uc1" TagName="cssUserControl" %>
+<%@ Register Src="~/UC/master/jsUserControl.ascx" TagPrefix="uc1" TagName="jsUserControl" %>
+<%@ Register Src="~/UC/master/headerUserControl.ascx" TagPrefix="uc1" TagName="headerUserControl" %>
+<%@ Register Src="~/UC/master/footerUserControl.ascx" TagPrefix="uc1" TagName="footerUserControl" %>
+<%@ Register Src="~/UC/master/popup/CartRightUserControl.ascx" TagPrefix="uc1" TagName="CartRightUserControl" %>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        <asp:ContentPlaceHolder ID="titleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <uc1:cssUserControl runat="server" ID="cssUserControl" />
+    <link href="/pi-layout/assets/css/custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="cssContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    <link href="/pi-layout/assets/css/mobile.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="seoContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <!-- ======= Header ======= -->
+        <uc1:headerUserControl runat="server" ID="headerUserControl" />
+        <!-- End Header -->
+        <asp:ContentPlaceHolder ID="bannerContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        <!-- ======= Hero Section ======= -->
+        
+        <!-- End Hero -->
+        <asp:ContentPlaceHolder ID="bodyContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        <!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <uc1:footerUserControl runat="server" ID="footerUserControl" />
+        <!-- End Footer -->
+        <div id="cd-shadow-layer"></div>
+        <uc1:CartRightUserControl runat="server" ID="CartRightUserControl" />
+        <%--<a href="javascript:;" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>--%>
+        <uc1:jsUserControl runat="server" ID="jsUserControl" />
+        <asp:ContentPlaceHolder ID="jsContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+
+</html>
