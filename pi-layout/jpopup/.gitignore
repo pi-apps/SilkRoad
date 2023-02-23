@@ -1,5 +1,0 @@
-# Ignore RubySASS Generated Cache Files
-.sass-cache/
-
-# Ignore Built CSS & Source map Files
-css/
