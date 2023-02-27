@@ -12,16 +12,16 @@ As a data storage center, capable of sharing data and connecting data portals fo
 It is a goods trading.
 Goods are exchanged through P2P, virtual booths, auction floors, posting news, and chat rooms.
 + Swap Pi Platform: 
-Cryptocurrency Swap
+Cryptocurrency Swap.
 The function of swapping digital currencies for fiat money with the Pi coin.
 + Lucky Pi Platform:
-Game [Lucky Pi]
+Game [Lucky Pi].
 Integrating services and entertainment games with prizes
 + 3D - E Service:
 Provide an intuitive 3D solution.
 Support businesses to increase sales through visual effects.
 + Smart City / NFT:
-Metaverse economic model
+Metaverse economic model.
 Combining e-commerce with online game platforms
 # Link of Pisilkroad
 Demo App Url: 
