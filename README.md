@@ -9,7 +9,7 @@ Its goal isto create applications where Pi can beused to exchange goods and serv
 As a data storage center, capable of sharing data and connecting data portals for customers,we are capable of integrating data into Web3.
 # List of products
 + Pi Silk Road - E-commerce: 
-It is a goods trading
+It is a goods trading.
 Goods are exchanged through P2P, virtual booths, auction floors, posting news, and chat rooms.
 + Swap Pi Platform: 
 Cryptocurrency Swap
