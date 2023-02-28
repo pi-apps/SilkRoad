@@ -34,3 +34,9 @@ Institutional Repository:
 https://github.com/pi-apps/SilkRoad
 Pi Silk Road community: 
 https://discord.gg/6DPqEGgu
+Whitepaper: 
+https://www.youtube.com/watch?v=njINczah72E
+Roadmap:
+https://www.youtube.com/watch?v=DDU1j5Gmd7I&t=3s
+Youtube:
+https://www.youtube.com/watch?v=Gye3ZvfVoiI&t=12s
