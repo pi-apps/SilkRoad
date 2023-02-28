@@ -2,6 +2,7 @@
 An E-commerce, multifunctional utility platform made by Vietnamese Pioneers. 
 It is an application authorized by the PiOS open source license by the open source library of the Pi Network system.
 License: https://github.com/pi-apps/SilkRoad/blob/main/LICENSE.md
+List.md: https://github.com/pi-apps/PiOS/blob/main/list.md
 # Pisilkroad.com
 [Pisilkroad.com] is a third-party utility platform developed by Pioneers
 Its goal isto create applications where Pi can beused to exchange goods and services.
