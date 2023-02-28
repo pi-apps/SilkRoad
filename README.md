@@ -1,4 +1,4 @@
-# SilkRoad
+# SilkRoad for Pi
 An E-commerce, multifunctional utility platform made by Vietnamese Pioneers. 
 It is an application authorized by the PiOS open source license by the open source library of the Pi Network system.
 License: https://github.com/pi-apps/SilkRoad/blob/main/LICENSE.md
