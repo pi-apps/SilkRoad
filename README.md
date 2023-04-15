@@ -1,3 +1,7 @@
+[![DeepSource](https://app.deepsource.com/gh/KOSASIH/SilkRoad.svg/?label=active+issues&show_trend=true&token=XK_SCqtw7dyn8OCqYWH-eazz)](https://app.deepsource.com/gh/KOSASIH/SilkRoad/?ref=repository-badge)
+
+
+
 # SilkRoad for Pi
 An E-commerce, multifunctional utility platform made by Vietnamese Pioneers. 
 It is an application authorized by the PiOS open source license by the open source library of the Pi Network system.
