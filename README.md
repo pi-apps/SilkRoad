@@ -3,6 +3,7 @@
 [![StackHawk](https://github.com/KOSASIH/SilkRoad/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/stackhawk.yml)
 [![Jekyll site CI](https://github.com/KOSASIH/SilkRoad/actions/workflows/jekyll-docker.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/jekyll-docker.yml)
 [![Greetings](https://github.com/KOSASIH/SilkRoad/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/greetings.yml)
+[![Dependency Review](https://github.com/KOSASIH/SilkRoad/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/dependency-review.yml)
 
 # SilkRoad for Pi
 
