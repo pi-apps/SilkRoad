@@ -1,9 +1,5 @@
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/SilkRoad.svg/?label=active+issues&show_trend=true&token=XK_SCqtw7dyn8OCqYWH-eazz)](https://app.deepsource.com/gh/KOSASIH/SilkRoad/?ref=repository-badge)
 [![Mark stale issues and pull requests](https://github.com/KOSASIH/SilkRoad/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/stale.yml)
-[![StackHawk](https://github.com/KOSASIH/SilkRoad/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/stackhawk.yml)
-[![Jekyll site CI](https://github.com/KOSASIH/SilkRoad/actions/workflows/jekyll-docker.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/jekyll-docker.yml)
-[![Greetings](https://github.com/KOSASIH/SilkRoad/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/greetings.yml)
-[![Dependency Review](https://github.com/KOSASIH/SilkRoad/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/dependency-review.yml)
 
 # SilkRoad for Pi
 
