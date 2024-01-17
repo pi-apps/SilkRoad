@@ -1,0 +1,125 @@
+version = 1
+
+[[analyzers]]
+name = "terraform"
+
+[[analyzers]]
+name = "sql"
+
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "scala"
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "ruby"
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[analyzers]]
+name = "php"
+
+  [analyzers.meta]
+  bootstrap_files = ["3000"]
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "ember",
+    "angularjs",
+    "vue",
+    "meteor",
+    "angular"
+  ]
+
+[[analyzers]]
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = "17"
+
+[[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/KOSASIH/SilkRoad"
+
+[[analyzers]]
+name = "docker"
+
+  [analyzers.meta]
+  dockerfile_paths = ["3000"]
+
+[[analyzers]]
+name = "cxx"
+
+[[analyzers]]
+name = "csharp"
+
+[[analyzers]]
+name = "ansible"
+
+[[transformers]]
+name = "dotnet-format"
+
+[[transformers]]
+name = "clang-format"
+
+[[transformers]]
+name = "gofmt"
+
+[[transformers]]
+name = "gofumpt"
+
+[[transformers]]
+name = "google-java-format"
+
+[[transformers]]
+name = "prettier"
+
+[[transformers]]
+name = "standardjs"
+
+[[transformers]]
+name = "php-cs-fixer"
+
+[[transformers]]
+name = "standardrb"
+
+[[transformers]]
+name = "rubocop"
+
+[[transformers]]
+name = "yapf"
+
+[[transformers]]
+name = "autopep8"
+
+[[transformers]]
+name = "isort"
+
+[[transformers]]
+name = "black"
+
+[[transformers]]
+name = "rustfmt"
+
+[[transformers]]
+name = "scalafmt"
