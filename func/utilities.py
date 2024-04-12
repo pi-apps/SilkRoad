@@ -1,17 +1,12 @@
 import random
-import string
 import re
+import string
+
 
 def convert_currency(amount, source_currency, target_currency):
     """Converts the given amount from the source currency to the target currency."""
     # Define the exchange rates
-    exchange_rates = {
-        "USD": 1.0,
-        "EUR": 0.85,
-        "GBP": 0.75,
-        "JPY": 110.0,
-        "CNY": 6.5
-    }
+    exchange_rates = {"USD": 1.0, "EUR": 0.85, "GBP": 0.75, "JPY": 110.0, "CNY": 6.5}
 
     # Convert the source and target currencies to uppercase
     source_currency = source_currency.upper()
@@ -22,10 +17,13 @@ def convert_currency(amount, source_currency, target_currency):
         raise ValueError("Invalid currency")
 
     # Convert the amount to the target currency
-    converted_amount = amount * (exchange_rates[target_currency] / exchange_rates[source_currency])
+    converted_amount = amount * (
+        exchange_rates[target_currency] / exchange_rates[source_currency]
+    )
 
     # Return the converted amount
     return converted_amount
+
 
 def validate_email(email):
     """Validates the given email address."""
@@ -38,6 +36,7 @@ def validate_email(email):
     else:
         return False
 
+
 def generate_random_string(length):
     """Generates a random string of the given length."""
     # Define the characters to use for generating the random string
@@ -48,6 +47,7 @@ def generate_random_string(length):
 
     # Return the random string
     return random_string
+
 
 # Example usage
 amount = 100
