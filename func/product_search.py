@@ -47,7 +47,8 @@ def search_products(image_path):
     features_db = np.array(features_db)
 
     # Calculate the similarity between the uploaded image and the products in the database
-    nbrs = NearestNeighbors(n_neighbors=5, algorithm="ball_tree").fit(features_db)
+    nbrs = NearestNeighbors(n_neighbors=5,
+                            algorithm="ball_tree").fit(features_db)
     distances, indices = nbrs.kneighbors([uploaded_features])
 
     # Return the search results
