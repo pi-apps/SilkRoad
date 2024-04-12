@@ -37,7 +37,7 @@ def preprocess_data(data):
 def build_model():
     """Builds a deep learning model for fraud detection."""
     # Define the input layer
-    inputs = tf.keras.Input(shape=(data.shape[1],))
+    inputs = tf.keras.Input(shape=(data.shape[1], ))
 
     # Add hidden layers
     x = tf.keras.layers.Dense(64, activation="relu")(inputs)
@@ -50,7 +50,9 @@ def build_model():
     model = tf.keras.Model(inputs=inputs, outputs=outputs)
 
     # Compile the model
-    model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
+    model.compile(optimizer="adam",
+                  loss="binary_crossentropy",
+                  metrics=["accuracy"])
 
     # Return the model
     return model
@@ -61,7 +63,8 @@ def train_model(model, X_train, y_train):
     # Define the callbacks
     callbacks = [
         tf.keras.callbacks.EarlyStopping(patience=5, monitor="val_loss"),
-        tf.keras.callbacks.ModelCheckpoint("best_model.h5", save_best_only=True),
+        tf.keras.callbacks.ModelCheckpoint("best_model.h5",
+                                           save_best_only=True),
     ]
 
     # Train the model
@@ -126,19 +129,15 @@ if __name__ == "__main__":
     print("F1 score:", f1_score(y_test, y_pred > 0.5))
 
     # Detect fraud in a new transaction
-    new_transaction = pd.DataFrame(
-        [
-            {
-                "country": "US",
-                "card_type": "credit",
-                "amount": "100.50",
-                "hour": 12,
-                "day": 15,
-                "month": 3,
-                "year": 2023,
-            }
-        ]
-    )
+    new_transaction = pd.DataFrame([{
+        "country": "US",
+        "card_type": "credit",
+        "amount": "100.50",
+        "hour": 12,
+        "day": 15,
+        "month": 3,
+        "year": 2023,
+    }])
     fraud_prob, is_fraud = detect_fraud(model, new_transaction)
     if is_fraud == 1:
         print("Fraud detected!")
