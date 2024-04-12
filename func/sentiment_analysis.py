@@ -1,14 +1,17 @@
 import re
+
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.pipeline import Pipeline
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
 
 # Define the sentiment analysis algorithm
+
+
 def preprocess_text(text):
     """Preprocesses the text by removing stopwords and lemmatizing the words."""
     # Tokenize the text
@@ -28,19 +31,20 @@ def preprocess_text(text):
     # Return the preprocessed text
     return text
 
+
 def train_model(X_train, y_train):
     """Trains a sentiment analysis model on the given training data."""
     # Define the pipeline
-    pipeline = Pipeline([
-        ("vectorizer", TfidfVectorizer()),
-        ("classifier", LogisticRegression())
-    ])
+    pipeline = Pipeline(
+        [("vectorizer", TfidfVectorizer()), ("classifier", LogisticRegression())]
+    )
 
     # Train the model
     model = pipeline.fit(X_train, y_train)
 
     # Return the trained model
     return model
+
 
 def analyze_sentiment(model, text):
     """Analyzes the sentiment of the given text using the trained model."""
@@ -58,6 +62,7 @@ def analyze_sentiment(model, text):
     # Return the predicted sentiment
     return y_pred[0]
 
+
 # Example usage
 if __name__ == "__main__":
     # Load the customer reviews
@@ -69,14 +74,17 @@ if __name__ == "__main__":
     ]
 
     # Preprocess the reviews
-    reviews = [{"text": preprocess_text(review["text"]), "sentiment": review["sentiment"]} for review in reviews]
+    reviews = [
+        {"text": preprocess_text(review["text"]), "sentiment": review["sentiment"]}
+        for review in reviews
+    ]
 
     # Split the reviews into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(
         [review["text"] for review in reviews],
         [review["sentiment"] for review in reviews],
         test_size=0.2,
-        random_state=42
+        random_state=42,
     )
 
     # Train the sentiment analysis model
