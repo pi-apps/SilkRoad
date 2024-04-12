@@ -1,4 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Pi-Network-violet)
+![Static Badge](https://img.shields.io/badge/Silk-Road-white)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/SilkRoad.svg/?label=active+issues&show_trend=true&token=XK_SCqtw7dyn8OCqYWH-eazz)](https://app.deepsource.com/gh/KOSASIH/SilkRoad/?ref=repository-badge)
 [![Mark stale issues and pull requests](https://github.com/KOSASIH/SilkRoad/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/SilkRoad/actions/workflows/stale.yml)
 
