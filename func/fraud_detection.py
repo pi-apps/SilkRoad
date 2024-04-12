@@ -1,11 +1,14 @@
-import pandas as pd
-import numpy as np
 import re
+
+import numpy as np
+import pandas as pd
 import tensorflow as tf
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 # Define the fraud detection algorithm
+
+
 def preprocess_data(data):
     """Preprocesses the transaction data."""
     # Replace missing values with the mean of the column
@@ -30,6 +33,7 @@ def preprocess_data(data):
     # Return the preprocessed data
     return data
 
+
 def build_model():
     """Builds a deep learning model for fraud detection."""
     # Define the input layer
@@ -51,13 +55,14 @@ def build_model():
     # Return the model
     return model
 
+
 def train_model(model, X_train, y_train):
     """Trains the fraud detection model."""
     # Define the callbacks
     callbacks = [
         tf.keras.callbacks.EarlyStopping(patience=5, monitor="val_loss"),
-        tf.keras.callbacks.ModelCheckpoint("best_model.h5", save_best_only=True)
-]
+        tf.keras.callbacks.ModelCheckpoint("best_model.h5", save_best_only=True),
+    ]
 
     # Train the model
     model.fit(
@@ -66,7 +71,7 @@ def train_model(model, X_train, y_train):
         epochs=10,
         batch_size=32,
         validation_split=0.2,
-        callbacks=callbacks
+        callbacks=callbacks,
     )
 
     # Load the best model
@@ -74,6 +79,7 @@ def train_model(model, X_train, y_train):
 
     # Return the trained model
     return model
+
 
 def detect_fraud(model, transaction):
     """Detects fraud in the given transaction using the trained model."""
@@ -91,6 +97,7 @@ def detect_fraud(model, transaction):
     # Return the fraud probability and prediction
     return fraud_prob, np.round(fraud_prob)
 
+
 # Example usage
 if __name__ == "__main__":
     # Load the transaction data
@@ -104,7 +111,7 @@ if __name__ == "__main__":
         transactions.drop(columns=["fraud"]),
         transactions["fraud"],
         test_size=0.2,
-        random_state=42
+        random_state=42,
     )
 
     # Build and train the fraud detection model
@@ -119,15 +126,19 @@ if __name__ == "__main__":
     print("F1 score:", f1_score(y_test, y_pred > 0.5))
 
     # Detect fraud in a new transaction
-    new_transaction = pd.DataFrame([{
-        "country": "US",
-        "card_type": "credit",
-        "amount": "100.50",
-        "hour": 12,
-        "day": 15,
-        "month": 3,
-        "year": 2023
-    }])
+    new_transaction = pd.DataFrame(
+        [
+            {
+                "country": "US",
+                "card_type": "credit",
+                "amount": "100.50",
+                "hour": 12,
+                "day": 15,
+                "month": 3,
+                "year": 2023,
+            }
+        ]
+    )
     fraud_prob, is_fraud = detect_fraud(model, new_transaction)
     if is_fraud == 1:
         print("Fraud detected!")
