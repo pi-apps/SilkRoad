@@ -1,6 +1,7 @@
 import logging
 import sys
 
+
 def handle_exception(exc_type, exc_value, exc_traceback):
     """Handles exceptions and logs the error message."""
     # Create a logger object
@@ -30,6 +31,7 @@ def handle_exception(exc_type, exc_value, exc_traceback):
     # Exit the program
     sys.exit(1)
 
+
 def log_error(message):
     """Logs the given error message."""
     # Create a logger object
@@ -53,10 +55,12 @@ def log_error(message):
     # Log the error message
     logger.error(message)
 
+
 def display_error_message(message):
     """Displays the given error message to the user."""
     # Display the error message
     print(message)
+
 
 # Example usage
 try:
