@@ -1,9 +1,10 @@
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from statsmodels.tsa.statespace.sarimax import SARIMAX
-from sklearn.model_selection import train_test_split
+import numpy as np
+import pandas as pd
 from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+
 
 # Define the predictive analytics algorithm
 def preprocess_data(data):
@@ -24,6 +25,7 @@ def preprocess_data(data):
     # Return the preprocessed data
     return data
 
+
 def train_model(X_train, y_train):
     """Trains the predictive analytics model."""
     # Define the model
@@ -35,6 +37,7 @@ def train_model(X_train, y_train):
     # Return the trained model
     return model
 
+
 def predict_inventory(model, transaction):
     """Predicts the inventory level for the given transaction using the trained model."""
     # Preprocess the transaction data
@@ -45,10 +48,12 @@ def predict_inventory(model, transaction):
     X = vectorizer.transform(transaction)
 
     # Predict the inventory level
-    inventory_level = model["model"].predict(start=len(X_train), end=len(X_train) + len(X) - 1)
+    inventory_level = model["model"].predict(start=len(X_train),
+                                             end=len(X_train) + len(X) - 1)
 
     # Return the predicted inventory level
     return inventory_level
+
 
 # Example usage
 if __name__ == "__main__":
@@ -63,14 +68,15 @@ if __name__ == "__main__":
         inventory.drop(columns=["inventory"]),
         inventory["inventory"],
         test_size=0.2,
-        random_state=42
+        random_state=42,
     )
 
     # Train the predictive analytics model
     model = train_model(X_train, y_train)
 
     # Evaluate the model on the testing set
-    y_pred = model.predict(start=len(X_train), end=len(X_train) + len(X_test) - 1)
+    y_pred = model.predict(start=len(X_train),
+                           end=len(X_train) + len(X_test) - 1)
     print("Mean squared error:", mean_squared_error(y_test, y_pred))
     print("R^2 score:", r2_score(y_test, y_pred))
 
@@ -83,7 +89,7 @@ if __name__ == "__main__":
         "quantity_sold": 10,
         "quantity_returned": 2,
         "lead_time": 14,
-        "order_frequency": 0.5
+        "order_frequency": 0.5,
     }])
     inventory_level = predict_inventory(model, new_transaction)
     print(f"Predicted inventory level: {inventory_level}")
