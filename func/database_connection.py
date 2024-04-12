@@ -1,5 +1,6 @@
 import psycopg2
 
+
 def connect_to_db():
     """Connects to the database and returns a connection object."""
     # Define the connection parameters
@@ -7,7 +8,7 @@ def connect_to_db():
         "host": "localhost",
         "database": "mydatabase",
         "user": "myuser",
-        "password": "mypassword"
+        "password": "mypassword",
     }
 
     # Connect to the database
@@ -15,6 +16,7 @@ def connect_to_db():
 
     # Return the connection object
     return connection
+
 
 def query_db(query, params=None):
     """Queries the database and returns the result as a list of tuples."""
@@ -40,10 +42,12 @@ def query_db(query, params=None):
     # Return the result
     return result
 
+
 def close_db_connection(connection):
     """Closes the given database connection."""
     # Close the connection
     connection.close()
+
 
 # Example usage
 query = "SELECT * FROM products WHERE price > %s"
