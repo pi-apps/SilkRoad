@@ -1,5 +1,6 @@
 import re
 
+
 def search_products(query):
     """Searches for products based on the given query."""
     # Connect to the database
@@ -12,7 +13,10 @@ def search_products(query):
     query = re.escape(query)
 
     # Search for products with the given query in the name or description
-    cursor.execute("SELECT id, name, description FROM products WHERE name ILIKE %s OR description ILIKE %s", ("%" + query + "%", "%" + query + "%"))
+    cursor.execute(
+        "SELECT id, name, description FROM products WHERE name ILIKE %s OR description ILIKE %s",
+        ("%" + query + "%", "%" + query + "%"),
+    )
     products = [row for row in cursor.fetchall()]
 
     # Close the cursor and connection
@@ -21,6 +25,7 @@ def search_products(query):
 
     # Return the search results
     return products
+
 
 def filter_products(filters):
     """Filters products based on the given filters."""
@@ -38,7 +43,10 @@ def filter_products(filters):
         where_clause += f"{filter_name} = %s"
 
     # Filter the products based on the given filters
-    cursor.execute("SELECT id, name, description FROM products WHERE " + where_clause, tuple(filter_value.values()))
+    cursor.execute(
+        "SELECT id, name, description FROM products WHERE " + where_clause,
+        tuple(filter_value.values()),
+    )
     products = [row for row in cursor.fetchall()]
 
     # Close the cursor and connection
@@ -47,6 +55,7 @@ def filter_products(filters):
 
     # Return the filtered products
     return products
+
 
 def sort_products(sort_by, order):
     """Sorts products based on the given sorting criteria."""
@@ -68,7 +77,9 @@ def sort_products(sort_by, order):
         order_clause += " DESC"
 
     # Sort the products based on the given sorting criteria
-    cursor.execute("SELECT id, name, description FROM products ORDER BY " + order_clause)
+    cursor.execute(
+        "SELECT id, name, description FROM products ORDER BY " + order_clause
+    )
     products = [row for row in cursor.fetchall()]
 
     # Close the cursor and connection
@@ -77,6 +88,7 @@ def sort_products(sort_by, order):
 
     # Return the sorted products
     return products
+
 
 # Example usage
 search_results = search_products("shirt")
