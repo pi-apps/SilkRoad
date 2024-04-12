@@ -35,9 +35,8 @@ def preprocess_text(text):
 def train_model(X_train, y_train):
     """Trains a sentiment analysis model on the given training data."""
     # Define the pipeline
-    pipeline = Pipeline(
-        [("vectorizer", TfidfVectorizer()), ("classifier", LogisticRegression())]
-    )
+    pipeline = Pipeline([("vectorizer", TfidfVectorizer()),
+                         ("classifier", LogisticRegression())])
 
     # Train the model
     model = pipeline.fit(X_train, y_train)
@@ -67,17 +66,26 @@ def analyze_sentiment(model, text):
 if __name__ == "__main__":
     # Load the customer reviews
     reviews = [
-        {"text": "This product is amazing! I love it!", "sentiment": 1},
-        {"text": "This product is okay, I guess.", "sentiment": 0},
-        {"text": "This product is terrible. I hate it.", "sentiment": -1},
+        {
+            "text": "This product is amazing! I love it!",
+            "sentiment": 1
+        },
+        {
+            "text": "This product is okay, I guess.",
+            "sentiment": 0
+        },
+        {
+            "text": "This product is terrible. I hate it.",
+            "sentiment": -1
+        },
         # Add more reviews here...
     ]
 
     # Preprocess the reviews
-    reviews = [
-        {"text": preprocess_text(review["text"]), "sentiment": review["sentiment"]}
-        for review in reviews
-    ]
+    reviews = [{
+        "text": preprocess_text(review["text"]),
+        "sentiment": review["sentiment"]
+    } for review in reviews]
 
     # Split the reviews into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(
