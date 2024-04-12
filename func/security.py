@@ -1,9 +1,11 @@
-import os
 import base64
 import hashlib
 import hmac
 import json
+import os
+
 from cryptography.fernet import Fernet
+
 
 def encrypt_data(data):
     """Encrypts the given data using a symmetric encryption algorithm."""
@@ -19,16 +21,20 @@ def encrypt_data(data):
     # Return the encrypted data and the key
     return encrypted_data, key
 
+
 def decrypt_data(encrypted_data, key):
     """Decrypts the given encrypted data using the given key."""
     # Create a new Fernet instance with the key
     f = Fernet(key)
 
     # Decrypt the data using the Fernet instance
+
+
 decrypted_data = f.decrypt(encrypted_data)
 
-    # Return the decrypted data
-    return decrypted_data.decode()
+# Return the decrypted data
+return decrypted_data.decode()
+
 
 def hash_password(password):
     """Hashes the given password using a hashing algorithm."""
@@ -37,6 +43,7 @@ def hash_password(password):
 
     # Return the hashed password
     return hashed_password
+
 
 def check_password(password, hashed_password):
     """Checks if the given password matches the hashed password."""
@@ -51,6 +58,7 @@ def check_password(password, hashed_password):
     # The passwords do not match
     return False
 
+
 def generate_hmac(data, secret_key):
     """Generates an HMAC hash of the given data using the given secret key."""
     # Create an HMAC hash object
@@ -61,6 +69,7 @@ def generate_hmac(data, secret_key):
 
     # Return the HMAC hash
     return hmac_hash
+
 
 def verify_hmac(data, hmac_hash, secret_key):
     """Verifies if the given HMAC hash matches the given data using the given secret key."""
@@ -75,13 +84,14 @@ def verify_hmac(data, hmac_hash, secret_key):
     # The HMAC hashes do not match
     return False
 
+
 def monitor_activity(logs):
     """Monitors user activity logs for suspicious activity."""
     # Define a list of suspicious activity patterns
     suspicious_patterns = [
         "deleted_multiple_records",
         "accessed_sensitive_data",
-        "modified_critical_settings"
+        "modified_critical_settings",
     ]
 
     # Analyze the logs for suspicious activity
