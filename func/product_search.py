@@ -1,11 +1,14 @@
 import os
 import sys
+
 import numpy as np
 import tensorflow as tf
 from PIL import Image
 from sklearn.neighbors import NearestNeighbors
 
 # Define the image recognition algorithm
+
+
 def extract_features(image_path):
     """Extracts features from the given image."""
     # Load the pre-trained image recognition model
@@ -25,6 +28,7 @@ def extract_features(image_path):
 
     # Return the features
     return features[0]
+
 
 def search_products(image_path):
     """Searches for products similar to the given image."""
@@ -52,6 +56,7 @@ def search_products(image_path):
         result = results[index]
         search_results.append(result)
     return search_results
+
 
 # Example usage
 if __name__ == "__main__":
