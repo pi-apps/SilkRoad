@@ -1,6 +1,8 @@
 import os
 import uuid
+
 from PIL import Image
+
 
 def add_product(name, description, price, image_file):
     """Adds a new product with the given name, description, price, and image."""
@@ -14,6 +16,7 @@ def add_product(name, description, price, image_file):
     # ...
 
     return product_id
+
 
 def edit_product(product_id, name, description, price, image_file):
     """Edits an existing product with the given ID, name, description, price, and image."""
@@ -31,6 +34,7 @@ def edit_product(product_id, name, description, price, image_file):
 
     return True
 
+
 def delete_product(product_id):
     """Deletes a product with the given ID."""
     # Retrieve the existing product information from the database
@@ -44,6 +48,7 @@ def delete_product(product_id):
 
     return True
 
+
 def upload_image_to_cloud_storage(image_file):
     """Uploads an image file to a cloud storage service."""
     # Generate a unique filename for the image
@@ -54,6 +59,7 @@ def upload_image_to_cloud_storage(image_file):
 
     return f"https://example.com/{filename}"
 
+
 def delete_image_from_cloud_storage(image_url):
     """Deletes an image file from a cloud storage service."""
     # Extract the filename from the image URL
@@ -63,6 +69,7 @@ def delete_image_from_cloud_storage(image_url):
     # ...
 
     return True
+
 
 def generate_qr_code(product_id, image_file):
     """Generates a QR code for a product with the given ID and saves it as an image file."""
