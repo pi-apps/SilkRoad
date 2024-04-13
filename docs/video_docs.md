@@ -6,7 +6,7 @@ The video package contains functions for working with video and audio data, such
 
 ### VideoEncoder
 
-The VideoEncoder class allows you to encode video frames into a video file. Here's an example of how to use it: [Video Encoder](docs/example/video_encoder.py) 
+The VideoEncoder class allows you to encode video frames into a video file. Here's an example of how to use it: [Video Encoder](example/video_encoder.py) 
 
 ### VideoDecoder
 
