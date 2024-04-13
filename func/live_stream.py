@@ -1,15 +1,18 @@
-import os
 import asyncio
-import sys
+import os
 import subprocess
+import sys
 from typing import Optional
 
 import aiohttp
 import aiortc
 import cv2
 
+
 class LiveStream:
-    def __init__(self, session: aiohttp.ClientSession, stream_name: str, broadcaster_id: str):
+
+    def __init__(self, session: aiohttp.ClientSession, stream_name: str,
+                 broadcaster_id: str):
         self.session = session
         self.stream_name = stream_name
         self.broadcaster_id = broadcaster_id
@@ -32,7 +35,8 @@ class LiveStream:
 
     async def set_remote_description(self, sdp: str):
         # Set the remote description
-        await self.pc.setRemoteDescription(aiortc.RTCSessionDescription(sdp=sdp, type="offer"))
+        await self.pc.setRemoteDescription(
+            aiortc.RTCSessionDescription(sdp=sdp, type="offer"))
 
     async def add_ice_candidate(self, candidate: aiortc.RTCIceCandidate):
         # Add an ICE candidate
@@ -40,8 +44,20 @@ class LiveStream:
 
     async def start_stream(self, url: str):
         # Start the live stream
-        cmd = ["ffmpeg", "-re", "-i", "path/to/video/source", "-c:v", "copy", "-f", "flv", url]
-        subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        cmd = [
+            "ffmpeg",
+            "-re",
+            "-i",
+            "path/to/video/source",
+            "-c:v",
+            "copy",
+            "-f",
+            "flv",
+            url,
+        ]
+        subprocess.Popen(cmd,
+                         stdout=subprocess.DEVNULL,
+                         stderr=subprocess.DEVNULL)
 
     async def stop_stream(self):
         # Stop the live stream
@@ -58,7 +74,11 @@ class LiveStream:
     def _get_video_frame(self) -> aiortc.MediaStreamTrack.Frame:
         # Get the next video frame
         frame = cv2.imencode(".jpg", self._get_video_image())[1].tobytes()
-        return aiortc.MediaStreamTrack.Frame(data=frame, format="jpeg", width=1280, height=720, timestamp=0)
+        return aiortc.MediaStreamTrack.Frame(data=frame,
+                                             format="jpeg",
+                                             width=1280,
+                                             height=720,
+                                             timestamp=0)
 
     def _get_video_image(self) -> cv2.UMat:
         # Get the next video image
@@ -66,8 +86,11 @@ class LiveStream:
         # to fit your specific use case.
         return cv2.imread("path/to/video/source")
 
+
 class LiveStreamViewer:
-    def __init__(self, session: aiohttp.ClientSession, stream_name: str, viewer_id: str):
+
+    def __init__(self, session: aiohttp.ClientSession, stream_name: str,
+                 viewer_id: str):
         self.session = session
         self.stream_name = stream_name
         self.viewer_id = viewer_id
@@ -81,7 +104,8 @@ class LiveStreamViewer:
         self.pc.addTrack(aiortc.VideoStreamTrack())
 
         # Set the remote description
-        await self.pc.setRemoteDescription(aiortc.RTCSessionDescription(sdp=offer, type="offer"))
+        await self.pc.setRemoteDescription(
+            aiortc.RTCSessionDescription(sdp=offer, type="offer"))
 
         # Create an answer
         answer = await self.pc.createAnswer()
@@ -94,8 +118,11 @@ class LiveStreamViewer:
         # Add an ICE candidate
         await self.pc.addIceCandidate(candidate)
 
+
 class SignalingServer:
-    def __init__(self, session: aiohttp.ClientSession, live_streams: dict[str, LiveStream]):
+
+    def __init__(self, session: aiohttp.ClientSession,
+                 live_streams: dict[str, LiveStream]):
         self.session = session
         self.live_streams = live_streams
 
@@ -122,11 +149,18 @@ class SignalingServer:
                     live_stream = self.live_streams[data["stream_name"]]
 
                     # Create an answer for the offer
-                    viewer = LiveStreamViewer(self.session, live_stream.stream_name, sender_id)
+                    viewer = LiveStreamViewer(self.session,
+                                              live_stream.stream_name,
+                                              sender_id)
                     answer = await viewer.create_answer(data["offer"])
 
                     # Send the answer to the server
-                    await ws.send_json({"type": "answer", "answer": answer, "stream_name": live_stream.stream_name, "sender_id": viewer.viewer_id})
+                    await ws.send_json({
+                        "type": "answer",
+                        "answer": answer,
+                        "stream_name": live_stream.stream_name,
+                        "sender_id": viewer.viewer_id,
+                    })
 
                     # Add the viewer to the list of viewers
                     await live_stream.add_viewer(viewer)
@@ -140,7 +174,8 @@ class SignalingServer:
                         if viewer.viewer_id == sender_id:
                             break
                     if viewer is not None:
-                        await viewer.add_ice_candidate(aiortc.RTCIceCandidate(**data["candidate"]))
+                        await viewer.add_ice_candidate(
+                            aiortc.RTCIceCandidate(**data["candidate"]))
                 elif message_type == "stream_stopped":
                     # Get the live stream from the ID
                     live_stream = self.live_streams[data["stream_name"]]
@@ -154,7 +189,11 @@ class SignalingServer:
                         await live_stream.remove_viewer(viewer)
 
                 # Send an acknowledgment message to the server
-                await ws.send_json({"type": "acknowledgment", "sender_id": sender_id})
+                await ws.send_json({
+                    "type": "acknowledgment",
+                    "sender_id": sender_id
+                })
+
 
 async def main():
     # Create an aiohttp session
@@ -164,7 +203,8 @@ async def main():
     live_stream = LiveStream(session, "example_stream", "broadcaster_id")
 
     # Create a new SignalingServer object
-    signaling_server = SignalingServer(session, {"example_stream": live_stream})
+    signaling_server = SignalingServer(session,
+                                       {"example_stream": live_stream})
 
     # Start the live stream
     await live_stream.start_stream("rtmp://localhost/live/example_stream")
@@ -174,6 +214,7 @@ async def main():
 
     # Close the aiohttp session
     await session.close()
+
 
 if __name__ == "__main__":
     # Run the main function

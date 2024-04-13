@@ -1,12 +1,15 @@
-import os
 import asyncio
+import os
 from typing import Optional
 
 import aiohttp
 import aiortc
 
+
 class VideoCall:
-    def __init__(self, session: aiohttp.ClientSession, room_name: str, user_id: str):
+
+    def __init__(self, session: aiohttp.ClientSession, room_name: str,
+                 user_id: str):
         self.session = session
         self.room_name = room_name
         self.user_id = user_id
@@ -29,7 +32,8 @@ class VideoCall:
 
     async def set_remote_description(self, sdp: str):
         # Set the remote description
-        await self.pc.setRemoteDescription(aiortc.RTCSessionDescription(sdp=sdp, type="offer"))
+        await self.pc.setRemoteDescription(
+            aiortc.RTCSessionDescription(sdp=sdp, type="offer"))
 
     async def add_ice_candidate(self, candidate: aiortc.RTCIceCandidate):
         # Add an ICE candidate
@@ -38,6 +42,7 @@ class VideoCall:
     async def close(self):
         # Close the RTCPeerConnection
         await self.pc.close()
+
 
 async def main():
     # Create an aiohttp ClientSession
@@ -61,10 +66,12 @@ async def main():
             candidate = input("Enter ICE candidate (or 'done' to finish): ")
             if candidate == "done":
                 break
-            await video_call.add_ice_candidate(aiortc.RTCIceCandidate(candidate))
+            await video_call.add_ice_candidate(
+                aiortc.RTCIceCandidate(candidate))
 
         # Close the VideoCall
         await video_call.close()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

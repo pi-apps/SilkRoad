@@ -31,5 +31,3 @@ The adjust_audio_settings function allows you to adjust the audio settings, such
 ### Live Stream Package
 
 #### LiveStream
-
-The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it: [Live Stream](example/live_stream.py)
