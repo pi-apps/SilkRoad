@@ -26,6 +26,6 @@ The adjust_video_settings function allows you to adjust the video settings, such
 
 ### adjust_audio_settings
 
-The adjust_audio_settings function allows you to adjust the audio settings, such as changing the audio codec or the bitrate. Here's an example of how to use it:[Adjust Audio Settings](example/adjust_audio_settings.py)
+
 
 
