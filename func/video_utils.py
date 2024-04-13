@@ -1,8 +1,11 @@
-import cv2
-import numpy as np
 import threading
 
+import cv2
+import numpy as np
+
+
 class VideoEncoder:
+
     def __init__(self, width: int, height: int, fps: int, bitrate: int):
         # Initialize the video encoder
         self.width = width
@@ -10,7 +13,8 @@ class VideoEncoder:
         self.fps = fps
         self.bitrate = bitrate
         self.encoder = cv2.VideoWriter_fourcc(*"H264")
-        self.output = cv2.VideoWriter("output.mp4", self.encoder, self.fps, (self.width, self.height), False)
+        self.output = cv2.VideoWriter("output.mp4", self.encoder, self.fps,
+                                      (self.width, self.height), False)
 
     def encode_frame(self, frame: np.ndarray):
         # Encode a single video frame
@@ -20,7 +24,9 @@ class VideoEncoder:
         # Release the video encoder
         self.output.release()
 
+
 class VideoDecoder:
+
     def __init__(self, width: int, height: int, fps: int):
         # Initialize the video decoder
         self.width = width
@@ -39,13 +45,16 @@ class VideoDecoder:
         # Release the video decoder
         self.decoder.release()
 
+
 class AudioEncoder:
+
     def __init__(self, sample_rate: int, bitrate: int):
         # Initialize the audio encoder
         self.sample_rate = sample_rate
         self.bitrate = bitrate
         self.encoder = cv2.AudioWriter_fourcc(*"AAC")
-        self.output = cv2.AudioWriter("output.aac", self.encoder, self.sample_rate, 1, False)
+        self.output = cv2.AudioWriter("output.aac", self.encoder,
+                                      self.sample_rate, 1, False)
 
     def encode_frame(self, frame: np.ndarray):
         # Encode a single audio frame
@@ -55,7 +64,9 @@ class AudioEncoder:
         # Release the audio encoder
         self.output.release()
 
+
 class AudioDecoder:
+
     def __init__(self, sample_rate: int):
         # Initialize the audio decoder
         self.sample_rate = sample_rate
@@ -72,11 +83,14 @@ class AudioDecoder:
         # Release the audio decoder
         self.decoder.release()
 
+
 def adjust_video_settings(width: int, height: int, fps: int, bitrate: int):
     # Adjust the video settings
     encoder = cv2.VideoWriter_fourcc(*"H264")
-    output = cv2.VideoWriter("output.mp4", encoder, fps, (width, height), False)
+    output = cv2.VideoWriter("output.mp4", encoder, fps, (width, height),
+                             False)
     return output
+
 
 def adjust_audio_settings(sample_rate: int, bitrate: int):
     # Adjust the audio settings
