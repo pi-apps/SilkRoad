@@ -34,3 +34,6 @@ The adjust_audio_settings function allows you to adjust the audio settings, such
 
 The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it: [Live Stream](example/live_stream.py) 
 
+These are just examples of how to use the video and live streaming functionality. You can modify the code to suit your specific use case and requirements.
+
+Please note that this implementation is a basic version, and you may need to modify it to fit your specific use case. Additionally, this code only works with OpenCV and may not be compatible with other video and audio processing libraries. Make sure to test the functionality thoroughly before using it in a production environment.
