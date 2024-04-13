@@ -10,22 +10,23 @@ The VideoEncoder class allows you to encode video frames into a video file. Here
 
 ### VideoDecoder
 
-The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it:
+The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it: [Video Decoder](example/video_decoder.py)
 
 ### AudioEncoder
 
-The AudioEncoder class allows you to encode audio frames into an audio file. Here's an example of how to use it:
+The AudioEncoder class allows you to encode audio frames into an audio file. Here's an example of how to use it: [Audio Encoder](example/audio_encoder.py)
 
 ### AudioDecoder
 
-The AudioDecoder class allows you to decode audio frames from an audio file. Here's an example of how to use it:
+The AudioDecoder class allows you to decode audio frames from an audio file. Here's an example of how to use it: [Audio Decoder](example/audio_decoder.py)
 
 ### adjust_video_settings
 
-The adjust_video_settings function allows you to adjust the video settings, such as changing the video codec or the bitrate. Here's an example of how to use it:
+The adjust_video_settings function allows you to adjust the video settings, such as changing the video codec or the bitrate. Here's an example of how to use it: [Adjust Video Settings](example/adjust_video_settings.py)
 
-### Live Stream Package
+### adjust_audio_settings
 
-#### LiveStream
 
-The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it:
+
+
+
