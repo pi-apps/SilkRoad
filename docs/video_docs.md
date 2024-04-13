@@ -26,7 +26,3 @@ The adjust_video_settings function allows you to adjust the video settings, such
 
 ### adjust_audio_settings
 
-
-
-
-
