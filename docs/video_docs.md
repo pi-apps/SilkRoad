@@ -6,11 +6,11 @@ The video package contains functions for working with video and audio data, such
 
 ### VideoEncoder
 
-The VideoEncoder class allows you to encode video frames into a video file. Here's an example of how to use it: [Video Encoder](example/video_encoder.py) 
+The VideoEncoder class allows you to encode video frames into a video file. Here's an example of how to use it: [Video Encoder](example/video_encoder.py)
 
 ### VideoDecoder
 
-The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it: [Video Decoder](example/video_decoder.py) 
+The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it: [Video Decoder](example/video_decoder.py)
 
 ### AudioEncoder
 
@@ -26,7 +26,6 @@ The adjust_video_settings function allows you to adjust the video settings, such
 
 ### Live Stream Package
 
-####  LiveStream
+#### LiveStream
 
 The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it:
-
