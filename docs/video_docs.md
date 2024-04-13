@@ -18,7 +18,7 @@ The AudioEncoder class allows you to encode audio frames into an audio file. Her
 
 ### AudioDecoder
 
-The AudioDecoder class allows you to decode audio frames from an audio file. Here's an example of how to use it:
+The AudioDecoder class allows you to decode audio frames from an audio file. Here's an example of how to use it: [Audio Decoder](example/audio_decoder.py) 
 
 ### adjust_video_settings
 
