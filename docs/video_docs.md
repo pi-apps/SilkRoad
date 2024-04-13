@@ -22,10 +22,11 @@ The AudioDecoder class allows you to decode audio frames from an audio file. Her
 
 ### adjust_video_settings
 
-The adjust_video_settings function allows you to adjust the video settings, such as changing the video codec or the bitrate. Here's an example of how to use it:
+The adjust_video_settings function allows you to adjust the video settings, such as changing the video codec or the bitrate. Here's an example of how to use it: [Adjust Video Settings](example/adjust_video_settings.py)
 
-### Live Stream Package
+### adjust_audio_settings
 
-#### LiveStream
 
-The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it:
+
+
+
