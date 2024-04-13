@@ -1,9 +1,12 @@
-import unittest
-import cv2
 import threading
 import time
+import unittest
+
+import cv2
+
 
 class TestVideoEncoder(unittest.TestCase):
+
     def setUp(self):
         # Initialize the video encoder
         self.width = 1280
@@ -11,7 +14,8 @@ class TestVideoEncoder(unittest.TestCase):
         self.fps = 30
         self.bitrate = 2048000
         self.encoder = cv2.VideoWriter_fourcc(*"H264")
-        self.output = cv2.VideoWriter("output.mp4", self.encoder, self.fps, (self.width, self.height), False)
+        self.output = cv2.VideoWriter("output.mp4", self.encoder, self.fps,
+                                      (self.width, self.height), False)
 
     def tearDown(self):
         # Release the video encoder
@@ -22,7 +26,9 @@ class TestVideoEncoder(unittest.TestCase):
         frame = cv2.imread("input.jpg")
         self.output.write(frame)
 
+
 class TestVideoDecoder(unittest.TestCase):
+
     def setUp(self):
         # Initialize the video decoder
         self.width = 1280
@@ -40,13 +46,16 @@ class TestVideoDecoder(unittest.TestCase):
         self.assertTrue(ret)
         self.assertIsNotNone(frame)
 
+
 class TestAudioEncoder(unittest.TestCase):
+
     def setUp(self):
         # Initialize the audio encoder
         self.sample_rate = 48000
         self.bitrate = 128000
         self.encoder = cv2.AudioWriter_fourcc(*"AAC")
-        self.output = cv2.AudioWriter("output.aac", self.encoder, self.sample_rate, 1, False)
+        self.output = cv2.AudioWriter("output.aac", self.encoder,
+                                      self.sample_rate, 1, False)
 
     def tearDown(self):
         # Release the audio encoder
@@ -57,7 +66,9 @@ class TestAudioEncoder(unittest.TestCase):
         frame = cv2.imread("input.wav", cv2.IMREAD_UNCHANGED)
         self.output.write(frame)
 
+
 class TestAudioDecoder(unittest.TestCase):
+
     def setUp(self):
         # Initialize the audio decoder
         self.sample_rate = 48000
@@ -73,7 +84,9 @@ class TestAudioDecoder(unittest.TestCase):
         self.assertTrue(ret)
         self.assertIsNotNone(frame)
 
+
 class TestVideoSettings(unittest.TestCase):
+
     def test_adjust_video_settings(self):
         # Test adjusting video settings
         width = 1280
@@ -83,13 +96,16 @@ class TestVideoSettings(unittest.TestCase):
         output = adjust_video_settings(width, height, fps, bitrate)
         self.assertIsNotNone(output)
 
+
 class TestAudioSettings(unittest.TestCase):
+
     def test_adjust_audio_settings(self):
         # Test adjusting audio settings
         sample_rate = 48000
         bitrate = 128000
         output = adjust_audio_settings(sample_rate, bitrate)
         self.assertIsNotNone(output)
+
 
 if __name__ == "__main__":
     unittest.main()
