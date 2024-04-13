@@ -10,7 +10,7 @@ The VideoEncoder class allows you to encode video frames into a video file. Here
 
 ### VideoDecoder
 
-The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it:
+The VideoDecoder class allows you to decode video frames from a video file. Here's an example of how to use it: [Video Decoder](example/video_decoder.py) 
 
 ### AudioEncoder
 
