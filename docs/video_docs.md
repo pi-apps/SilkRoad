@@ -26,7 +26,6 @@ The adjust_video_settings function allows you to adjust the video settings, such
 
 ### Live Stream Package
 
-####  LiveStream
+#### LiveStream
 
 The LiveStream class allows you to set up and manage live streams, allowing sellers to broadcast video content to multiple customers at once. Here's an example of how to use it:
-
