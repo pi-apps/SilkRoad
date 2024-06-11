@@ -1,0 +1,67 @@
+<!-- crypto_integration.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Crypto Integration</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Wallet Balance</h2>
+            <p>Current Balance: {{ balance }}</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Crypto Prices</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Crypto</th>
+                        <th>Price (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for crypto, price in crypto_prices.items %}
+                    <tr>
+                        <td>{{ crypto }}</td>
+                        <td>{{ price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Buy Crypto</h2>
+            <form method="post">
+                {% csrf_token %}
+                <label for="symbol">Symbol:</label>
+                <select id="symbol" name="symbol">
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="LTC">Litecoin (LTC)</option>
+                </select>
+                <br>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <br>
+                <button type="submit" class="btn btn-primary">Buy</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2>Sell Crypto</h2>
+            <form method="post">
+                {% csrf_token %}
+                <label for="symbol">Symbol:</label>
+                <select id="symbol" name="symbol">
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="LTC">Litecoin (LTC)</option>
+                </select>
+                <br>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <br>
+                <button type="submit" class="btn btn-primary">Sell</button>
+            </form>
+        </div>
+    </div>
+{% endblock
