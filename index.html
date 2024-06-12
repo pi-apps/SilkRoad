@@ -1,98 +1,107 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <style>
-        body {
-        }
-        /* Style the video: 100% width and height to cover the entire window */
-        #myVideo {
-            /*position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100% !important;
-            height: auto !important;*/
-            /* transform: translateX(-50%) translateY(-50%); */
-            /*z-index: -10;*/
-        }
-        #myVideo {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        /* Add some content at the bottom of the video/page */
-        .content {
-            position: fixed;
-            right: 0;
-            background: rgba(0, 0, 0, 0.4);
-            color: #f1f1f1;
-            height: 100%;
-            padding: 201px 27px;
-            font-size: 18px;
-        }
-
-        /* Style the button used to pause/play the video */
-        #myBtn {
-            width: 200px;
-            font-size: 18px;
-            padding: 8px;
-            border: none;
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-        }
-
-            #myBtn:hover {
-                background: #ddd;
-                color: black;
-            }
-    </style>
-    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
-    <script>Pi.init({ version: "2.0", sandbox: true })</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PiSilkRoad | Advanced Tech Showcase</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="playvideo()" style="padding:0; margin:0">
-    <video autoplay="autoplay" muted id="myVideo">
-        <source src="intro.mp4" type="video/mp4">
-    </video>
-
-    <div class="content" style="display:none;">
-        <div style="font-size:20pt; padding-bottom:20px">Go to Market</div>
-        <div style="padding-bottom:20px;">
-            <select style="width:200px; height:35px; font-size:18px;">
-                <option value="Chợ Việt">Chợ Việt</option>
-                <option value="Chợ Thái">Chợ Thái</option>
-                <option value="Chợ Lào">Chợ Lào</option>
-                <option value="Chợ Campodia">Chợ Campodia</option>
-                <option value="Chợ Singapore">Chợ Singapore</option>
-                <option value="Chợ Hàn Quốc">Chợ Hàn Quốc</option>
-                <option value="Chợ Malaysia">Chợ Malaysia</option>
-                <option value="Chợ Indonesia">Chợ Indonesia</option>
-                <option value="Chợ Trung Quốc">Chợ Trung Quốc</option>
-            </select>
-        </div>
-        <div style="float:right"><button id="myBtn" onclick="window.location.href='home.aspx'">Buy Ticket</button></div>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="logo.png" alt="PiSilkRoad Logo">
     </div>
-    <script src="/Content/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
-    <script type='text/javascript'>
-        document.getElementById('myVideo').addEventListener('ended', myHandler, false);
-        function myHandler(e) {
-            location.href = '/home.aspx';
-        }
-        function playvideo() {
-            $("#myVideo").get(0).play();
-        }
-        $(window).on('load', function () {
-            $("#myVideo").get(0).play();
-        })
-        document.addEventListener("DOMContentLoaded", function (event) {
+  </header>
 
-        });
-    </script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to PiSilkRoad</h1>
+      <p>Experience the future of technology today</p>
+      <button class="btn-cta">Get Started</button>
+    </div>
+    <div class="hero-bg">
+      <video autoplay loop muted>
+        <source src="hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <i class="fas fa-rocket"></i>
+        <h3>Innovative Solutions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Advanced Technology</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-users"></i>
+        <h3>Expert Team</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Features</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-lock"></i>
+        <h3>Secure Data Storage</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-compass"></i>
+        <h3>Intelligent Navigation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Lightning-Fast Performance</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button class="btn-submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2023 PiSilkRoad. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/fontawesome.min.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+    </html>
