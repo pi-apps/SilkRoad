@@ -11,4 +11,4 @@ Pillow==10.3.0
 psycopg2-binary==2.8.6
 pytz==2021.1
 requests==2.32.2
-sqlparse==0.4.1
+sqlparse==0.5.0
