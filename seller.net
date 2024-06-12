@@ -1,0 +1,71 @@
+using System;
+
+namespace SellerPage
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Prompt user to create a new shop
+            Console.WriteLine("Do you want to create a new shop? (Y/N)");
+            string response = Console.ReadLine().ToUpper();
+
+            if (response == "Y")
+            {
+                // Prompt user to choose whether to resell or rent the shop
+                Console.WriteLine("Do you want to resell or rent the shop? (R/S)");
+                string resellOrRent = Console.ReadLine().ToUpper();
+
+                // Create new shop
+                Shop newShop = new Shop();
+
+                // Set shop details
+                Console.WriteLine("Enter shop name:");
+                newShop.Name = Console.ReadLine();
+                Console.WriteLine("Enter shop description:");
+                newShop.Description = Console.ReadLine();
+                Console.WriteLine("Enter shop price:");
+                newShop.Price = Convert.ToDecimal(Console.ReadLine());
+
+                if (resellOrRent == "R")
+                {
+                    // Add shop to list of shops available for resale
+                    ResaleShopList.Shops.Add(newShop);
+
+                    Console.WriteLine("Shop created and added to list of shops available for resale.");
+                }
+                else if (resellOrRent == "S")
+                {
+                    // Add shop to list of shops available for rent
+                    RentalShopList.Shops.Add(newShop);
+
+                    Console.WriteLine("Shop created and added to list of shops available for rent.");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please choose either R for resell or S for rent.");
+                }
+            }
+
+            // Wait for user to press a key before exiting
+            Console.ReadKey();
+        }
+    }
+
+    public class Shop
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+    }
+
+    public static class ResaleShopList
+    {
+        public static System.Collections.Generic.List<Shop> Shops = new System.Collections.Generic.List<Shop>();
+    }
+
+    public static class RentalShopList
+    {
+        public static System.Collections.Generic.List<Shop> Shops = new System.Collections.Generic.List<Shop>();
+    }
+}
