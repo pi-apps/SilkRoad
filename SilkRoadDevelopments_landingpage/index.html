@@ -182,7 +182,7 @@
                             'action': 'complete',
                             'paymentId': payment.identifier,
                             'txid': payment.transaction.txid,
-                            'app_client': 'LazadaDemoTest'
+                            'app_client': 'silkroad'
                         };
                         return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
                             $("#button_click").prop("disabled", false);
@@ -221,7 +221,7 @@
                         // Amount of π to be paid:
                         amount: parseFloat($("#pi_donate").val()),
                         // An explanation of the payment - will be shown to the user:
-                        memo: "Demo transfer request", // e.g: "Digital kitten #1234",
+                        memo: "Donation to SilkRoad for Pi", // e.g: "Digital kitten #1234",
                         // An arbitrary developer-provided metadata object - for your own usage:
                         metadata: { paymentType: "donation" /* ... */ }, // e.g: { kittenId: 1234 }
                     }, {
@@ -231,7 +231,7 @@
                                     'action': 'approve',
                                     'paymentId': paymentId,
                                     'txid': '',
-                                    'app_client': 'LazadaDemoTest'
+                                    'app_client': 'silkroad'
                                 };
                                 return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
                                     $("#button_click").prop("disabled", false);
@@ -244,7 +244,7 @@
                                     'action': 'complete',
                                     'paymentId': paymentId,
                                     "txid": txid,
-                                    'app_client': 'LazadaDemoTest'
+                                    'app_client': 'silkroad'
                                 };
                                 return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
                                     $("#button_click").prop("disabled", false);

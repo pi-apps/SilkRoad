@@ -16,8 +16,8 @@
     }
     
     $apps = array();
-    $apps['auth_app1'] = 'Key xs2kxpzv3rvmugywdkokhfvkeq7qpulkbsieiesrfozd0holedgduvoep60cjqc4';
-    $apps['LazadaDemoTest'] = 'Key xs2kxpzv3rvmugywdkokhfvkeq7qpulkbsieiesrfozd0holedgduvoep60cjqc4';
+    $apps['auth_app1'] = 'Key ';
+    $apps['silkroad'] = 'Key ';
     //$apps['LazadaDemoTest'] = 'Key <your Server API Key>';
    //$apps['auth_app4'] = 'Key <your Server API Key>';
     
