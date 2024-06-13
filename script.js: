@@ -1,0 +1,53 @@
+// Add event listeners to navigation links
+document.querySelectorAll('nav ul li a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'mooth' });
+    });
+});
+
+// Add animation to hero section
+document.querySelector('.hero').addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero');
+    const heroHeight = hero.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const opacity = (heroHeight - scrollPosition) / heroHeight;
+    hero.style.opacity = opacity;
+});
+
+// Add animation to stats section
+document.querySelector('.stats').addEventListener('scroll', () => {
+    const stats = document.querySelector('.stats');
+    const statsHeight = stats.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const opacity = (statsHeight - scrollPosition) / statsHeight;
+    stats.style.opacity = opacity;
+});
+
+// Add animation to services section
+document.querySelector('.services-grid').addEventListener('scroll', () => {
+    const services = document.querySelector('.services-grid');
+    const servicesHeight = services.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const opacity = (servicesHeight - scrollPosition) / servicesHeight;
+    services.style.opacity = opacity;
+});
+
+// Add animation to portfolio section
+document.querySelector('.portfolio-grid').addEventListener('scroll', () => {
+    const portfolio = document.querySelector('.portfolio-grid');
+    const portfolioHeight = portfolio.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const opacity = (portfolioHeight - scrollPosition) / portfolioHeight;
+    portfolio.style.opacity = opacity;
+});
+
+// Add animation to contact section
+document.querySelector('.contact').addEventListener('scroll', () => {
+    const contact = document.querySelector('.contact');
+    const contactHeight = contact.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const opacity = (contactHeight - scrollPosition) / contactHeight;
+    contact.style.opacity = opacity;
+});
