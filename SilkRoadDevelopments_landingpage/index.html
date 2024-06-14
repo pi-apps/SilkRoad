@@ -57,134 +57,158 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2334449220276386" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container form-group" style="text-align:center; max-width:840px">
-
+    <div style="text-align:center">
         <style>
-                .goog-te-banner-frame.skiptranslate {
-                    display: none !important;
-                }
-                .skiptranslate > iframe {
-                    display: none !important;
-                }
-                
-                body {
-                    top: 0px !important; 
-                }
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index:99999;
+            }
+        </style>
+        <ul class="nav nav-pills sticky" id="myTab" role="tablist" style="background-color: #e3f2fd;" translate="no">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          </li>
+          <li><button style="margin-left:5px; min-height:40px" class="clear_cache btn btn-info"><i class="fa fa-refresh"></i></button></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container form-group" style="text-align:center; max-width:840px">
 
-                .goog-te-menu-frame {
-                    max-width:100% !important; 
-                }
-                .goog-te-menu2 { 
-                    max-width: 100% !important;
-                    overflow-x: scroll !important;
-                    box-sizing:border-box !important; 
-                    height:auto !important; 
-                }
-                
-                #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
-                .goog-text-highlight { background: none !important; box-shadow: none !important;}
-                
-                .goog-logo-link{display: none !important;}
-                .goog-te-gadget{height: 28px !important;  overflow: hidden;}
-            </style>
-            
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                      var lang_google='en';
-                      
-                      new google.translate.TranslateElement({pageLanguage: lang_google,
-                                                            autoDisplay: true,
-                                                            layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
-                                                            'google_translate_element');
-                     
-                        //const el = document.querySelector('#goog-gt-');
-                        //const el2 = document.querySelector('.skiptranslate');
-                        const el3 = document.querySelector('circle');
-                        //const el4 = document.querySelector('.goog-te-gadget');
-                        const observer = new window.IntersectionObserver(([entry]) => {
-                            /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
-                            {
-                                for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
-                                {
-                                    if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
-                                        document.getElementsByClassName("skiptranslate")[i].style.display = "none";
-                                }
+                    <style>
+                            .goog-te-banner-frame.skiptranslate {
+                                display: none !important;
                             }
-                            document.getElementById("goog-gt-").style.display = "none";*/
-                            document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
-                        }, {
-                            root: null,
-                            threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
-                        });
+                            .skiptranslate > iframe {
+                                display: none !important;
+                            }
+                            
+                            body {
+                                top: 0px !important; 
+                            }
 
-                        //observer.observe(el);
-                        //observer.observe(el2);
-                        observer.observe(el3);
-                        //observer.observe(el4);
-                  
-                }
-            </script>
+                            .goog-te-menu-frame {
+                                max-width:100% !important; 
+                            }
+                            .goog-te-menu2 { 
+                                max-width: 100% !important;
+                                overflow-x: scroll !important;
+                                box-sizing:border-box !important; 
+                                height:auto !important; 
+                            }
+                            
+                            #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
+                            .goog-text-highlight { background: none !important; box-shadow: none !important;}
+                            
+                            .goog-logo-link{display: none !important;}
+                            .goog-te-gadget{height: 28px !important;  overflow: hidden;}
+                        </style>
+                        
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                  var lang_google='en';
+                                  
+                                  new google.translate.TranslateElement({pageLanguage: lang_google,
+                                                                        autoDisplay: true,
+                                                                        layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
+                                                                        'google_translate_element');
+                                 
+                                    //const el = document.querySelector('#goog-gt-');
+                                    //const el2 = document.querySelector('.skiptranslate');
+                                    const el3 = document.querySelector('circle');
+                                    //const el4 = document.querySelector('.goog-te-gadget');
+                                    const observer = new window.IntersectionObserver(([entry]) => {
+                                        /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
+                                        {
+                                            for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
+                                            {
+                                                if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
+                                                    document.getElementsByClassName("skiptranslate")[i].style.display = "none";
+                                            }
+                                        }
+                                        document.getElementById("goog-gt-").style.display = "none";*/
+                                        document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
+                                    }, {
+                                        root: null,
+                                        threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                                    });
 
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <strong>Translate</strong>
-            <div id="google_translate_element"></div>
-            <br/>
-            <img src="logo.png" alt="LatinChain" class="img-fluid" style="width: 200px; height: 100px;" />
-        <br/>
-        <br/>
-        <h1>Pi cryptocurrency payment on SilkRoad (Watch TV Online)</h1>
-        <br/>
-        <br/>
-        <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-        <br/>
-        <br/>
-        <div id="username">Hello</div>
-        <br/>
-        <div>Remember access through Pi Browser</div>
-        <br/>
-        <br/>
-        <button id="clear_cache" class="btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
-        <br/>
-        <br/>
-        <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
-        <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
-        <br /><br />
-        <label for="tvselect">TV Online:</label>
+                                    //observer.observe(el);
+                                    //observer.observe(el2);
+                                    observer.observe(el3);
+                                    //observer.observe(el4);
+                              
+                            }
+                        </script>
 
-        <div translate="no">
-            <select class="form-select" id="tvselect" aria-label="Default select example">
-              <option value="disney" selected>Disney Channel</option>
-              <option value="cartoon1">Cartoon Network Steven Universe</option>
-              <option value="cartoon2">Cartoon Network Looney Toons</option>
-              <option value="geographic">Geographic Channel</option>
-              <option value="natgeowild">Nat Geo WILD</option>
-              <option value="nasa">NASA Solar Eclipses</option>
-              <option value="discovery">Discovery Channel</option>
-              <option value="history">History Channel</option>
-            </select>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <div style="margin-top: 50px !important;">
+                        </div>
+                        <strong>Translate</strong>
+                        <div id="google_translate_element"></div>
+                        <br/>
+                        <img src="logo.png" alt="LatinChain" class="img-fluid" style="width: 200px; height: 100px;" />
+                    <br/>
+                    <br/>
+                    <h1>Pi cryptocurrency payment on SilkRoad (Watch TV Online)</h1>
+                    <br/>
+                    <br/>
+                    <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+                    <br/>
+                    <br/>
+                    <div id="username">Hello</div>
+                    <br/>
+                    <div>Remember access through Pi Browser</div>
+                    <br/>
+                    <br/>
+                    <button id="clear_cache" class="clear_cache btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
+                    <br/>
+                    <br/>
+                    <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
+                    <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
+                    <br /><br />
+                    <label for="tvselect">TV Online:</label>
+
+                    <div translate="no">
+                        <select class="form-select" id="tvselect" aria-label="Default select example">
+                          <option value="disney" selected>Disney Channel</option>
+                          <option value="cartoon1">Cartoon Network Steven Universe</option>
+                          <option value="cartoon2">Cartoon Network Looney Toons</option>
+                          <option value="geographic">Geographic Channel</option>
+                          <option value="natgeowild">Nat Geo WILD</option>
+                          <option value="nasa">NASA Solar Eclipses</option>
+                          <option value="discovery">Discovery Channel</option>
+                          <option value="history">History Channel</option>
+                        </select>
+                    </div>
+                    <br /><br />
+                    <iframe id="tvonline" width="300" height="250" src="https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br /><br />
+                    <div>Share in Social Networks:</div>
+                    <br />
+                    <button id="social_share" class="btn btn-outline-primary" style="border-radius: 50%; border: 2px solid;"><i class="fa fa-share-alt"></i></button>
+                    <br /><br />
+                    <a href="marketing.html">About us</a>
+                    <br /><br />
+                    <h3>
+                        The Silk Road for Pi of PI-CLOVER JSC is a series of modern trade networks connecting all parts of the World. The route consists of a set of trading points and markets used to help store, exchange and exchange goods, it is an E-Commerce Site. It is also known as Silk Road for Pi.
+                    </h3>
+                    <br /><br />
+
+                    <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+
+                    <br/>
+                    <br/>
+
+                    <div id="share_message" style="display:none;">Hi. Check it out this Pi App: SilkRoad for Pi. Try it in Pi Browser. #PiNetwork #PiApps</div>
+                    <div id="pi_username_message" style="display:none;">Pi username: <span translate="no" class="referrer_username"></span></div>
+                </div>
+                
+            </div>
         </div>
-        <br /><br />
-        <iframe id="tvonline" width="300" height="250" src="https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br /><br />
-        <div>Share in Social Networks:</div>
-        <br />
-        <button id="social_share" class="btn btn-outline-primary" style="border-radius: 50%; border: 2px solid;"><i class="fa fa-share-alt"></i></button>
-        <br /><br />
-        <a href="marketing.html">About us</a>
-        <br /><br />
-        <h3>
-            The Silk Road for Pi of PI-CLOVER JSC is a series of modern trade networks connecting all parts of the World. The route consists of a set of trading points and markets used to help store, exchange and exchange goods, it is an E-Commerce Site. It is also known as Silk Road for Pi.
-        </h3>
-        <br /><br />
-
-        <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-
-        <br/>
-        <br/>
-
-        <div id="share_message" style="display:none;">Hi. Check it out this Pi App: SilkRoad for Pi. Try it in Pi Browser. #PiNetwork #PiApps</div>
-        <div id="pi_username_message" style="display:none;">Pi username: <span translate="no" class="referrer_username"></span></div>
     </div>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             const btn = document.querySelector('#social_share');
@@ -232,7 +256,7 @@
             
             new Choices(document.querySelector("#tvselect"));
 
-            $( "#clear_cache" ).click(function() {
+            $( ".clear_cache" ).click(function() {
                                     try {
                                         Cache.delete();
                                     } catch (err) {
