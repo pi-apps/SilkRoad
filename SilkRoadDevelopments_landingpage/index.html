@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC1ELTSB5N"></script>
@@ -170,7 +170,7 @@
                     <br /><br />
                     <label for="tvselect">TV Online:</label>
 
-                    <div translate="no">
+                    <div>
                         <select class="form-select" id="tvselect" aria-label="Default select example">
                           <option value="disney" selected>Disney Channel</option>
                           <option value="cartoon1">Cartoon Network Steven Universe</option>
@@ -254,7 +254,21 @@
                     $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=fgNdZx3Zl7HBuHcp&amp;list=PLob1mZcVWOaj-nXWX7GzNRm4I4uOcEb_8");
             });
             
-            new Choices(document.querySelector("#tvselect"));
+            var previousLang = $('.goog-te-combo').val(); // Initial language
+
+            setInterval(function() {
+                var currentLang = $('.goog-te-combo').val();
+                if (previousLang !== currentLang) {
+                  // Language has changed!
+                  console.log('Language changed to:', currentLang);
+                  // Perform your desired action here (e.g., reload page, update UI)
+                  previousLang = currentLang;
+                  
+                  $('#tvselect').select2({language: currentLang});
+                }
+            }, 500); // Check every half second
+            
+            $('#tvselect').select2({language: "en"});
 
             $( ".clear_cache" ).click(function() {
                                     try {
