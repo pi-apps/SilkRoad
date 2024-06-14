@@ -54,7 +54,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2334449220276386" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container form-group" style="text-align:center">
+    <div class="container form-group" style="text-align:center; max-width:840px">
 
         <style>
                 .goog-te-banner-frame.skiptranslate {
@@ -129,7 +129,7 @@
             <img src="logo.png" alt="LatinChain" class="img-fluid" style="width: 200px; height: 100px;" />
         <br/>
         <br/>
-        <h1>Pi cryptocurrency donation on SilkRoad (Watch Disney TV Online)</h1>
+        <h1>Pi cryptocurrency donation on SilkRoad (Watch TV Online)</h1>
         <br/>
         <br/>
         <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
@@ -146,7 +146,21 @@
         <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
         <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
         <br /><br />
-        <iframe width="300" height="250" src="https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <label for="tvselect">TV Online:</label>
+
+        <select class="form-select" id="tvselect" aria-label="Default select example">
+          <option selected>Choose your option:</option>
+          <option translate="no" value="disney">Disney Channel</option>
+          <option translate="no" value="cartoon1">Cartoon Network Steven Universe</option>
+          <option translate="no" value="cartoon2">Cartoon Network Looney Toons</option>
+          <option translate="no" value="geographic">Geographic Channel</option>
+          <option translate="no" value="natgeowild">Nat Geo WILD</option>
+          <option translate="no" value="nasa">NASA Solar Eclipses</option>
+          <option translate="no" value="discovery">Discovery Channel</option>
+          <option translate="no" value="history">History Channel</option>
+        </select>
+        <br /><br />
+        <iframe id="tvonline" width="300" height="250" src="https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br /><br />
         <div>Share in Social Networks:</div>
         <br />
@@ -191,6 +205,25 @@
                        //alert('Error: ' + err);
                   }
                 }
+            });
+            
+            $('#tvselect').on('change', function() {
+                if(this.value == "disney")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH");
+                else if(this.value == "natgeowild")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=1hd-PZi1bzp1CSNj&amp;list=PLNxd9fYeqXea4ejSSWiAAc_jwieHScr29");
+                else if(this.value == "geographic")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=dlkFOOjKA7EyDy7-&amp;list=PLivjPDlt6ApTUap3E0Y299uwor688LjeF");
+                else if(this.value == "cartoon1")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=5Y0LQKm1esBhYoU2&amp;list=PL_6LtW9tXrxj_6PMplWwq-6Ih0DW1yV5s");
+                else if(this.value == "cartoon2")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=s3-kWxz158KsI3pY&amp;list=PL_6LtW9tXrxh7Xmjjv3TBJVBkCoJgQzBV");
+                else if(this.value == "nasa")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=-yMe1AkkS4qIIHQA&amp;list=PL2aBZuCeDwlTC83-D5weTwSZV5gHwGCFp");
+                else if(this.value == "discovery")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=PsT_jgnrUhSGdsgh&amp;list=PL24ZdmosDg-hLuCSbkuusc7ObJBsQt7e2");
+                else if(this.value == "history")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=fgNdZx3Zl7HBuHcp&amp;list=PLob1mZcVWOaj-nXWX7GzNRm4I4uOcEb_8");
             });
 
             $( "#clear_cache" ).click(function() {
