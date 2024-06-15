@@ -176,6 +176,7 @@
                           <option value="disney" selected>Disney Channel</option>
                           <option value="cartoon1">Cartoon Network Steven Universe</option>
                           <option value="cartoon2">Cartoon Network Looney Toons</option>
+                          <option value="hbo">HBO House of Dragon</option>
                           <option value="geographic">Geographic Channel</option>
                           <option value="natgeowild">Nat Geo WILD</option>
                           <option value="nasa">NASA Solar Eclipses</option>
@@ -258,6 +259,8 @@
                     $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=PsT_jgnrUhSGdsgh&amp;list=PL24ZdmosDg-hLuCSbkuusc7ObJBsQt7e2");
                 else if(this.value == "history")
                     $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=fgNdZx3Zl7HBuHcp&amp;list=PLob1mZcVWOaj-nXWX7GzNRm4I4uOcEb_8");
+                else if(this.value == "hbo")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=g-CTMJpB69EtKNeZ&amp;list=PLO79iP69FaZNWC3yKcXckk9hk52uPvVWv");
             });
             
             var previousLang = $('.goog-te-combo').val(); // Initial language
