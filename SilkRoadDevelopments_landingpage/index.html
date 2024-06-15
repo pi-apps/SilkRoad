@@ -201,6 +201,7 @@
                     <br/>
                     <br/>
 
+                    <div id="clear_cache_message" style="display:none;">Are you sure you want to Clear Cache?, it will reloads the page.</div>
                     <div id="share_message" style="display:none;">Hi. Check it out this Pi App: SilkRoad for Pi. Try it in Pi Browser. #PiNetwork #PiApps</div>
                     <div id="pi_username_message" style="display:none;">Pi username: <span translate="no" class="referrer_username"></span></div>
                 </div>
@@ -271,16 +272,20 @@
             $('#tvselect').select2({language: "en"});
 
             $( ".clear_cache" ).click(function() {
-                                    try {
-                                        Cache.delete();
-                                    } catch (err) {
-                                        console.error(err);
-                                    }
-                                    try {
-                                        window.location.reload(true);
-                                    } catch (err) {
-                                        console.error(err);
-                                    }
+                var result = confirm($( "#clear_cache_message" ).text());
+                if(result)
+                {
+                    try {
+                        Cache.delete();
+                    } catch (err) {
+                        console.error(err);
+                    }
+                    try {
+                        window.location.reload(true);
+                    } catch (err) {
+                        console.error(err);
+                    }
+                }
             });
 
             const Pi = window.Pi;
