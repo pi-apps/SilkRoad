@@ -65,6 +65,77 @@
                 <!-- Masthead Avatar Image-->
                 <!--<img class="masthead-avatar mb-5" src="logo.png" alt="..." />-->
                 <!-- Masthead Heading-->
+                <style>
+                    .goog-te-banner-frame.skiptranslate {
+                        display: none !important;
+                    }
+                    .skiptranslate > iframe {
+                        display: none !important;
+                    }
+                    
+                    body {
+                        top: 0px !important; 
+                    }
+
+                    .goog-te-menu-frame {
+                        max-width:100% !important; 
+                    }
+                    .goog-te-menu2 { 
+                        max-width: 100% !important;
+                        overflow-x: scroll !important;
+                        box-sizing:border-box !important; 
+                        height:auto !important; 
+                    }
+                    
+                    #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
+                    .goog-text-highlight { background: none !important; box-shadow: none !important;}
+                    
+                    .goog-logo-link{display: none !important;}
+                    .goog-te-gadget{height: 28px !important;  overflow: hidden;}
+                </style>
+                
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                          var lang_google='en';
+                          
+                          new google.translate.TranslateElement({pageLanguage: lang_google,
+                                                                autoDisplay: true,
+                                                                layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
+                                                                'google_translate_element');
+                         
+                            //const el = document.querySelector('#goog-gt-');
+                            //const el2 = document.querySelector('.skiptranslate');
+                            const el3 = document.querySelector('circle');
+                            //const el4 = document.querySelector('.goog-te-gadget');
+                            const observer = new window.IntersectionObserver(([entry]) => {
+                                /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
+                                {
+                                    for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
+                                    {
+                                        if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
+                                            document.getElementsByClassName("skiptranslate")[i].style.display = "none";
+                                    }
+                                }
+                                document.getElementById("goog-gt-").style.display = "none";*/
+                                document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
+                            }, {
+                                root: null,
+                                threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                            });
+
+                            //observer.observe(el);
+                            //observer.observe(el2);
+                            observer.observe(el3);
+                            //observer.observe(el4);
+                      
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <strong>Translate</strong>
+                <div id="google_translate_element"></div>
+                <br/>
+                
                 <h1 class="masthead-heading text-uppercase mb-0">Pi Clover store</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -212,8 +283,10 @@
                                     <!-- Portfolio Modal - Text-->
                                     <br/>
                                     
-                                    HAPPY PI DAY!!<br/>
-                                    Buy 01 product. GET 01 Pi for free.<br/><br/>
+                                    <video width="300" height="300" autoplay loop>
+                                      <source src="assets/img/portfolio/piday.mp4" type="video/mp4"/>
+                                    </video>
+                                    <br/><br/>
                                     
                                     <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/rice1.jpeg" alt="..." />
                                     <br/>THE BEST RICE ON THE WORLD - ST25 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
