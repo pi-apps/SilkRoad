@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>SilkRoad for Pi</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -45,7 +46,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">SilkRoad for Pi</a>
+                <a class="navbar-brand" href="/">SilkRoad for Pi</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -135,7 +136,6 @@
                 <strong>Translate</strong>
                 <div id="google_translate_element"></div>
                 <br/>
-                
                 <h1 class="masthead-heading text-uppercase mb-0">Pi Clover store</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -194,11 +194,38 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <p class="lead">
+                    <div style="max-width: 500px">
                     Pi Clover store on Vietnam paid in Pi. <a href="#portfolio" target="_self" class="btn btn-outline-dark text-light">Store</a><br/>
                     Pi App.<br/>
                     Developed with OpenSource code.<br/>
                     Website: <a href="https://pisilkroad.com/" target="_self" class="btn btn-outline-dark text-light">https://pisilkroad.com</a>
                     <br/><br/>
+                    </div>
+                    
+                    <div style="max-width: 600px; float: left">
+                    
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+                    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+                    <style>
+                        #map { height: 180px; max-width: 100% }
+                    </style>
+                    <div id="map"></div>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            var map = L.map('map').setView([10.780295, 106.757903], 13);
+                            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                            }).addTo(map);
+                            var marker = L.marker([10.780295, 106.757903]).addTo(map);
+                        });
+                    </script>
+                    </div>
                     </p>
                 </div>
                 <!-- About Section Button-->
