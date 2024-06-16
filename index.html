@@ -1,305 +1,96 @@
-﻿<html>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+        }
+        /* Style the video: 100% width and height to cover the entire window */
+        #myVideo {
+            /*position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100% !important;
+            height: auto !important;*/
+            /* transform: translateX(-50%) translateY(-50%); */
+            /*z-index: -10;*/
+        }
+        #myVideo {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
-    <title>SilkRoad</title>
-    <meta name="description" content="SilkRoad" />
-        
-    <meta property="og:url" content="/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="SilkRoad"/>
-    <meta property="og:description" content="SilkRoad"/>
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        /* Add some content at the bottom of the video/page */
+        .content {
+            position: fixed;
+            right: 0;
+            background: rgba(0, 0, 0, 0.4);
+            color: #f1f1f1;
+            height: 100%;
+            padding: 201px 27px;
+            font-size: 18px;
+        }
 
-    <!-- ios support -->
-    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-    <meta name="theme-color" content="#db4938" />
+        /* Style the button used to pause/play the video */
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 8px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
 
-    <meta name="application-name" content="SilkRoad Example">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv-pre3.6.js"></script>
-    <![endif]-->
-
-    <meta property="og:image" content="logo.png" />
-    <link href="logo.png" rel="shortcut icon" />
-
-    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-    <!--<script src="https://downloads.minepi.com/sdk/v1/dev.js"></script>-->
-    <!--<script src="https://downloads.minepi.com/sdk/v1/prod.js"></script>-->
+            #myBtn:hover {
+                background: #ddd;
+                color: black;
+            }
+    </style>
     <script src="https://sdk.minepi.com/pi-sdk.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YC1ELTSB5N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YC1ELTSB5N');
-</script>
-
-    <meta name="google-adsense-account" content="ca-pub-2334449220276386"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2334449220276386" crossorigin="anonymous"></script>
+    <script>Pi.init({ version: "2.0", sandbox: true })</script>
 </head>
-<body>
-    <div class="container form-group" style="text-align:center">
+<body onload="playvideo()" style="padding:0; margin:0">
+    <video autoplay="autoplay" muted id="myVideo">
+        <source src="intro.mp4" type="video/mp4">
+    </video>
 
-        <style>
-                .goog-te-banner-frame.skiptranslate {
-                    display: none !important;
-                }
-                .skiptranslate > iframe {
-                    display: none !important;
-                }
-                
-                body {
-                    top: 0px !important; 
-                }
-
-                .goog-te-menu-frame {
-                    max-width:100% !important; 
-                }
-                .goog-te-menu2 { 
-                    max-width: 100% !important;
-                    overflow-x: scroll !important;
-                    box-sizing:border-box !important; 
-                    height:auto !important; 
-                }
-                
-                #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
-                .goog-text-highlight { background: none !important; box-shadow: none !important;}
-                
-                .goog-logo-link{display: none !important;}
-                .goog-te-gadget{height: 28px !important;  overflow: hidden;}
-            </style>
-            
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                      var lang_google='en';
-                      
-                      new google.translate.TranslateElement({pageLanguage: lang_google,
-                                                            autoDisplay: true,
-                                                            layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
-                                                            'google_translate_element');
-                     
-                        //const el = document.querySelector('#goog-gt-');
-                        //const el2 = document.querySelector('.skiptranslate');
-                        const el3 = document.querySelector('circle');
-                        //const el4 = document.querySelector('.goog-te-gadget');
-                        const observer = new window.IntersectionObserver(([entry]) => {
-                            /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
-                            {
-                                for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
-                                {
-                                    if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
-                                        document.getElementsByClassName("skiptranslate")[i].style.display = "none";
-                                }
-                            }
-                            document.getElementById("goog-gt-").style.display = "none";*/
-                            document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
-                        }, {
-                            root: null,
-                            threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
-                        });
-
-                        //observer.observe(el);
-                        //observer.observe(el2);
-                        observer.observe(el3);
-                        //observer.observe(el4);
-                  
-                }
-            </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <strong>Translate</strong>
-            <div id="google_translate_element"></div>
-            <br/>
-            <img src="logo.png" alt="LatinChain" class="img-fluid" style="width: 200px; height: 100px;" />
-        <br/>
-        <br/>
-        <h1>Pi cryptocurrency donation on SilkRoad</h1>
-        <br/>
-        <br/>
-        <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-        <br/>
-        <br/>
-        <div id="username">Hello</div>
-        <br/>
-        <div>Remember access through Pi Browser</div>
-        <br/>
-        <br/>
-        <button id="clear_cache" class="btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
-        <br/>
-        <br/>
-        <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
-        <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
-
-        <br /><br />
-        <div>Share in Social Networks:</div>
-        <br />
-        <button id="social_share" class="btn btn-outline-primary" style="border-radius: 50%; border: 2px solid;"><i class="fa fa-share-alt"></i></button>
-        <br /><br />
-        <a href="marketing.html">About us</a>
-        <br /><br />
-        <h3>
-            The Silk Road for Pi of PI-CLOVER JSC is a series of modern trade networks connecting all parts of the World. The route consists of a set of trading points and markets used to help store, exchange and exchange goods, it is an E-Commerce Site. It is also known as Silk Road for Pi.
-        </h3>
-        <br /><br />
-
-        <iframe data-aa='2331718' src='//ad.a-ads.com/2331718?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-
-        <br/>
-        <br/>
-
-        <div id="share_message" style="display:none;">Hi. Check it out this Pi App: SilkRoad for Pi. Try it in Pi Browser. #PiNetwork #PiApps</div>
-        <div id="pi_username_message" style="display:none;">Pi username: <span translate="no" class="referrer_username"></span></div>
+    <div class="content" style="display:none;">
+        <div style="font-size:20pt; padding-bottom:20px">Go to Market</div>
+        <div style="padding-bottom:20px;">
+            <select style="width:200px; height:35px; font-size:18px;">
+                <option value="Chợ Việt">Chợ Việt</option>
+                <option value="Chợ Thái">Chợ Thái</option>
+                <option value="Chợ Lào">Chợ Lào</option>
+                <option value="Chợ Campodia">Chợ Campodia</option>
+                <option value="Chợ Singapore">Chợ Singapore</option>
+                <option value="Chợ Hàn Quốc">Chợ Hàn Quốc</option>
+                <option value="Chợ Malaysia">Chợ Malaysia</option>
+                <option value="Chợ Indonesia">Chợ Indonesia</option>
+                <option value="Chợ Trung Quốc">Chợ Trung Quốc</option>
+            </select>
+        </div>
+        <div style="float:right"><button id="myBtn" onclick="window.location.href='home.aspx'">Buy Ticket</button></div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            const btn = document.querySelector('#social_share');
-            //const resultPara = document.querySelector('.result');
-                           
-            // Must be triggered some kind of "user activation"
-            btn.addEventListener('click', async () => {
-                const shareData = {
-                   title: 'LatinChain Platform',
-                   text: $("#share_message").text() + "\n\nWebpage:\nhttps://pisilkroad.com/\n\n" + $("#pi_username_message").text(),
-                   //url: 'https://latin-chain.com/',
-                }
-                                
-                if (!navigator.share) {
-                 Pi.openShareDialog(shareData.title, shareData.text);
-                }else
-                {
-                  try {
-                      await navigator.share(shareData);
-                      //resultPara.textContent = 'MDN shared successfully'
-                  } catch(err) {
-                       //alert('Error: ' + err);
-                  }
-                }
-            });
-
-            $( "#clear_cache" ).click(function() {
-                                    try {
-                                        Cache.delete();
-                                    } catch (err) {
-                                        console.error(err);
-                                    }
-                                    try {
-                                        window.location.reload(true);
-                                    } catch (err) {
-                                        console.error(err);
-                                    }
-            });
-
-            const Pi = window.Pi;
-            Pi.init({ version: "2.0" });
-
-            //alert(PiNetworkClient);
-
-            async function auth() {
-                try {
-                    // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
-                    const scopes = ['username', 'payments', 'wallet_address'];
-                    function onIncompletePaymentFound(payment) {
-                        var data = {
-                            'action': 'complete',
-                            'paymentId': payment.identifier,
-                            'txid': payment.transaction.txid,
-                            'app_client': 'silkroad'
-                        };
-                        return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
-                            $("#button_click").prop("disabled", false);
-                        }).fail(function () {
-                            $("#button_click").prop("disabled", false);
-                        });
-                    }; // Read more about this in the SDK reference
-
-                    Pi.authenticate(scopes, onIncompletePaymentFound).then(function (auth) {
-                        $("#button_click").click(function () {
-                            if (parseFloat($("#pi_donate").val()) > 0) {
-                                $("#button_click").prop("disabled", true);
-                                /*setTimeout(function ()
-                                {
-                                    $("#button_click").prop( "disabled", false );
-                                }, 10000);*/
-                                transfer();
-                            }
-                            //alert("Click");
-                        });
-                        $("#username").html( "Hello, <strong>" + auth.user.username + "</strong>");
-                        $("#referrer_username").html( "<strong>" + auth.user.username + "</strong>");
-                        //alert('Hello ' + auth.user.username);
-                    }).catch(function (error) {
-                        console.error(error);
-                    });
-                } catch (err) {
-                    alert(err);
-                    // Not able to fetch the user
-                }
-            }
-
-            async function transfer() {
-                try {
-                    const payment = Pi.createPayment({
-                        // Amount of π to be paid:
-                        amount: parseFloat($("#pi_donate").val()),
-                        // An explanation of the payment - will be shown to the user:
-                        memo: "Donation to SilkRoad for Pi", // e.g: "Digital kitten #1234",
-                        // An arbitrary developer-provided metadata object - for your own usage:
-                        metadata: { paymentType: "donation" /* ... */ }, // e.g: { kittenId: 1234 }
-                    }, {
-                            // Callbacks you need to implement - read more about those in the detailed docs linked below:
-                            onReadyForServerApproval: function (paymentId) {
-                                var data = {
-                                    'action': 'approve',
-                                    'paymentId': paymentId,
-                                    'txid': '',
-                                    'app_client': 'silkroad'
-                                };
-                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
-                                    $("#button_click").prop("disabled", false);
-                                }).fail(function () {
-                                    $("#button_click").prop("disabled", false);
-                                });
-                            },
-                            onReadyForServerCompletion: function (paymentId, txid) {
-                                var data = {
-                                    'action': 'complete',
-                                    'paymentId': paymentId,
-                                    "txid": txid,
-                                    'app_client': 'silkroad'
-                                };
-                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
-                                    $("#button_click").prop("disabled", false);
-                                }).fail(function () {
-                                    $("#button_click").prop("disabled", false);
-                                });
-                            },
-                            onCancel: function (paymentId) { $("#button_click").prop("disabled", false); /* ... */ },
-                            onError: function (error, payment) { $("#button_click").prop("disabled", false); /* ... */ },
-                        });
-                } catch (err) {
-                    $("#button_click").prop("disabled", false);
-                    alert(err);
-                    // Technical problem (eg network failure). Please try again
-                }
-            }
-
-            auth();
+    <script src="/Content/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type='text/javascript'>
+        document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+        function myHandler(e) {
+            location.href = '/home.aspx';
+        }
+        function playvideo() {
+            $("#myVideo").get(0).play();
+        }
+        $(window).on('load', function () {
+            $("#myVideo").get(0).play();
+        })
+        document.addEventListener("DOMContentLoaded", function (event) {
 
         });
     </script>
