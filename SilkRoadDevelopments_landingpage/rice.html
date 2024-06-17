@@ -136,6 +136,36 @@
                 <strong>Translate</strong>
                 <div id="google_translate_element"></div>
                 <br/>
+                <style>
+
+                    #overlay{
+                      position: fixed;
+                      top:0;
+                      left:0;
+                      width:100%;
+                      height:100%;
+                      background: rgba(0,0,0,0.8) none 50% / contain no-repeat;
+                      cursor: pointer;
+                      transition: 0.3s;
+                      
+                      visibility: hidden;
+                      opacity: 0;
+                    }
+                    #overlay.open {
+                      visibility: visible;
+                      opacity: 1;
+                    }
+
+                    #overlay:after { /* X button icon */
+                      content: "\2715";
+                      position: absolute;
+                      color:#fff;
+                      top: 10px;
+                      right:20px;
+                      font-size: 2em;
+                    }
+                </style>
+                
                 <h1 class="masthead-heading text-uppercase mb-0">Pi Clover store</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -223,6 +253,15 @@
                                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                             }).addTo(map);
                             var marker = L.marker([10.780295, 106.757903]).addTo(map);
+                        
+                            var previous=0;
+
+                            $('.img').on('click', function() {
+                              $('#overlay')
+                                .css({backgroundImage: `url(${this.src})`})
+                                .addClass('open')
+                                .one('click', function() { $(this).removeClass('open'); });
+                            });
                         });
                     </script>
                     </div>
@@ -313,33 +352,34 @@
                                     Contact phone: +84898813974
                                     
                                     <br/><br/>
+                                    <div id="overlay"></div>
                                     <hr/>
                                     AGRI - PRODUCTS
                                     <hr/>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/rice1.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/rice1.jpeg" alt="..." />
                                     <br/>THE BEST RICE ON THE WORLD - ST25 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/rice2.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/rice2.jpeg" alt="..." />
                                     <br/>THE BEST RICE ON THE WORLD - ST25 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
                                     <hr/>
                                     BOOK STORE
                                     <hr/>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/book1.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/book1.jpeg" alt="..." />
                                     <br/>Book 1 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/book2.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/book2.jpeg" alt="..." />
                                     <br/>Book 2 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/book3.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/book3.jpeg" alt="..." />
                                     <br/>Book 3 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/book4.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" id="img6" style="width:200px; height:200px" src="assets/img/portfolio/book4.jpeg" alt="..." />
                                     <br/>Book 4 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
-                                    <img class="img-fluid rounded mb-5" style="width:200px; height:200px" src="assets/img/portfolio/book5.jpeg" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img" style="width:200px; height:200px" src="assets/img/portfolio/book5.jpeg" alt="..." />
                                     <br/>Book 5 <a href="#contact" target="_self" class="btn btn-link" onclick="document.querySelector('.closemodal').click()">Contact to buy</a>
                                     <br/><br/>
                                     <button class="btn btn-primary closemodal" data-bs-dismiss="modal">
