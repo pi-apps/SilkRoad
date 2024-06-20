@@ -1,88 +1,103 @@
-import os
-import json
-import requests
-from flask import Flask, request, jsonify
-from flask_sqlalchemy import SQLAlchemy
+const express = require("express");
+const bodyParser = require("body-parser");
+const sqlite3 = require("sqlite3").verbose();
+const axios = require("axios");
+const dotenv = require("dotenv");
 
-app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///payment_gateway.db"
-db = SQLAlchemy(app)
+dotenv.config();
 
-class Payment(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    order_id = db.Column(db.String(255), nullable=False)
-    amount = db.Column(db.Float, nullable=False)
-    currency = db.Column(db.String(3), nullable=False)
-    payment_status = db.Column(db.String(20), default="pending")
+const app = express();
+app.use(bodyParser.json());
 
-@app.route("/create_payment", methods=["POST"])
-def create_payment():
-    data = request.get_json()
-    order_id = data["order_id"]
-    amount = data["amount"]
-    currency = data["currency"]
+const db = new sqlite3.Database("payment_gateway.db", (err) => {
+  if (err) {
+    console.error(err.message);
+  }
+  console.log("Connected to the payment_gateway database.");
+});
 
-    payment = Payment(order_id=order_id, amount=amount, currency=currency)
-    db.session.add(payment)
-    db.session.commit()
+db.serialize(() => {
+  db.run("CREATE TABLE IF NOT EXISTS payments (id INTEGER PRIMARY KEY AUTOINCREMENT, order_id TEXT, amount REAL, currency TEXT, payment_status TEXT, pi_wallet_payment_id TEXT)");
+});
 
-    pi_wallet_payment_id = create_pi_wallet_payment(order_id, amount, currency)
-    payment.pi_wallet_payment_id = pi_wallet_payment_id
-    db.session.commit()
+app.post("/create_payment", async (req, res) => {
+  const { order_id, amount, currency } = req.body;
 
-    return jsonify({"payment_id": payment.id})
+  try {
+    const piWalletPaymentId = await createPiWalletPayment(order_id, amount, currency);
+    db.run("INSERT INTO payments (order_id, amount, currency, payment_status, pi_wallet_payment_id) VALUES (?, ?, ?, 'pending', ?)", [order_id, amount, currency, piWalletPaymentId], function (err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+      res.json({ payment_id: this.lastID });
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to create Pi Wallet payment." });
+  }
+});
 
-@app.route("/webhook", methods=["POST"])
-def webhook_handler():
-    data = request.get_json()
-    payment_id = data["payment_id"]
-    payment_status = data["payment_status"]
+app.post("/webhook", async (req, res) => {
+  const { payment_id, payment_status } = req.body;
 
-    payment = Payment.query.get(payment_id)
-    if payment:
-        payment.payment_status = payment_status
-        db.session.commit()
+  try {
+    db.run("UPDATE payments SET payment_status = ? WHERE pi_wallet_payment_id = ?", [payment_status, payment_id], function (err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
 
-        if payment_status == "success":
-            # Update order status in SilkRoad
-            update_silkroad_order_status(payment.order_id, "paid")
+      if (this.changes === 0) {
+        return res.status(404).json({ error: "Payment not found." });
+      }
 
-    return jsonify({"success": True})
+      if (payment_status === "success") {
+        await updateSilkRoadOrderStatus(payment.order_id, "paid");
+      }
 
-def create_pi_wallet_payment(order_id, amount, currency):
-    pi_wallet_api_key = os.environ["PI_WALLET_API_KEY"]
-    pi_wallet_api_secret = os.environ["PI_WALLET_API_SECRET"]
+      res.json({ success: true });
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to process Pi Wallet webhook." });
+  }
+});
 
-    headers = {
-        "Authorization": f"Bearer {pi_wallet_api_key}",
-        "Content-Type": "application/json"
-    }
+const createPiWalletPayment = async (order_id, amount, currency) => {
+  const piWalletApiKey = process.env.PI_WALLET_API_KEY;
+  const piWalletApiSecret = process.env.PI_WALLET_API_SECRET;
 
-    data = {
-        "amount": amount,
-        "currency": currency,
-        "order_id": order_id
-    }
+  const headers = {
+    "Authorization": `Bearer ${piWalletApiKey}`,
+    "Content-Type": "application/json"
+  };
 
-    response = requests.post("https://api.pi-wallet.com/v1/payments", headers=headers, json=data)
-    return response.json()["payment_id"]
+  const data = {
+    amount,
+    currency,
+    order_id
+  };
 
-def update_silkroad_order_status(order_id, status):
-    silkroad_api_key = os.environ["SILKROAD_API_KEY"]
-    silkroad_api_secret = os.environ["SILKROAD_API_SECRET"]
+  const response = await axios.post("https://api.pi-wallet.com/v1/payments", data, { headers });
+  return response.data.payment_id;
+};
 
-    headers = {
-        "Authorization": f"Bearer {silkroad_api_key}",
-        "Content-Type": "application/json"
-    }
+const updateSilkRoadOrderStatus = async (order_id, status) => {
+  const silkRoadApiKey = process.env.SILKROAD_API_KEY;
+  const silkRoadApiSecret = process.env.SILKROAD_API_SECRET;
 
-    data = {
-        "order_id": order_id,
-        "status": status
-    }
+  const headers = {
+    "Authorization": `Bearer ${silkRoadApiKey}`,
+    "Content-Type": "application/json"
+  };
 
-    response = requests.patch("https://api.silkroad.com/v1/orders", headers=headers, json=data)
-    return response.json()
+  const data = {
+order_id,
+    status
+  };
 
-if __name__ == "__main__":
-    app.run(debug=True)
+  await axios.patch("https://api.silkroad.com/v1/orders", data, { headers });
+};
+
+app.listen(3000, () => {
+  console.log("Payment gateway server listening on port 3000.");
+});
