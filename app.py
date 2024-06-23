@@ -13,3 +13,8 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route('/products', methods=['GET'])
+def products():
+    # TO DO: Implement product showcase logic here
+    return render_template('products.html')
