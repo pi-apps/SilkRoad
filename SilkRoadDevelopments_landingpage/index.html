@@ -349,6 +349,48 @@
             Pi.init({ version: "2.0" });
 
             //alert(PiNetworkClient);
+            
+            //This function was made by LatinChain Platform
+            async function showPiAds(Pi) {
+                try {
+                    var d1 = new Date();
+                    var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+                    var date2 = new Date(date1.getTime() - 5 * 60000);
+                    
+                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
+                    {
+                        return;
+                    }
+                    
+                    const nativeFeaturesList = await Pi.nativeFeaturesList();
+                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
+                    
+                    const ready = await Pi.Ads.isAdReady("interstitial");
+                    
+                    if (ready === false) {
+                        const requestAdResponse = await Pi.Ads.requestAd("interstitial");
+                        
+                        if (requestAdResponse === "AD_NOT_AVAILABLE") {
+                            // display modal to update Pi Browser
+                            // showAdsNotSupportedModal()
+                            return;
+                        }
+                    }
+                    
+                    const showAdResponse = await Pi.Ads.showAd("interstitial");
+                    
+                    if(showAdResponse.result == "AD_CLOSED")
+                    {
+                        var d1 = new Date();
+                        var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+
+                        localStorage['pi_ad_datetime'] = date1.getTime();
+                    }
+                } catch (err) {
+                    //alert(err);
+                    // Not able to fetch the user
+                }
+            }
 
             async function auth() {
                 try {
@@ -369,6 +411,9 @@
                     }; // Read more about this in the SDK reference
 
                     Pi.authenticate(scopes, onIncompletePaymentFound).then(function (auth) {
+                        
+                        showPiAds(Pi);
+                        
                         $("#button_click").click(function () {
                             if (parseFloat($("#pi_donate").val()) > 0) {
                                 $("#button_click").prop("disabled", true);
