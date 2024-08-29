@@ -355,26 +355,17 @@
                 try {
                     var d1 = new Date();
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
-                    var date2 = new Date(date1.getTime() - 30 * 60000);
+                    var date2 = new Date(date1.getTime() - 1 * 60000);
                     
                     if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
                     {
                         return;
                     }
                     
-                    const nativeFeaturesList = await Pi.nativeFeaturesList();
-                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
-                    
                     const ready = await Pi.Ads.isAdReady("interstitial");
                     
                     if (ready === false) {
-                        const requestAdResponse = await Pi.Ads.requestAd("interstitial");
-                        
-                        if (requestAdResponse === "AD_NOT_AVAILABLE") {
-                            // display modal to update Pi Browser
-                            // showAdsNotSupportedModal()
-                            return;
-                        }
+                        await Pi.Ads.requestAd("interstitial");
                     }
                     
                     const showAdResponse = await Pi.Ads.showAd("interstitial");
@@ -394,6 +385,9 @@
 
             async function auth() {
                 try {
+                    const nativeFeaturesList = await Pi.nativeFeaturesList();
+                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
+                    
                     // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
                     const scopes = ['username', 'payments', 'wallet_address'];
                     function onIncompletePaymentFound(payment) {
