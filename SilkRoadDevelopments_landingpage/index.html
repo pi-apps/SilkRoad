@@ -254,6 +254,38 @@
         </div>
     </div>
     
+    <style>
+
+        #overlay{
+          position: fixed;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background: rgba(0,0,0,0.8) none 50% / contain no-repeat;
+          cursor: pointer;
+          transition: 0.3s;
+          
+          visibility: hidden;
+          opacity: 0;
+        }
+        #overlay.open {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        #overlay:after { /* X button icon */
+          content: "\2715";
+          position: absolute;
+          color:#fff;
+          top: 10px;
+          right:20px;
+          font-size: 2em;
+        }
+    </style>
+    
+    <div id="overlay"></div>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             const btn = document.querySelector('#social_share');
@@ -362,21 +394,49 @@
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
                     var date2 = new Date(date1.getTime() - 2 * 60000);
                     
-                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
-                    {
-                        return;
-                    }
-                    
-                    const isAdReadyResponse = await Pi.Ads.isAdReady("interstitial");
-                                
+                    const isAdReadyResponse = await Pi.Ads.isAdReady("rewarded");
                     if (isAdReadyResponse.ready === false) {
-                        await Pi.Ads.requestAd("interstitial");
+                        
+                        const requestAdResponse = await Pi.Ads.requestAd("rewarded");
+                        if (requestAdResponse.result === "ADS_NOT_SUPPORTED") {
+                            // display modal to update Pi Browser
+                            // showAdsNotSupportedModal()
+                            alert("Update Pi Browser version, please!.");
+                            return;
+                        }
+                        if (requestAdResponse.result !== "AD_LOADED") {
+                            // display modal ads are temporarily unavailable and user should try again later
+                            // showAdUnavailableModal()
+                            alert("Ads are temporarily unavailable, try again later!.");
+                            return;
+                        }
                     }
                     
-                    const showAdResponse = await Pi.Ads.showAd("interstitial");
+                    const showAdResponse = await Pi.Ads.showAd("rewarded");
                     
-                    if(showAdResponse.result == "AD_CLOSED")
+                    if (showAdResponse.result === "AD_REWARDED")
                     {
+                        if(showAdResponse.adId)
+                        {
+                            alert("Rewarded.");
+                        }
+                        
+                        var d1 = new Date();
+                        
+                        var days = [];
+                        days[0] = "https://pixabay.com/get/gf9117346471579f2264616bd2c404ac7206d54d9f48e2ebec439a7a1e0edbcfb706da44f875c9fd0da6eab555c22e1431ad71e1d5150cb78a227b58db5cc19dd_1280.jpg";
+                        days[1] = "https://pixabay.com/get/ga3abd63372be1a33168a00c10245cd2f9e77e5e91f2f4e3545e99aa4ca804006d891ec2ff69e269211ca97d34c3661d46571f643e2e4edaa71daf1c3d17b4018_1280.jpg";
+                        days[2] = "https://pixabay.com/get/g8f83a2dd2b773a61eba0d9eb4d6e0adce78a5cfcc82cd231bab5dbd1a5de727a44f63658b747d5212ab38979f236a7345a2f0468bad2445c1c4bbdc0a702a29e_1280.png";
+                        days[3] = "https://pixabay.com/get/g141774934cb192faf27c2270cd2e2544c0ce46d96308ea74bb87dd963f244030a0ec6dd25da5f5934e801c1b7435c4f66e772cb46b6e72047f6dfa608427c853_1280.jpg";
+                        days[4] = "https://pixabay.com/get/gf512654b0a928098b18b05642e23f373c7204b14e15484fa451aa3be20a18b16ee02338cef49459e16a4761f764c33678246301be72a73fd3a6eca148fb434aa_1280.png";
+                        days[5] = "https://pixabay.com/get/gd73e9496415a5c1c2a7fd926c99a6e883dd0951a020fbdbf41794e02ce6ae6147a1134d5c68f8711e24c734d89dd75ba32bfc737f58b1e4384aec5f10a1a573b_1280.jpg";
+                        days[6] = "https://pixabay.com/get/g6f168498fead0d9475b3b225a4184dd8c23839eeebda6d8d2c0f7f9caf321b70aca7b7518e8d090b7f77560892199e930f712a97da411659420475ae35badab9_1280.png";
+                        
+                        $('#overlay')
+                            .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
+                            .addClass('open')
+                            .one('click', function() { $(this).removeClass('open'); });
+                        
                         var d1 = new Date();
                         var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
 
