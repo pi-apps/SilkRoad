@@ -1,0 +1,547 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SilkRoad</title>
+    <meta name="description" content="SilkRoad" />
+        
+    <meta property="og:url" content="/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="SilkRoad"/>
+    <meta property="og:description" content="SilkRoad"/>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ios support -->
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+
+    <meta name="application-name" content="SilkRoad for Pi">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv-pre3.6.js"></script>
+    <![endif]-->
+
+    <meta property="og:image" content="logo.png" />
+    <link href="logo.png" rel="shortcut icon" />
+
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <!--<script src="https://downloads.minepi.com/sdk/v1/dev.js"></script>-->
+    <!--<script src="https://downloads.minepi.com/sdk/v1/prod.js"></script>-->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YC1ELTSB5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YC1ELTSB5N');
+</script>
+
+</head>
+<body>
+    <div style="text-align:center">
+        <style>
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index:99999;
+            }
+        </style>
+        <ul class="nav nav-pills justify-content-center sticky" id="myTab" role="tablist" style="background-color: #e3f2fd;" translate="no">
+          <li class="nav-item" role="presentation">
+            <button style="height:100%" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-house"></i></button>
+          </li>
+          <li><button style="margin-left:5px; min-height:40px" class="clear_cache btn btn-info"><i class="fa fa-refresh"></i></button></li>
+          <li><button style="margin-left:5px; min-height:40px" class="store btn btn-info"><i class="fa fa-store"></i></button></li>
+          <li><button style="margin-left:5px; min-height:40px" class="store-facebook btn btn-info"><i class="fa-brands fa-facebook"></i></button></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container form-group" style="text-align:center; max-width:840px">
+
+                    <style>
+                            .goog-te-banner-frame.skiptranslate {
+                                display: none !important;
+                            }
+                            .skiptranslate > iframe {
+                                display: none !important;
+                            }
+                            
+                            body {
+                                top: 0px !important; 
+                            }
+
+                            .goog-te-menu-frame {
+                                max-width:100% !important; 
+                            }
+                            .goog-te-menu2 { 
+                                max-width: 100% !important;
+                                overflow-x: scroll !important;
+                                box-sizing:border-box !important; 
+                                height:auto !important; 
+                            }
+                            
+                            #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
+                            .goog-text-highlight { background: none !important; box-shadow: none !important;}
+                            
+                            .goog-logo-link{display: none !important;}
+                            /*.goog-te-gadget{height: 28px !important;  overflow: hidden;}*/
+                        </style>
+                        
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                  var lang_google='en';
+                                  
+                                  new google.translate.TranslateElement({pageLanguage: lang_google,
+                                                                        autoDisplay: true,
+                                                                        layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
+                                                                        'google_translate_element');
+                                 
+                                    //const el = document.querySelector('#goog-gt-');
+                                    //const el2 = document.querySelector('.skiptranslate');
+                                    const el3 = document.querySelector('circle');
+                                    //const el4 = document.querySelector('.goog-te-gadget');
+                                    const observer = new window.IntersectionObserver(([entry]) => {
+                                        /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
+                                        {
+                                            for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
+                                            {
+                                                if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
+                                                    document.getElementsByClassName("skiptranslate")[i].style.display = "none";
+                                            }
+                                        }
+                                        document.getElementById("goog-gt-").style.display = "none";*/
+                                        document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
+                                    }, {
+                                        root: null,
+                                        threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                                    });
+
+                                    //observer.observe(el);
+                                    //observer.observe(el2);
+                                    observer.observe(el3);
+                                    //observer.observe(el4);
+                              
+                            }
+                        </script>
+
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <div style="margin-top: 50px !important;">
+                        </div>
+                        <strong>Translate</strong>
+                        <div id="google_translate_element"></div>
+                        <br/>
+                        <img src="logo.png" alt="SilkRoad" class="img-fluid" style="width: 200px; height: 100px;" />
+                    <br/>
+                    <br/>
+                    <h1>Pi cryptocurrency payment on SilkRoad (Watch TV Online)</h1>
+                    <br/>
+                    <br/>
+                    <div id="username">Hello</div>
+                    <br/>
+                    <div>Remember access through Pi Browser</div>
+                    <br/>
+                    <br/>
+                    <button id="clear_cache" class="clear_cache btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
+                    <br/>
+                    <br/>
+                    <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
+                    <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
+                    <br /><br />
+                    <label for="tvselect">TV Online:</label>
+
+                    <div>
+                        <select class="form-select" id="tvselect" aria-label="Default select">
+                          <option value="silkroad1" selected>SilkRoad video 1</option>
+                          <option value="silkroad2">SilkRoad video 2</option>
+                          <option value="silkroad3">SilkRoad video 3</option>
+                          <option value="silkroad4">SilkRoad video 4</option>
+                          <option value="disney">Disney Channel</option>
+                          <option value="cartoon1">Cartoon Network Steven Universe</option>
+                          <option value="cartoon2">Cartoon Network Looney Toons</option>
+                          <option value="hbo">HBO House of Dragon</option>
+                          <option value="geographic">Geographic Channel</option>
+                          <option value="natgeowild">Nat Geo WILD</option>
+                          <option value="nasa">NASA Solar Eclipses</option>
+                          <option value="discovery">Discovery Channel</option>
+                          <option value="history">History Channel</option>
+                        </select>
+                    </div>
+                    <br /><br />
+                    <iframe id="tvonline" width="300" height="250" src="https://www.youtube.com/embed/Gye3ZvfVoiI?si=H4os6EgdeFDfqF7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br /><br />
+                    <div>Share in Social Networks:</div>
+                    <br />
+                    <button id="social_share" class="btn btn-outline-primary" style="border-radius: 50%; border: 2px solid;"><i class="fa fa-share-alt"></i></button>
+                    <br /><br />
+                    <a href="rice_mainnet.html">Do you want to get Pi rewards on Pi2Day?, click here!</a>
+                    <br /><br />
+                    <div translate="no">Pi, Pi Network and the Pi logo are trademarks of the Pi Community Company.</div>
+                    <br /><br />
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+                    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+                    <style>
+                        #map { height: 180px; }
+                    </style>
+                    <div id="map"></div>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            var map = L.map('map').setView([10.728072, 106.710111], 13);
+                            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                            }).addTo(map);
+                            var marker = L.marker([10.728072, 106.710111]).addTo(map);
+                        });
+                    </script>
+                    <br /><br />
+                    <div style="">
+                        <a href="marketing_mainnet.html">About us</a>
+                        <br /><br />
+                        <a href="Privacy%20Policy.pdf">Privacy Policy</a>&nbsp;&nbsp;
+                        <a href="Terms%20and%20Conditions.pdf">ToS</a>
+                        <br /><br />
+                        <div style="text-align: justify; text-justify: inter-word;">
+                        Silkroad is a cutting-edge, multifunctional e-commerce platform designed to revolutionize the way businesses operate online. 
+                        This comprehensive utility platform combines the features of a traditional e-commerce site with a range of innovative tools and 
+                        services, providing a seamless and integrated experience for users. Silkroad is built to cater to the diverse needs of modern businesses, 
+                        entrepreneurs, and individuals, offering a robust, scalable, and secure environment to buy, sell, and manage products and services.
+                        </div>
+                        <br/><br/>
+                        Welcome to Silk Road ! 
+                        
+                    </div>
+
+                    <br/>
+                    <br/>
+
+                    <div id="clear_cache_message" style="display:none;">Are you sure you want to Clear Cache?, it will reloads the page.</div>
+                    <div id="share_message" style="display:none;">Hi. Check it out this Pi App: SilkRoad for Pi. Try it in Pi Browser. #PiNetwork #PiApps</div>
+                    <div id="pi_username_message" style="display:none;">Pi username: <span translate="no" class="referrer_username"></span></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <style>
+
+        #overlay{
+          position: fixed;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background: rgba(0,0,0,0.8) none 50% / contain no-repeat;
+          cursor: pointer;
+          transition: 0.3s;
+          
+          visibility: hidden;
+          opacity: 0;
+          z-index:999999;
+        }
+        #overlay.open {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        #overlay:after { /* X button icon */
+          content: "\2715";
+          position: absolute;
+          color:#fff;
+          top: 10px;
+          right:20px;
+          font-size: 2em;
+        }
+    </style>
+    
+    <div id="overlay"></div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const btn = document.querySelector('#social_share');
+            //const resultPara = document.querySelector('.result');
+                           
+            // Must be triggered some kind of "user activation"
+            btn.addEventListener('click', async () => {
+                const shareData = {
+                   title: 'SilkRoad for Pi',
+                   text: $("#share_message").text() + "\n\nWebpage:\nhttps://pisilkroad.com/\n\n" + $("#pi_username_message").text(),
+                   //url: 'https://latin-chain.com/',
+                }
+                                
+                if (!navigator.share) {
+                 Pi.openShareDialog(shareData.title, shareData.text);
+                }else
+                {
+                  try {
+                      await navigator.share(shareData);
+                      //resultPara.textContent = 'MDN shared successfully'
+                  } catch(err) {
+                       //alert('Error: ' + err);
+                  }
+                }
+            });
+            
+            $('#tvselect').on('change', function() {
+                if(this.value == "disney")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=VCEv9e3lWgnNL_RR&amp;list=PLiv1IUQDVSNKSwiTLE-l6pwhnu75gRIfH");
+                else if(this.value == "natgeowild")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=1hd-PZi1bzp1CSNj&amp;list=PLNxd9fYeqXea4ejSSWiAAc_jwieHScr29");
+                else if(this.value == "geographic")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=dlkFOOjKA7EyDy7-&amp;list=PLivjPDlt6ApTUap3E0Y299uwor688LjeF");
+                else if(this.value == "cartoon1")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=5Y0LQKm1esBhYoU2&amp;list=PL_6LtW9tXrxj_6PMplWwq-6Ih0DW1yV5s");
+                else if(this.value == "cartoon2")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=s3-kWxz158KsI3pY&amp;list=PL_6LtW9tXrxh7Xmjjv3TBJVBkCoJgQzBV");
+                else if(this.value == "nasa")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=-yMe1AkkS4qIIHQA&amp;list=PL2aBZuCeDwlTC83-D5weTwSZV5gHwGCFp");
+                else if(this.value == "discovery")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=PsT_jgnrUhSGdsgh&amp;list=PL24ZdmosDg-hLuCSbkuusc7ObJBsQt7e2");
+                else if(this.value == "history")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=fgNdZx3Zl7HBuHcp&amp;list=PLob1mZcVWOaj-nXWX7GzNRm4I4uOcEb_8");
+                else if(this.value == "hbo")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=g-CTMJpB69EtKNeZ&amp;list=PLO79iP69FaZNWC3yKcXckk9hk52uPvVWv");
+                else if(this.value == "silkroad1")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/Gye3ZvfVoiI?si=H4os6EgdeFDfqF7V");
+                else if(this.value == "silkroad2")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/vWwP5XOtz3E?si=eGBnfavXGJs-yXuj");
+                else if(this.value == "silkroad3")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/njINczah72E?si=oWrvqLSzQXdjo2AE");
+                else if(this.value == "silkroad4")
+                    $('#tvonline').attr('src', "https://www.youtube.com/embed/DDU1j5Gmd7I?si=q8yoRZdgkueoo0MR");
+            });
+            
+            var previousLang = $('.goog-te-combo').val(); // Initial language
+
+            setInterval(function() {
+                var currentLang = $('.goog-te-combo').val();
+                if (previousLang !== currentLang) {
+                  // Language has changed!
+                  console.log('Language changed to:', currentLang);
+                  // Perform your desired action here (e.g., reload page, update UI)
+                  previousLang = currentLang;
+                  
+                  $('#tvselect').select2({language: currentLang});
+                }
+            }, 500); // Check every half second
+            
+            $('#tvselect').select2({language: "en"});
+
+            $( ".clear_cache" ).click(function() {
+                var result = confirm($( "#clear_cache_message" ).text());
+                if(result)
+                {
+                    try {
+                        Cache.delete();
+                    } catch (err) {
+                        console.error(err);
+                    }
+                    try {
+                        window.location.reload(true);
+                    } catch (err) {
+                        console.error(err);
+                    }
+                }
+            });
+            
+            $( ".store" ).click(function() {
+                location.href="rice_mainnet.html"
+            });
+            
+            $( ".store-facebook" ).click(function() {
+                window.open("https://www.facebook.com/groups/853347333676799", "_blank");
+            });
+
+            const Pi = window.Pi;
+            Pi.init({ version: "2.0" });
+
+            //alert(PiNetworkClient);
+            
+            //This function was made by LatinChain Platform
+            async function showPiAds(Pi) {
+                try {
+                    var d1 = new Date();
+                    var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+                    var date2 = new Date(date1.getTime() - 2 * 60000);
+                    
+                    const isAdReadyResponse = await Pi.Ads.isAdReady("rewarded");
+                    if (isAdReadyResponse.ready === false) {
+                        
+                        const requestAdResponse = await Pi.Ads.requestAd("rewarded");
+                        if (requestAdResponse.result === "ADS_NOT_SUPPORTED") {
+                            // display modal to update Pi Browser
+                            // showAdsNotSupportedModal()
+                            alert("Update Pi Browser version, please!.");
+                            return;
+                        }
+                        if (requestAdResponse.result !== "AD_LOADED") {
+                            // display modal ads are temporarily unavailable and user should try again later
+                            // showAdUnavailableModal()
+                            alert("Ads are temporarily unavailable, try again later!.");
+                            return;
+                        }
+                    }
+                    
+                    const showAdResponse = await Pi.Ads.showAd("rewarded");
+                    
+                    if (showAdResponse.result === "AD_REWARDED")
+                    {
+                        if(showAdResponse.adId)
+                        {
+                            alert("Rewarded.");
+                        }
+                        
+                        var d1 = new Date();
+                        
+                        var days = [];
+                        days[0] = "https://pixabay.com/get/gf9117346471579f2264616bd2c404ac7206d54d9f48e2ebec439a7a1e0edbcfb706da44f875c9fd0da6eab555c22e1431ad71e1d5150cb78a227b58db5cc19dd_1280.jpg";
+                        days[1] = "https://pixabay.com/get/ga3abd63372be1a33168a00c10245cd2f9e77e5e91f2f4e3545e99aa4ca804006d891ec2ff69e269211ca97d34c3661d46571f643e2e4edaa71daf1c3d17b4018_1280.jpg";
+                        days[2] = "https://pixabay.com/get/g8f83a2dd2b773a61eba0d9eb4d6e0adce78a5cfcc82cd231bab5dbd1a5de727a44f63658b747d5212ab38979f236a7345a2f0468bad2445c1c4bbdc0a702a29e_1280.png";
+                        days[3] = "https://pixabay.com/get/g141774934cb192faf27c2270cd2e2544c0ce46d96308ea74bb87dd963f244030a0ec6dd25da5f5934e801c1b7435c4f66e772cb46b6e72047f6dfa608427c853_1280.jpg";
+                        days[4] = "https://pixabay.com/get/gf512654b0a928098b18b05642e23f373c7204b14e15484fa451aa3be20a18b16ee02338cef49459e16a4761f764c33678246301be72a73fd3a6eca148fb434aa_1280.png";
+                        days[5] = "https://pixabay.com/get/gd73e9496415a5c1c2a7fd926c99a6e883dd0951a020fbdbf41794e02ce6ae6147a1134d5c68f8711e24c734d89dd75ba32bfc737f58b1e4384aec5f10a1a573b_1280.jpg";
+                        days[6] = "https://pixabay.com/get/g6f168498fead0d9475b3b225a4184dd8c23839eeebda6d8d2c0f7f9caf321b70aca7b7518e8d090b7f77560892199e930f712a97da411659420475ae35badab9_1280.png";
+                        
+                        $('#overlay')
+                            .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
+                            .addClass('open')
+                            .one('click', function() { $(this).removeClass('open'); });
+                        
+                        var d1 = new Date();
+                        var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+
+                        localStorage['pi_ad_datetime'] = date1.getTime();
+                    }
+                } catch (err) {
+                    //alert(err);
+                    // Not able to fetch the user
+                }
+            }
+
+            async function auth() {
+                try {
+                    const nativeFeaturesList = await Pi.nativeFeaturesList();
+                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
+                    
+                    if(!adNetworkSupported)
+                        alert("Update Pi Browser version, please.");
+                    
+                    // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
+                    const scopes = ['username', 'payments', 'wallet_address'];
+                    function onIncompletePaymentFound(payment) {
+                        var data = {
+                            'action': 'complete',
+                            'paymentId': payment.identifier,
+                            'txid': payment.transaction.txid,
+                            'app_client': 'silkroad-mainnet'
+                        };
+                        return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                            $("#button_click").prop("disabled", false);
+                        }).fail(function () {
+                            $("#button_click").prop("disabled", false);
+                        });
+                    }; // Read more about this in the SDK reference
+
+                    Pi.authenticate(scopes, onIncompletePaymentFound).then(function (auth) {
+                        
+                        showPiAds(Pi);
+                        
+                        $("#button_click").click(function () {
+                            if (parseFloat($("#pi_donate").val()) > 0) {
+                                $("#button_click").prop("disabled", true);
+                                /*setTimeout(function ()
+                                {
+                                    $("#button_click").prop( "disabled", false );
+                                }, 10000);*/
+                                transfer();
+                            }
+                            //alert("Click");
+                        });
+                        $("#username").html( "Hello, <strong>" + auth.user.username + "</strong>");
+                        $("#referrer_username").html( "<strong>" + auth.user.username + "</strong>");
+                        //alert('Hello ' + auth.user.username);
+                    }).catch(function (error) {
+                        console.error(error);
+                    });
+                } catch (err) {
+                    alert(err);
+                    // Not able to fetch the user
+                }
+            }
+
+            async function transfer() {
+                try {
+                    const payment = Pi.createPayment({
+                        // Amount of π to be paid:
+                        amount: parseFloat($("#pi_donate").val()),
+                        // An explanation of the payment - will be shown to the user:
+                        memo: "Donation to SilkRoad for Pi", // e.g: "Digital kitten #1234",
+                        // An arbitrary developer-provided metadata object - for your own usage:
+                        metadata: { paymentType: "donation" /* ... */ }, // e.g: { kittenId: 1234 }
+                    }, {
+                            // Callbacks you need to implement - read more about those in the detailed docs linked below:
+                            onReadyForServerApproval: function (paymentId) {
+                                var data = {
+                                    'action': 'approve',
+                                    'paymentId': paymentId,
+                                    'txid': '',
+                                    'app_client': 'silkroad-mainnet'
+                                };
+                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                                    $("#button_click").prop("disabled", false);
+                                }).fail(function () {
+                                    $("#button_click").prop("disabled", false);
+                                });
+                            },
+                            onReadyForServerCompletion: function (paymentId, txid) {
+                                var data = {
+                                    'action': 'complete',
+                                    'paymentId': paymentId,
+                                    "txid": txid,
+                                    'app_client': 'silkroad-mainnet'
+                                };
+                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                                    $("#button_click").prop("disabled", false);
+                                }).fail(function () {
+                                    $("#button_click").prop("disabled", false);
+                                });
+                            },
+                            onCancel: function (paymentId) { $("#button_click").prop("disabled", false); /* ... */ },
+                            onError: function (error, payment) { $("#button_click").prop("disabled", false); /* ... */ },
+                        });
+                } catch (err) {
+                    $("#button_click").prop("disabled", false);
+                    alert(err);
+                    // Technical problem (eg network failure). Please try again
+                }
+            }
+
+            auth();
+
+        });
+    </script>
+</body>
+</html>
