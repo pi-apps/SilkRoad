@@ -387,6 +387,11 @@
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
                     var date2 = new Date(date1.getTime() - 2 * 60000);
                     
+                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
+                    {
+                        return;
+                    }
+                    
                     const isAdReadyResponse = await Pi.Ads.isAdReady("rewarded");
                     if (isAdReadyResponse.ready === false) {
                         
