@@ -159,6 +159,9 @@
                     <div>Remember access through Pi Browser</div>
                     <br/>
                     <br/>
+                    <a href="https://pisilkroad.com" target="_blank">Go to Testnet</a>
+                    <br/>
+                    <br/>
                     <button id="clear_cache" class="clear_cache btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
                     <br/>
                     <br/>
@@ -289,7 +292,7 @@
             btn.addEventListener('click', async () => {
                 const shareData = {
                    title: 'SilkRoad for Pi',
-                   text: $("#share_message").text() + "\n\nWebpage:\nhttps://pisilkroad.com/\n\n" + $("#pi_username_message").text(),
+                   text: $("#share_message").text() + "\n\nWebpage:\nhttps://mainnet.pisilkroad.com/\n\n" + $("#pi_username_message").text(),
                    //url: 'https://latin-chain.com/',
                 }
                                 
@@ -423,13 +426,13 @@
                         var d1 = new Date();
                         
                         var days = [];
-                        days[0] = "https://pisilkroad.com/assets/img/days/sunday.jpg";
-                        days[1] = "https://pisilkroad.com/assets/img/days/monday.jpg";
-                        days[2] = "https://pisilkroad.com/assets/img/days/tuesday.jpg";
-                        days[3] = "https://pisilkroad.com/assets/img/days/wednesday.jpg";
-                        days[4] = "https://pisilkroad.com/assets/img/days/thursday.jpg";
-                        days[5] = "https://pisilkroad.com/assets/img/days/friday.jpg";
-                        days[6] = "https://pisilkroad.com/assets/img/days/saturday.jpg";
+                        days[0] = "https://mainnet.pisilkroad.com/assets/img/days/sunday.jpg";
+                        days[1] = "https://mainnet.pisilkroad.com/assets/img/days/monday.jpg";
+                        days[2] = "https://mainnet.pisilkroad.com/assets/img/days/tuesday.jpg";
+                        days[3] = "https://mainnet.pisilkroad.com/assets/img/days/wednesday.jpg";
+                        days[4] = "https://mainnet.pisilkroad.com/assets/img/days/thursday.jpg";
+                        days[5] = "https://mainnet.pisilkroad.com/assets/img/days/friday.jpg";
+                        days[6] = "https://mainnet.pisilkroad.com/assets/img/days/saturday.jpg";
                         
                         $('#overlay')
                             .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
@@ -464,7 +467,7 @@
                             'txid': payment.transaction.txid,
                             'app_client': 'silkroad-mainnet'
                         };
-                        return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                        return $.post("https://mainnet.pisilkroad.com/server1.php", data).done(function (data) {
                             $("#button_click").prop("disabled", false);
                         }).fail(function () {
                             $("#button_click").prop("disabled", false);
@@ -516,7 +519,7 @@
                                     'txid': '',
                                     'app_client': 'silkroad-mainnet'
                                 };
-                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                                return $.post("https://mainnet.pisilkroad.com/server1.php", data).done(function (data) {
                                     $("#button_click").prop("disabled", false);
                                 }).fail(function () {
                                     $("#button_click").prop("disabled", false);
@@ -529,7 +532,7 @@
                                     "txid": txid,
                                     'app_client': 'silkroad-mainnet'
                                 };
-                                return $.post("https://pisilkroad.com/server1.php", data).done(function (data) {
+                                return $.post("https://mainnet.pisilkroad.com/server1.php", data).done(function (data) {
                                     $("#button_click").prop("disabled", false);
                                 }).fail(function () {
                                     $("#button_click").prop("disabled", false);
