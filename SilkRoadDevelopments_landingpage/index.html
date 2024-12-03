@@ -43,6 +43,9 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+    <link rel="stylesheet" href="colorbox/example3/colorbox.css" />
+    <script src="colorbox/jquery.colorbox.js"></script>
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC1ELTSB5N"></script>
 <script>
@@ -63,16 +66,93 @@
               position: fixed;
               top: 0;
               width: 100%;
-              z-index:99999;
+              z-index:9999;
             }
         </style>
+        
+        <style>
+             /* The side navigation menu */
+            .sidenav {
+              height: 100%; /* 100% Full-height */
+              width: 0; /* 0 width - change this with JavaScript */
+              position: fixed; /* Stay in place */
+              z-index:9998; /* Stay on top */
+              top: 0; /* Stay at the top */
+              left: 0;
+              background-color: #111; /* Black*/
+              overflow-x: hidden; /* Disable horizontal scroll */
+              padding-top: 60px; /* Place content 60px from the top */
+              transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover {
+              color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            } 
+        </style>
+        
+        <script>
+            /* Set the width of the side navigation to 250px */
+            var open_nav = false;
+            function openNav() {
+              if(!open_nav)
+              {
+                  document.getElementById("mySidenav").style.width = "250px";
+                  open_nav = true;
+              }else
+              {
+                  document.getElementById("mySidenav").style.width = "0";
+                  open_nav = false;
+              }
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              open_nav = false;
+            } 
+        </script>
+        
+        <div id="mySidenav" class="sidenav">
+          <div style="margin-top:50px"></div>
+          <a href="javascript:void(0);" class="closebtn" onclick="closeNav()" style="margin-top:50px !important"><i class="fa-solid fa-x"></i></a>
+          <a href="javascript:void(0);"><button style="margin-left:5px; min-height:40px" class="clear_cache btn btn-info"><i class="fa fa-refresh"></i></button></a>
+          <a href="javascript:void(0);"><button style="margin-left:5px; min-height:40px" class="store btn btn-info"><i class="fa fa-store"></i></button></a>
+          <a href="javascript:void(0);"><button style="margin-left:5px; min-height:40px" class="store-facebook btn btn-info"><i class="fa-brands fa-facebook"></i></button></a>
+          <a href="javascript:void(0);"><button style="margin-left:5px; min-height:40px" class="plutotv btn btn-info"><i class="fa-solid fa-tv"></i></button></a>
+          <a href="javascript:void(0);"><button style="margin-left:5px; min-height:40px" class="donatebutton btn btn-info"><i class="fa-solid fa-handshake-simple"></i></button></a>
+        </div>
+        
         <ul class="nav nav-pills justify-content-center sticky" id="myTab" role="tablist" style="background-color: #e3f2fd;" translate="no">
           <li class="nav-item" role="presentation">
             <button style="height:100%" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-house"></i></button>
           </li>
-          <li><button style="margin-left:5px; min-height:40px" class="clear_cache btn btn-info"><i class="fa fa-refresh"></i></button></li>
-          <li><button style="margin-left:5px; min-height:40px" class="store btn btn-info"><i class="fa fa-store"></i></button></li>
-          <li><button style="margin-left:5px; min-height:40px" class="store-facebook btn btn-info"><i class="fa-brands fa-facebook"></i></button></li>
+          <li><button style="margin-left:5px; height:100%" class="btn btn-info" onclick="openNav()"><i class="fa-solid fa-bars"></i></button></li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -153,7 +233,7 @@
                         <img src="logo.png" alt="SilkRoad" class="img-fluid" style="width: 200px; height: 100px;" />
                     <br/>
                     <br/>
-                    <h1>Pi cryptocurrency payment on SilkRoad (Watch TV Online)</h1>
+                    <h1>SilkRoad on Pi cryptocurency ecosystem (Watch TV Online)</h1>
                     <br/>
                     <br/>
                     <a href="https://mainnet.pisilkroad.com" target="_blank">Go to Mainnet</a>
@@ -171,8 +251,14 @@
                     <br/>
                     <br/>
                     <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
-                    <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
+                    <button id="button_click" name="button_click" class="btn btn-primary font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa-solid fa-handshake-simple"></i></div><div style="font-size:100%;">Donate Pi</div></button>
+                    
+                    <div style="margin-top: 30px">
+                        <input id="plutotv" name="plutotv" value="Watch Pluto TV" type="button" class="btn btn-primary plutotv" />
+                    </div>
+                    
                     <br /><br />
+                    
                     <label for="tvselect">TV Online:</label>
 
                     <div>
@@ -292,6 +378,14 @@
     
     <script type="text/javascript">
         $(document).ready(function () {
+            $( ".plutotv" ).click(function() {
+                $.colorbox({href:"https://pluto.tv/latam/live-tv/6320d80a66666000086712d7?lang=en", fixed:true, iframe:true, width: "100%", height: "100%", maxWidth: "100%", maxHeight: "100%"});
+            });
+            
+            $( ".donatebutton" ).click(function() {
+                location.href="#username";
+            });
+            
             const btn = document.querySelector('#social_share');
             //const resultPara = document.querySelector('.result');
                            
