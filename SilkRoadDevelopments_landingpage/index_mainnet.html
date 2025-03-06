@@ -520,18 +520,14 @@
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
                     var date2 = new Date(date1.getTime() - 60 * 60000);
                     
-                    alert("1");
                     if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
                     {
                         return;
                     }
                     
-                    alert("2");
-                    
                     const isAdReadyResponse = await Pi.Ads.isAdReady("rewarded");
-                    alert("3");
                     if (isAdReadyResponse.ready === false) {
-                        alert("4");
+                        
                         const requestAdResponse = await Pi.Ads.requestAd("rewarded");
                         if (requestAdResponse.result === "ADS_NOT_SUPPORTED") {
                             // display modal to update Pi Browser
@@ -547,12 +543,8 @@
                         }
                     }
                     
-                    alert("5");
-                    
                     const showAdResponse = await Pi.Ads.showAd("rewarded");
                     
-                    alert("6");
-                    alert("result " + showAdResponse.result);
                     if (showAdResponse.result === "AD_REWARDED")
                     {
                         if(showAdResponse.adId)
@@ -571,17 +563,15 @@
                         days[5] = "https://mainnet.pisilkroad.com/assets/img/days/friday.jpg";
                         days[6] = "https://mainnet.pisilkroad.com/assets/img/days/saturday.jpg";
                         
-                        alert("hello 1 ");
                         $('#overlay')
                             .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
                             .addClass('open')
                             .one('click', function() { $(this).removeClass('open'); });
-                        alert("hello 2 ");
+                        
                         var d1 = new Date();
                         var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
-                        alert("hello 3 ");
+
                         localStorage['pi_ad_datetime'] = date1.getTime();
-                        alert("hello 4 ");
                     }
                 } catch (err) {
                     //alert(err);
