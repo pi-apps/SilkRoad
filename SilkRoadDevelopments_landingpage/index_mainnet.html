@@ -233,6 +233,9 @@
                     <h1>SilkRoad on Pi cryptocurency ecosystem (Watch TV Online)</h1>
                     <br/>
                     <br/>
+                    <button id="ver_pi_ads" class="btn btn-primary font-weight-bold text-black">Watch Pi Ads</button>
+                    <br/>
+                    <br/>
                     Trade Pi<br/>
                     <a href="https://www.mexc.com/price/PI" target="_blank">Pi Swap</a>
                     <br/>
@@ -514,13 +517,13 @@
             //alert(PiNetworkClient);
             
             //This function was made by LatinChain Platform
-            async function showPiAds(Pi) {
+            async function showPiAds(Pi, activated) {
                 try {
                     var d1 = new Date();
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
                     var date2 = new Date(date1.getTime() - 60 * 60000);
                     
-                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime())
+                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime() && activated)
                     {
                         return;
                     }
@@ -605,7 +608,11 @@
 
                     Pi.authenticate(scopes, onIncompletePaymentFound).then(function (auth) {
                         
-                        showPiAds(Pi);
+                        $("#ver_pi_ads").click(function(){
+                            showPiAds(Pi, false);
+                        });
+                        
+                        showPiAds(Pi, true);
                         
                         $("#button_click").click(function () {
                             if (parseFloat($("#pi_donate").val()) > 0) {
