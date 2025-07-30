@@ -512,7 +512,6 @@
             });
 
             const Pi = window.Pi;
-            Pi.init({ version: "2.0" });
 
             //alert(PiNetworkClient);
             
@@ -521,7 +520,7 @@
                 try {
                     var d1 = new Date();
                     var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
-                    var date2 = new Date(date1.getTime() - 60 * 60000);
+                    var date2 = new Date(date1.getTime() - 8 * 60 * 60000);
                     
                     if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime() && activated)
                     {
@@ -581,14 +580,42 @@
                     // Not able to fetch the user
                 }
             }
+            
+            //This function was made by LatinChain Platform
+            async function showPiIntestitialAds(Pi, activated) {
+                try {
+                    var d1 = new Date();
+                    var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+                    var date2 = new Date(date1.getTime() - 8 * 60 * 60000);
+                    
+                    if(localStorage && localStorage['pi_ad_datetime'] > date2.getTime() && activated)
+                    {
+                        return;
+                    }
+                    
+                    const isAdReadyResponse = await Pi.Ads.isAdReady("interstitial");
+        
+                    if (isAdReadyResponse.ready === false) {
+                        await Pi.Ads.requestAd("interstitial");
+                    }
+                    
+                    const showAdResponse = await Pi.Ads.showAd("interstitial");
+                    
+                    if(showAdResponse.result == "AD_CLOSED")
+                    {
+                        var d1 = new Date();
+                        var date1 = new Date(d1.getUTCFullYear(), d1.getUTCMonth(), d1.getUTCDate(), d1.getUTCHours(), d1.getUTCMinutes(), d1.getUTCSeconds());
+
+                        localStorage['pi_ad_datetime'] = date1.getTime();
+                    }
+                } catch (err) {
+                    //alert(err);
+                    // Not able to fetch the user
+                }
+            }
 
             async function auth() {
                 try {
-                    const nativeFeaturesList = await Pi.nativeFeaturesList();
-                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
-                    
-                    if(!adNetworkSupported)
-                        alert("Update Pi Browser version, please.");
                     
                     // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
                     const scopes = ['username', 'payments', 'wallet_address'];
@@ -612,7 +639,7 @@
                             showPiAds(Pi, false);
                         });
                         
-                        showPiAds(Pi, true);
+                        showPiIntestitialAds(Pi, true);
                         
                         $("#button_click").click(function () {
                             if (parseFloat($("#pi_donate").val()) > 0) {
@@ -684,7 +711,19 @@
                 }
             }
 
-            auth();
+            (async () => {
+                await Pi.init({ version: "2.0" });
+                (async () => {
+                    const nativeFeaturesList = await Pi.nativeFeaturesList();
+                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
+                    
+                    if(!adNetworkSupported)
+                        alert("Update Pi Browser version, please!.");
+                  // store adNetworkSupported for later use
+                })();
+                
+                auth();
+            })();
 
         });
     </script>
