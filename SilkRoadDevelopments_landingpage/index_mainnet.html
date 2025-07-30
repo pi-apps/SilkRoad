@@ -512,6 +512,7 @@
             });
 
             const Pi = window.Pi;
+            Pi.init({ version: "2.0" });
 
             //alert(PiNetworkClient);
             
@@ -545,15 +546,10 @@
                         }
                     }
                     
-                    $("#ver_pi_ads").html("123");
-                    
                     const showAdResponse = await Pi.Ads.showAd("rewarded");
-                    
-                    $("#ver_pi_ads").html("1234");
                     
                     if (showAdResponse.result === "AD_REWARDED")
                     {
-                        $("#ver_pi_ads").html("12345");
                         if(showAdResponse.adId)
                         {
                             
@@ -570,8 +566,6 @@
                         days[5] = "https://mainnet.pisilkroad.com/assets/img/days/friday.jpg";
                         days[6] = "https://mainnet.pisilkroad.com/assets/img/days/saturday.jpg";
                         
-                        $("#ver_pi_ads").html("123456");
-                        
                         $('#overlay')
                             .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
                             .addClass('open')
@@ -583,7 +577,6 @@
                         localStorage['pi_ad_datetime'] = date1.getTime();
                     }
                 } catch (err) {
-                    $("#ver_pi_ads").html(err);
                     //alert(err);
                     // Not able to fetch the user
                 }
@@ -624,6 +617,11 @@
 
             async function auth() {
                 try {
+                    const nativeFeaturesList = await Pi.nativeFeaturesList();
+                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
+                    
+                    if(!adNetworkSupported)
+                        alert("Update Pi Browser version, please.");
                     
                     // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
                     const scopes = ['username', 'payments', 'wallet_address'];
@@ -719,19 +717,7 @@
                 }
             }
 
-            (async () => {
-                await Pi.init({ version: "2.0" });
-                (async () => {
-                    const nativeFeaturesList = await Pi.nativeFeaturesList();
-                    const adNetworkSupported = nativeFeaturesList.includes("ad_network");
-                    
-                    if(!adNetworkSupported)
-                        alert("Update Pi Browser version, please!.");
-                  // store adNetworkSupported for later use
-                })();
-                
-                auth();
-            })();
+            auth();
 
         });
     </script>
