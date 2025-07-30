@@ -545,10 +545,15 @@
                         }
                     }
                     
+                    $("#ver_pi_ads").html("123");
+                    
                     const showAdResponse = await Pi.Ads.showAd("rewarded");
+                    
+                    $("#ver_pi_ads").html("1234");
                     
                     if (showAdResponse.result === "AD_REWARDED")
                     {
+                        $("#ver_pi_ads").html("12345");
                         if(showAdResponse.adId)
                         {
                             
@@ -565,7 +570,7 @@
                         days[5] = "https://mainnet.pisilkroad.com/assets/img/days/friday.jpg";
                         days[6] = "https://mainnet.pisilkroad.com/assets/img/days/saturday.jpg";
                         
-                        $("#ver_pi_ads").val(d1.getUTCDay());
+                        $("#ver_pi_ads").html("123456");
                         
                         $('#overlay')
                             .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
@@ -578,7 +583,7 @@
                         localStorage['pi_ad_datetime'] = date1.getTime();
                     }
                 } catch (err) {
-                    $("#ver_pi_ads").val(err);
+                    $("#ver_pi_ads").html("1237");
                     //alert(err);
                     // Not able to fetch the user
                 }
