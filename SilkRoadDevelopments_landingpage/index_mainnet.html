@@ -565,6 +565,8 @@
                         days[5] = "https://mainnet.pisilkroad.com/assets/img/days/friday.jpg";
                         days[6] = "https://mainnet.pisilkroad.com/assets/img/days/saturday.jpg";
                         
+                        $("#ver_pi_ads").val(d1.getUTCDay());
+                        
                         $('#overlay')
                             .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
                             .addClass('open')
@@ -576,6 +578,7 @@
                         localStorage['pi_ad_datetime'] = date1.getTime();
                     }
                 } catch (err) {
+                    $("#ver_pi_ads").val(err);
                     //alert(err);
                     // Not able to fetch the user
                 }
