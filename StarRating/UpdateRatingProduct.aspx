@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="UpdateRatingProduct.aspx.cs" Inherits="StarRating_UpdateRatingProduct" %>
