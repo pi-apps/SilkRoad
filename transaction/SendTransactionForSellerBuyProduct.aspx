@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SendTransactionForSellerBuyProduct.aspx.cs" Inherits="transaction_CreateTransactionBuyProduct" %>

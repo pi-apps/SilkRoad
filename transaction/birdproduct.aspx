@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="birdproduct.aspx.cs" Inherits="transaction_birdproduct" %>

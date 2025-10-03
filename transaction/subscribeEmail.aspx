@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="subscribeEmail.aspx.cs" Inherits="transaction_subscribeEmail" %>
