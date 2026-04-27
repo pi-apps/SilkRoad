@@ -137,8 +137,6 @@
                             var pi_user_id = "";
                             var pi_user_code = "";
                             var accessToken = "";
-
-                            Pi.init({ version: "2.0", sandbox: false });
                             
                             async function auth() {
                                 try {
@@ -166,7 +164,15 @@
                                 }
                             }
 
-                            auth();
+                            (async () => {
+                
+                                try{
+                                    await Pi.init({ version: "2.0", sandbox: false });
+                                }catch(e){
+                                }
+
+                                auth();
+                            });
                      });
                 </script>
 
